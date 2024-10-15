@@ -3,7 +3,6 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { Page1Data } from "../Constants/product/product_data.json";
 import { gsap } from "gsap";
-import dynamic from "next/dynamic";
 
 export default function ImageSlider() {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
