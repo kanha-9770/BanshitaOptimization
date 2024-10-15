@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { Page1Data } from "../Constants/product/product_data.json";
 import { gsap } from "gsap";
+import dynamic from "next/dynamic";
 
 export default function ImageSlider() {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
@@ -97,18 +98,20 @@ export default function ImageSlider() {
             alt={Page1Data.products[currentIndex].machineName}
             width={400}
             height={400}
-            className="lg:w-[19rem] md:w-[12rem] w-[20rem] lg:-mt-[3rem] md:-mt-[2rem] mt-[2.5rem]"
+            priority
+            className="lg:w-[19rem] md:w-[12rem] h-max w-[20rem] lg:mt-0 md:-mt-[2rem] mt-[5rem]"
           />
+
           <Image
             src={Page1Data.products[currentIndex].productImg}
             alt={Page1Data.products[currentIndex].machineName}
             width={400}
             height={400}
-            className="lg:w-[5rem] w-[4rem] lg:-mt-[10.5rem] -mt-[8rem] lg:-ml-2 md:ml-2 -ml-[4rem]"
+            className="lg:w-[5rem] w-[4rem] lg:-mt-[6.5rem] -mt-[8rem] lg:-ml-2 md:ml-2 -ml-[4rem]"
           />
         </div>
       </div>
-      <div className="flex lg:pl-[1rem] space-x-2 lg:absolute lg:bottom-10">
+      <div className="flex lg:pl-[1rem] lg:py-4 pt-4 space-x-2 ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 64 64"
@@ -145,7 +148,7 @@ export default function ImageSlider() {
           />
         </svg>
       </div>
-      <div className="absolute lg:bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+      <div className="absolute lg:bottom-4 bottom-0 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {Page1Data.products.map((_, idx) => (
           <div
             key={idx}

@@ -30,6 +30,10 @@ const nextConfig = {
         hostname: 'assets.nesscoindustries.com',
       },
       {
+        protocol:'https',
+        hostname:'nessco.vercel.app',
+      },
+      {
         protocol: 'https',
         hostname: 'www.nesscoindia.com',
       },
