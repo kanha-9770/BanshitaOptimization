@@ -1,17 +1,32 @@
-import Image from "next/image";
+import { useRef } from "react";
+import data from "../Constants/hero.json";
 
 const ImageSlider: React.FC = () => {
+  const homeData = data.find((item) => item.category === "HeroSection")?.data;
+  const videoSources = homeData?.video?.sources || [];
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  if (!videoSources.length) {
+    return <p>No video available.</p>;
+  }
+
   return (
     <div className="relative w-full mx-auto h-full">
-      <Image
-        src="https://res.cloudinary.com/dj4jijw2a/image/upload/v1728375387/webphome_r4zgw2.webp"
-        alt="Hero Image"
-        height={1200}
-        width={800}
-        priority
-        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 75vw, 50vw"
+      <video
+        ref={videoRef}
         className="w-full h-full object-cover rounded-2xl"
-      />
+        autoPlay={true}
+        loop
+        muted
+        controls={false}
+        playsInline
+        preload="metadata" // Preload only metadata for faster loading
+      >
+        {videoSources.map((source, index) => (
+          <source key={index} src={source.src} type={source.type} />
+        ))}
+        Your browser does not support the video tag.
+      </video>
     </div>
   );
 };
