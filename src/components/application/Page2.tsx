@@ -142,7 +142,7 @@ const Page2: React.FC = () => {
                 <select
                   id="Category"
                   name="Category"
-                  className="w-full outline-none bg-transparent text-[#5e5d5d] lg:text-[0.9rem] text-sm"
+                  className="w-full outline-none font-normal bg-transparent text-[#5e5d5d] lg:text-[0.9rem] text-sm"
                 >
                   <option value="" disabled selected>
                     {Page2Data.category}

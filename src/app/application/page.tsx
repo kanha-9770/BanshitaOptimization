@@ -5,7 +5,7 @@ import { Metadata } from "next";
 
 // Define ApplicationSeoData interface to match your JSON structure
 interface ApplicationSeoData {
-  title: string; 
+  title: string;
   description: string;
   keywords: string;
   openGraph: {
@@ -27,7 +27,8 @@ interface ApplicationSeoData {
 }
 
 export async function generateMetadata(): Promise<Metadata> {
-  const metadata: ApplicationSeoData | undefined = seoData?.applicationSeoData;
+  const metadata: ApplicationSeoData | undefined =
+    seoData?.applicationSeoData;
 
   if (!metadata) {
     return {
