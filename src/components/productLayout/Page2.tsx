@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import gsap from "gsap";
-import { Page2Data } from "@/Components/Constants/product/productLayout_data.json";
+import { Page2Data } from "@/components/Constants/product/productLayout_data.json";
 import { Label } from "@/components/ui/label";
 
 interface MachineItem {

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Page2Data } from "@/Components/Constants/application/application_data.json";
+import { Page2Data } from "@/components/Constants/application/application_data.json";
 import Image from "next/image";
 
 const Modal: React.FC<{

@@ -6,7 +6,7 @@ import { notFound, useParams } from "next/navigation";
 import {
   Page1Data,
   Page2Data,
-} from "@/Components/Constants/product/productLayout_data.json";
+} from "@/components/Constants/product/productLayout_data.json";
 
 const Page = () => {
   const params = useParams() as Record<string, string | string[]> | null;

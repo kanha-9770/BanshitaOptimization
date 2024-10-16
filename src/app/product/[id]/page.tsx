@@ -1,6 +1,6 @@
 import React from "react";
 import Pages from "@/components/productLayout/Pages";
-import seoData from "@/Components/Constants/product/productLayout_data.json";
+import seoData from "@/components/Constants/product/productLayout_data.json";
 import { Metadata } from "next";
 
 // Define ProductLayoutSeoData interface to match your JSON structure

@@ -1,6 +1,6 @@
 import Pages from "@/components/application/Pages";
 import React from "react";
-import seoData from "@/Components/Constants/application/application_data.json";
+import seoData from "@/components/Constants/application/application_data.json";
 import { Metadata } from "next";
 
 // Define ApplicationSeoData interface to match your JSON structure
