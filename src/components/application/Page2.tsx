@@ -135,14 +135,14 @@ const Page2: React.FC = () => {
                 <input
                   type="search"
                   placeholder={Page2Data.placeholder}
-                  className="w-full px-[0.5rem] outline-none bg-transparent lg:text-[0.9rem] text-sm text-[#6f6f6f]"
+                  className="w-full px-[0.5rem] outline-none bg-transparent lg:text-[0.9rem] text-sm text-[#5e5d5d]"
                 />
               </div>
               <div className="w-[40%] lg:h-[2.2rem] h-[1.8rem] rounded-[2rem] bg-[#f2f2f2] border-2 border-solid border-[#f2f2f2] overflow-hidden hover:border-[#d9d9d8] px-[0.5rem] flex items-center">
                 <select
                   id="Category"
                   name="Category"
-                  className="w-full outline-none bg-transparent text-[#6f6f6f] lg:text-[0.9rem] text-sm"
+                  className="w-full outline-none bg-transparent text-[#5e5d5d] lg:text-[0.9rem] text-sm"
                 >
                   <option value="" disabled selected>
                     {Page2Data.category}
