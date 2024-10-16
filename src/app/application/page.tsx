@@ -5,7 +5,7 @@ import { Metadata } from "next";
 
 // Define ApplicationSeoData interface to match your JSON structure
 interface ApplicationSeoData {
-  title: string;
+  title: string; //seo
   description: string;
   keywords: string;
   openGraph: {
