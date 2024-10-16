@@ -232,6 +232,7 @@ const Page2: React.FC = () => {
               className="lg:w-[28rem] md:w-[10rem] w-full"
               width={400}
               height={400}
+              priority
               src={selectedProduct.image}
               alt={selectedProduct.title}
             />
