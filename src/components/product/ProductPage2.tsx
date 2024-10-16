@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { Page2Data } from "../Constants/product/product_data.json";
+import { Page2Data } from "@/components/Constants/product/product_data.json";
 import gsap from "gsap";
 import { Label } from "@radix-ui/react-label";
 

@@ -1,11 +1,10 @@
-import Pages from "@/components/product/ProductPages";
+import Pages from "@/components/application/Pages";
 import React from "react";
-import seoData from "@/components/Constants/product/product_data.json";
+import seoData from "@/Components/Constants/application/application_data.json";
 import { Metadata } from "next";
 
-
-// Define ProductSeoData interface to match your JSON structure
-interface ProductSeoData {
+// Define ApplicationSeoData interface to match your JSON structure
+interface ApplicationSeoData {
   title: string;
   description: string;
   keywords: string;
@@ -28,7 +27,7 @@ interface ProductSeoData {
 }
 
 export async function generateMetadata(): Promise<Metadata> {
-  const metadata: ProductSeoData | undefined = seoData?.productSeoData;
+  const metadata: ApplicationSeoData | undefined = seoData?.applicationSeoData;
 
   if (!metadata) {
     return {
@@ -98,12 +97,11 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-
 const page = () => {
   return (
-    <div>
+    <>
       <Pages />
-    </div>
+    </>
   );
 };
 

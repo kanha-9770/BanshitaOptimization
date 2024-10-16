@@ -170,19 +170,6 @@ body {
 }
 
 
-/* hide scrollbar from blogs Page3 component */
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
-  /* Chrome, Safari, and Opera */
-}
-
-.scrollbar-hide {
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
-}
-
 @layer utilities {
 
   /* Hide scrollbar for Chrome, Safari and Opera */
@@ -253,7 +240,7 @@ body {
   background-size: 100% 2rem, 2rem 100%;
 }
 
-/* bookservice page form input style */
+/* services page form input style */
 .col-3 {
   position: relative;
 }
@@ -308,7 +295,7 @@ body {
   z-index: 1;
 }
 
-/* border gradient for navbar */
+/* border gradient */
 .custom-gradient-border {
   border: 2px solid transparent;
   /* full rounded */
@@ -319,6 +306,7 @@ body {
     linear-gradient(to right, #483d73, #B91C1C);
   /* Border gradient */
 }
+
 
 /* Custom scrollbar */
 .scrollbar-hide {

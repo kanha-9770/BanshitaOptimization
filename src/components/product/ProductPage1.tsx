@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
-import { Page1Data } from "../Constants/product/product_data.json";
-import Carousal from "./Carousal";
+import { Page1Data } from "@/components/Constants/product/product_data.json";
+import Carousal from "@/components/product/Carousal";
 
 // Debounce function to limit the rate of invoking a function
 const debounce = <T extends (...args: unknown[]) => void>(func: T, delay: number) => {

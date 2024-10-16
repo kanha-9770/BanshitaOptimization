@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { Page1Data } from "../Constants/product/product_data.json";
+import { Page1Data } from "@/components/Constants/product/product_data.json";
 import { gsap } from "gsap";
 
 export default function ImageSlider() {
