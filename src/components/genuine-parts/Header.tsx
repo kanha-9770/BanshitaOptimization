@@ -23,7 +23,7 @@ const Page1 = () => {
           <div className="absolute lg:right-2 -right-8 lg:w-[20rem] w-[12rem]">
           <Image
             src={Header.toolBoxImg}
-            alt={""}
+            alt={"Parts"}
             width={400}
             height={400}
             priority

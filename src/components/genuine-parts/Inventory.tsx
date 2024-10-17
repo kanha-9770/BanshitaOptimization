@@ -116,6 +116,7 @@ const Page2 = () => {
       <div className="lg:w-[82%] w-full">
         <div className="bg-white w-full rounded-lg p-2 flex items-center mb-2 space-x-2 lg:hidden">
           <button
+            aria-label="Filter"
             onClick={openMachineModal}
             className="w-[50%] bg-black flex items-center rounded-md py-1"
           >
@@ -141,6 +142,7 @@ const Page2 = () => {
             </p>
           </button>
           <button
+            aria-label="Filter"
             onClick={openModal}
             className="w-[50%] bg-black flex items-center rounded-md py-1"
           >
@@ -328,6 +330,7 @@ const Page2 = () => {
             {/* Proceed Button */}
             <div className="flex lg:justify-end">
               <button
+                aria-label="Proceed"
                 className="group text-xs mt-1 bg-black font-medium text-white lg:px-2 lg:py-1 py-2 px-3 rounded-md hover:bg-red-700 flex items-center justify-center lg:w-max w-full"
                 onClick={handleProceedClick}
               >
@@ -382,6 +385,7 @@ const Page2 = () => {
                   </div>
                 </div>
                 <button
+                  aria-label="Proceed"
                   className="group lg:text-xs text-sm mt-1 bg-black font-medium text-white lg:px-2 lg:py-1 py-2 px-1 lg:rounded-md rounded-lg hover:bg-red-700 flex items-center justify-center lg:w-max w-full"
                   onClick={handleProceedClick}
                 >
@@ -408,7 +412,10 @@ const Page2 = () => {
                 <h2 className="lg:text-[1.1rem] text-sm font-medium lg:w-[80%] text-center lg:mb-2 mb-2">
                   {Inventory.productNotFound}
                 </h2>
-                <button className="lg:text-md text-sm font-medium text-white bg-gradient-to-r from-[#483d73] to-red-700 rounded-lg lg:py-3 py-2 lg:px-3 whitespace-nowrap lg:absolute lg:bottom-2">
+                <button
+                  aria-label="Request Spare"
+                  className="lg:text-md text-sm font-medium text-white bg-gradient-to-r from-[#483d73] to-red-700 rounded-lg lg:py-3 py-2 lg:px-3 whitespace-nowrap lg:absolute lg:bottom-2"
+                >
                   {Inventory.requestSpare}
                 </button>
               </div>
@@ -492,6 +499,7 @@ const Page2 = () => {
                 </div>
                 {!enquiryState[item.code] ? (
                   <button
+                    aria-label="Add Enquiry"
                     className="text-white bg-black lg:hover:bg-red-700 lg:hover:border-red-700 py-1 w-full rounded-lg border border-black"
                     onClick={() => handleButtonClick(item)}
                   >
@@ -517,6 +525,7 @@ const Page2 = () => {
           </div>
           <div className="lg:flex items-center justify-center bg-white rounded-lg mt-2 hidden">
             <button
+              aria-label="Proceed"
               className="group text-md my-2 bg-black font-medium text-white px-4 py-2 rounded-md float-right hover:bg-red-700 flex items-center justify-center"
               onClick={handleProceedClick}
             >
@@ -640,6 +649,7 @@ const Page2 = () => {
           {/* Proceed Button */}
           <div className="flex lg:justify-end">
             <button
+              aria-label="Proceed"
               className="group text-xs mt-1 bg-gradient-to-r from-[#483d73] to-red-700 font-medium text-white lg:px-2 lg:py-1 py-2 px-3 rounded-md  flex items-center justify-center lg:w-max w-full"
               onClick={handleProceedClick}
             >
@@ -673,7 +683,11 @@ const Page2 = () => {
               <h2 className="text-lg font-semibold mb-4 w-full text-center">
                 {Inventory.inventoryItems}
               </h2>
-              <button className="absolute right-0" onClick={handleCloseModal}>
+              <button
+                aria-label="Close"
+                className="absolute right-0"
+                onClick={handleCloseModal}
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -764,7 +778,10 @@ const Page2 = () => {
               </div>
             </div>
             <div className="flex justify-center lg:mt-4 mt-2">
-              <button className="text-sm bg-black text-white px-4 py-2 rounded-md font-normal">
+              <button
+                aria-label="Submit"
+                className="text-sm bg-black text-white px-4 py-2 rounded-md font-normal"
+              >
                 {Inventory.submit}
               </button>
             </div>
@@ -778,6 +795,7 @@ const Page2 = () => {
           <div className="bg-white mx-4 p-4 rounded-lg w-full lg:w-[60%] max-h-[80%]">
             {/* Close button */}
             <button
+              aria-label="Close"
               onClick={closeModal}
               className="flex justify-end w-full mb-4"
             >
@@ -842,6 +860,7 @@ const Page2 = () => {
           <div className="bg-white mx-4 p-4 rounded-lg w-full lg:w-[60%] max-h-[80%]">
             {/* Close button */}
             <button
+              aria-label="Close"
               onClick={closeMachineModal}
               className="flex justify-end w-full mb-4"
             >

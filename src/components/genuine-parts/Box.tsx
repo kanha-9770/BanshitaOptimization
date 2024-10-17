@@ -22,7 +22,7 @@ const Page3 = () => {
                 <h3 className="text-xl text-center font-semibold my-2">
                   {item.title}
                 </h3>
-                <p className="text-sm text-center text-[#9e9c9c] pb-[4rem]">
+                <p className="text-sm text-center text-[#6d6d6d] pb-[4rem]">
                   {item.description}
                 </p>
               </div>

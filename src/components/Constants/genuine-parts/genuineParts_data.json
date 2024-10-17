@@ -28,7 +28,7 @@
     "Header": {
         "title": "Nessco Genuine Parts",
         "description": "Our Genuine Parts are designed and engineered specifically for your Machine",
-        "toolBoxImg": "/assets/genuineParts/ToolBoxImg.svg",
+        "toolBoxImg": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
         "diverseMachines": "Diverse Machines, Tailored Solutions.",
         "paragraph": "At Nessco, we provide a diverse range of machines for all your production needs, from paper cups to versatile packaging solutions. Trust our cutting-edge technology to enhance your manufacturing efficiency and quality."
     },
