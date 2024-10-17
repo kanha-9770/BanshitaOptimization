@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { Page2Data } from "@/components/Constants/application/application_data.json";
+import { SelectProduct } from "@/components/Constants/application/application_data.json";
 import Image from "next/image";
 
 const Modal: React.FC<{
   setIsModalOpen: (isOpen: boolean) => void;
-  setSelectedProduct: (product: (typeof Page2Data.products)[0]) => void;
-  selectedProduct: (typeof Page2Data.products)[0]; // Add selectedProduct as a prop
+  setSelectedProduct: (product: (typeof SelectProduct.products)[0]) => void;
+  selectedProduct: (typeof SelectProduct.products)[0]; // Add selectedProduct as a prop
 }> = ({ setIsModalOpen, setSelectedProduct, selectedProduct }) => {
   const [selectedInModal, setSelectedInModal] = useState(selectedProduct); // Sync with the main component's state
 
@@ -14,7 +14,7 @@ const Modal: React.FC<{
     setIsModalOpen(false);
   };
 
-  const handleProductClick = (product: (typeof Page2Data.products)[0]) => {
+  const handleProductClick = (product: (typeof SelectProduct.products)[0]) => {
     setSelectedProduct(product); // Set selected product in the main component
     setIsModalOpen(false); // Close modal after selection
   };
@@ -62,7 +62,7 @@ const Modal: React.FC<{
               </button>
               <input
                 type="search"
-                placeholder={Page2Data.placeholder}
+                placeholder={SelectProduct.placeholder}
                 className="w-full px-[0.5rem] outline-none bg-transparent  text-[0.8rem] text-[#6f6f6f]"
               />
             </div>
@@ -84,7 +84,7 @@ const Modal: React.FC<{
           <div className="w-full h-[52vh] px-[0.5rem] overflow-hidden">
             <div className="h-full overflow-auto scrollbar-hide">
               <div className="grid grid-cols-3 gap-x-4 ">
-                {Page2Data.products.map((item, idx) => (
+                {SelectProduct.products.map((item, idx) => (
                   <div
                     key={idx}
                     className="cursor-pointer mt-[0.5vh]"
