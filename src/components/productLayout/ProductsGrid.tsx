@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import gsap from "gsap";
-import { Page2Data } from "@/components/Constants/product/productLayout_data.json";
+import { ProductsGrid } from "@/components/Constants/product/productLayout_data.json";
 import { Label } from "@/components/ui/label";
 
 interface MachineItem {
@@ -155,7 +155,7 @@ const Page2: React.FC<Page2Props> = ({ page2machine }) => {
                 aria-label="All"
                 onClick={() => handleCategoryChange("all")}
               >
-                <button>{Page2Data.all}</button>
+                <button>{ProductsGrid.all}</button>
               </div>
               <div
                 className={`lg:border-2 border-[0.1rem] border-solid lg:w-[12rem] w-[7rem] h-[1.5rem] lg:h-[2rem] lg:rounded-full rounded-lg flex items-center lg:mx-[0.3rem] mx-[0.2rem] lg:text-[1rem] text-[0.7rem] font-medium ${
@@ -176,7 +176,7 @@ const Page2: React.FC<Page2Props> = ({ page2machine }) => {
                   S
                 </div>
                 <button className="lg:ml-[1.4rem] ml-[0.3rem]">
-                  {Page2Data.servoDriven}
+                  {ProductsGrid.servoDriven}
                 </button>
               </div>
               <div
@@ -198,7 +198,7 @@ const Page2: React.FC<Page2Props> = ({ page2machine }) => {
                   M
                 </div>
                 <button className="lg:ml-[1.4rem] ml-[0.3rem]">
-                  {Page2Data.mechanicalCam}
+                  {ProductsGrid.mechanicalCam}
                 </button>
               </div>
             </div>
@@ -223,7 +223,7 @@ const Page2: React.FC<Page2Props> = ({ page2machine }) => {
 
                   <input
                     type="search"
-                    placeholder={Page2Data.placeholder}
+                    placeholder={ProductsGrid.placeholder}
                     className="w-full text-[0.7rem] lg:text-[1rem] outline-none bg-transparent text-black font-poppins lg:mx-[0.4rem] mx-[0.2rem]"
                   />
                 </div>
@@ -348,7 +348,7 @@ const Page2: React.FC<Page2Props> = ({ page2machine }) => {
                     onMouseEnter={() => setHoveredButtonIndex(idx)}
                     onMouseLeave={() => setHoveredButtonIndex(null)}
                   >
-                    {Page2Data.viewMachine}
+                    {ProductsGrid.viewMachine}
                   </button>
                 )}
                 <div className="flex items-center justify-center lg:hidden w-full">
@@ -356,7 +356,7 @@ const Page2: React.FC<Page2Props> = ({ page2machine }) => {
                     aria-label="View Machine"
                     className={`mt-[1rem] w-[70%] h-[2rem] border-[0.1rem] border-solid font-medium rounded-lg transition-colors duration-300 border-[#9c9c9c] hover:border-black hover:bg-black hover:text-white`}
                   >
-                    {Page2Data.viewMachine}
+                    {ProductsGrid.viewMachine}
                   </button>
                 </div>
               </div>
@@ -372,7 +372,7 @@ const Page2: React.FC<Page2Props> = ({ page2machine }) => {
                     htmlFor="add to inquiry"
                     className="text-sm whitespace-nowrap"
                   >
-                    {Page2Data.inquiry}
+                    {ProductsGrid.inquiry}
                   </Label>
                 </div>
               </div>
@@ -389,7 +389,7 @@ const Page2: React.FC<Page2Props> = ({ page2machine }) => {
           aria-label="Read More"
           className="underline italic text-[0.7rem] hover:text-red-700 hover:not-italic my-[1rem]"
         >
-          {isExpanded ? Page2Data.readLess : Page2Data.readMore}
+          {isExpanded ? ProductsGrid.readLess : ProductsGrid.readMore}
         </button>
       </div>
     </>

@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
-import { Page1Data } from "@/components/Constants/product/product_data.json";
+import { Header } from "@/components/Constants/product/product_data.json";
 import Carousal from "@/components/product/Carousal";
 
 // Debounce function to limit the rate of invoking a function
@@ -15,7 +15,7 @@ const debounce = <T extends (...args: unknown[]) => void>(func: T, delay: number
 const ProductPage1 = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slideRef = useRef<HTMLDivElement>(null);
-  const totalSlides = Page1Data.products.length;
+  const totalSlides = Header.products.length;
 
   
   // Function to scroll to a specific slide
@@ -70,14 +70,14 @@ const ProductPage1 = () => {
       <div className="lg:w-[40%] lg:px-8 px-[1.5rem]">
         <h1 className="lg:text-5xl text-[1.8rem] lg:leading-[3.5rem] lg:my-[1.2rem] my-[0.5rem] bg-gradient-to-r from-[#483d73] from-5% via-red-700 via-20% to-red-700  bg-clip-text text-transparent">
           <span className=" font-medium block">
-            {Page1Data.ourProduct.trim().replace(/\s+\S+$/, "")}
+            {Header.ourProduct.trim().replace(/\s+\S+$/, "")}
           </span>{" "}
           <span className=" font-semibold">
-            {Page1Data.ourProduct.trim().match(/\S+$/)}
+            {Header.ourProduct.trim().match(/\S+$/)}
           </span>
         </h1>
         <p className="lg:w-[23rem]  bg-green lg:text-[0.9rem] text-black text-[0.8rem]">
-          {Page1Data.description}
+          {Header.description}
         </p>
       </div>
       {/* Decorative Elements */}
@@ -87,7 +87,7 @@ const ProductPage1 = () => {
       {/* Slides Container */}
       <div className="lg:w-[60%] lg:my-0 my-[1rem] lg:px-0 px-[1.5rem]">
         <h2 className="lg:text-2xl text-[1.2rem] font-medium text-red-700 my-[0.4rem] lg:pl-[1rem]">
-          {Page1Data.featuredProducts}
+          {Header.featuredProducts}
         </h2>
         <Carousal />
       </div>

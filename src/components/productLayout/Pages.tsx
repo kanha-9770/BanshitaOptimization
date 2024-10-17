@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
-import Page1 from "@/components/productLayout/Page1";
-// import Page2 from "@/components/productLayout/Page2";
+import Page1 from "@/components/productLayout/Header";
+// import Page2 from "@/components/productLayout/ProductsGrid";
 import { notFound, useParams } from "next/navigation";
 import {
-  Page1Data,
-  Page2Data,
+  Header,
+  ProductsGrid,
 } from "@/components/Constants/product/productLayout_data.json";
 
 const Page = () => {
@@ -38,10 +38,10 @@ const Page = () => {
   // Find the product by its normalized title
   const normalizedMachinename = normalizeTitle(machinename);
 
-  const page1machine = Page1Data.data.find(
+  const page1machine = Header.data.find(
     (m) => normalizeTitle(m.title) === normalizedMachinename
   );
-  const page2machine = Page2Data.data.find(
+  const page2machine = ProductsGrid.data.find(
     (m) => normalizeTitle(m.title) === normalizedMachinename
   );
 

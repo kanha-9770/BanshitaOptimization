@@ -25,7 +25,7 @@
       "image": "https://www.nesscoindia.com/Assets/images/resource/fully-automatic-paper-cup-making-machine.webp"
     }
   },
-  "Page1Data": {
+  "Header": {
     "icons": [
       {
         "image": "/assets/ApplicationLayout/1.svg",
@@ -89,7 +89,7 @@
       }
     ]
   },
-  "Page2Data": {
+  "ScrollableComponent": {
     "products": [
       {
         "title": "Paper Cup With Lid",
@@ -118,7 +118,7 @@
       }
     ]
   },
-  "Page3Data": {
+  "ProductGallery": {
     "title": "Products Gallery",
     "description": "This is how our finished products looks like",
     "images": [
@@ -194,7 +194,7 @@
       }
     ]
   },
-  "Page4Data": {
+  "RelatedMachines": {
     "title": "Related Machines",
     "description": "You Might Want to take a look at our other products also.",
     "inquiry": "Added to inquiry",
@@ -469,7 +469,7 @@
       }
     ]
   },
-  "Page5Data": {
+  "FAQ": {
     "title": "Frequently Asked Questions",
     "subTitle": "FAQs",
     "questions": [

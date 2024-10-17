@@ -25,7 +25,7 @@
             "image": "https://www.nesscoindia.com/Assets/images/resource/fully-automatic-paper-cup-making-machine.webp"
         }
     },
-    "Page1Data": {
+    "Header": {
         "data": [
             {
                 "title": "Paper Cup Machine",
@@ -49,7 +49,7 @@
             }
         ]
     },
-    "Page2Data": {
+    "ProductsGrid": {
         "inquiry": "Added to inquiry",
         "placeholder": "Search Machine...",
         "all": "All",

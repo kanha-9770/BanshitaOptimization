@@ -1,17 +1,17 @@
 "use client";
 import React from "react";
-import Page1 from "@/components/applicationLayout/Page1";
+import Page1 from "@/components/applicationLayout/Header";
 import { notFound, useParams } from "next/navigation";
 import {
-  Page1Data,
-  Page2Data,
-  Page3Data,
-  Page4Data,
+  Header,
+  ScrollableComponent,
+  ProductGallery,
+  RelatedMachines,
 } from "@/components/Constants/application/applicationLayout_data.json";
-import Page2 from "@/components/applicationLayout/Page2";
-const Page3=dynamic(()=>import("@/components/applicationLayout/Page3"));
-const Page4=dynamic(()=>import("@/components/applicationLayout/Page4"));
-const Page5=dynamic(()=>import("@/components/applicationLayout/Page5"));
+import Page2 from "@/components/applicationLayout/ScrollableComponent";
+const Page3=dynamic(()=>import("@/components/applicationLayout/ProductsGallery"));
+const Page4=dynamic(()=>import("@/components/applicationLayout/RelatedMachines"));
+const Page5=dynamic(()=>import("@/components/applicationLayout/FAQ"));
 import dynamic from "next/dynamic";
 
 const Pages = () => {
@@ -44,16 +44,16 @@ const Pages = () => {
   // Find the product by its normalized title
   const normalizedProductname = normalizeTitle(productname);
 
-  const page1product = Page1Data.icons.find(
+  const page1product = Header.icons.find(
     (m) => normalizeTitle(m.title) === normalizedProductname
   );
-  const page2product = Page2Data.products.find(
+  const page2product = ScrollableComponent.products.find(
     (m) => normalizeTitle(m.title) === normalizedProductname
   );
-  const page3product = Page3Data.images.find(
+  const page3product = ProductGallery.images.find(
     (m) => normalizeTitle(m.title) === normalizedProductname
   );
-  const page4product = Page4Data.imageDescription.find(
+  const page4product = RelatedMachines.imageDescription.find(
     (m) => normalizeTitle(m.title) === normalizedProductname
   );
 

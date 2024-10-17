@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { Page2Data } from "@/components/Constants/product/product_data.json";
+import { ProductCatalouge } from "@/components/Constants/product/product_data.json";
 import gsap from "gsap";
 import { Label } from "@radix-ui/react-label";
 
@@ -147,7 +147,7 @@ const ProductPage2 = () => {
         {/* Radial gradient for the container to give a faded look */}
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center  bg-[#f2f2f2] [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
         <div className="bg-white w-full rounded-[0.5rem] lg:px-[2.2rem] px-[1rem] pb-[1.8rem] z-20">
-          {Page2Data.card.map((item, idx) => (
+          {ProductCatalouge.card.map((item, idx) => (
             <div key={idx} className="w-full">
               <div
                 className="flex items-center cursor-pointer py-[0.4rem] relative group"
@@ -346,7 +346,7 @@ const ProductPage2 = () => {
                                   {/* View Machine Button */}
                                   <div className="my-[0.5rem] flex lg:flex-rows flex-col items-center justify-center lg:h-[2.5rem]">
                                     <button className="lg:text-[0.9rem] text-[0.8rem] w-[65%] h-[2rem] border-[0.1rem] border-solid font-medium rounded-lg transition-colors duration-300 border-[#9c9c9c] hover:border-black hover:bg-black hover:text-white">
-                                      {Page2Data.viewMachine}
+                                      {ProductCatalouge.viewMachine}
                                     </button>
                                   </div>
 
@@ -424,7 +424,7 @@ const ProductPage2 = () => {
                   <div className="flex items-center justify-center w-full">
                     <div className="group flex items-center justify-center w-max pl-3 pr-1 mb-4 bg-black rounded-full  text-white hover:text-black hover:bg-white border border-black space-x-2">
                       <button className="lg:text-[0.9rem] py-1 text-[0.8rem] font-medium ">
-                        {Page2Data.viewAllMachines}
+                        {ProductCatalouge.viewAllMachines}
                       </button>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"

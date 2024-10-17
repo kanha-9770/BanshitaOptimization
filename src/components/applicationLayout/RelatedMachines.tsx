@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Page4Data } from "../Constants/application/applicationLayout_data.json";
+import { RelatedMachines } from "../Constants/application/applicationLayout_data.json";
 import { Label } from "@radix-ui/react-label";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -76,10 +76,10 @@ const Page4: React.FC<Page4Props> = ({ page4product }) => {
           <div className="pt-[1.5rem]">
             <h2 className="lg:text-[2.2rem] text-[1.5rem] font-semibold">
               <span className="text-[#483d73]">
-                {Page4Data?.title.trim().replace(/\s+\S+$/, "")}
+                {RelatedMachines?.title.trim().replace(/\s+\S+$/, "")}
               </span>{" "}
               <span className="text-red-700">
-                {Page4Data?.title.trim().match(/\S+$/)}
+                {RelatedMachines?.title.trim().match(/\S+$/)}
               </span>
             </h2>
             <button
@@ -211,7 +211,7 @@ const Page4: React.FC<Page4Props> = ({ page4product }) => {
                     {/* Key Points or View Machine Button */}
                     <div className="my-[1rem] flex lg:flex-rows flex-col items-center justify-center lg:h-[2rem]">
                       <button className="lg:text-[1rem] text-[0.9rem] w-[65%] lg:h-[2rem] h-[2rem] border-[0.1rem] border-solid font-medium rounded-lg transition-colors duration-300 border-[#9c9c9c] hover:border-black hover:bg-black hover:text-white">
-                        {Page4Data.viewMachine}
+                        {RelatedMachines.viewMachine}
                       </button>
                     </div>
 
@@ -226,7 +226,7 @@ const Page4: React.FC<Page4Props> = ({ page4product }) => {
                           htmlFor="addToEnquiry"
                           className="text-sm whitespace-nowrap"
                         >
-                          {Page4Data.inquiry}
+                          {RelatedMachines.inquiry}
                         </Label>
                       </div>
                     </div>

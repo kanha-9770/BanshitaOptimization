@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { Page4Data } from "@/components/Constants/application/application_data.json";
+import { CustomizedProjects } from "@/components/Constants/application/application_data.json";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -108,10 +108,10 @@ const Page4: React.FC = () => {
           <div>
             <h2 className="lg:text-[2.2rem] text-[1.5rem] font-semibold">
               <span className="text-[#483d73]">
-                {Page4Data.title.trim().replace(/\s+\S+$/, "")}
+                {CustomizedProjects.title.trim().replace(/\s+\S+$/, "")}
               </span>{" "}
               <span className="text-red-700">
-                {Page4Data.title.trim().match(/\S+$/)}
+                {CustomizedProjects.title.trim().match(/\S+$/)}
               </span>
             </h2>
           </div>
@@ -120,7 +120,7 @@ const Page4: React.FC = () => {
             ref={borderRef}
           ></div>
           <div className="lg:w-[76vw] w-[98%] lg:mt-[2rem] mt-[1rem]">
-            <p className="lg:text-[1rem] text-sm">{Page4Data.paragraph}</p>
+            <p className="lg:text-[1rem] text-sm">{CustomizedProjects.paragraph}</p>
           </div>
         </div>
         <div className="relative">
@@ -129,7 +129,7 @@ const Page4: React.FC = () => {
             className="border-solid lg:border-r-[0.2rem] border-r-2 border-red-700 absolute lg:-top-[2rem] -top-[1rem] lg:right-[5.5rem] right-[2rem] -z-10"
             ref={borderImgRef}
           ></div>
-          {Page4Data.container.map((item, idx) => (
+          {CustomizedProjects.container.map((item, idx) => (
             <div key={idx} className="flex lg:my-[3rem] my-[1rem]">
               <div className="lg:w-[65%] w-[60%] lg:pl-[1rem] pl-[0.5rem]">
                 <h2 className="lg:text-[1.6rem] text-[1.1rem] text-[#483d73] font-medium lg:mb-[0.8rem] mb-[0.4rem]">

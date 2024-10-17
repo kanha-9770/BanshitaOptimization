@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { Page3Data } from "../Constants/application/applicationLayout_data.json";
+import { ProductGallery } from "../Constants/application/applicationLayout_data.json";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -69,14 +69,14 @@ const Page3: React.FC<Page3Props> = ({ page3product }) => {
             <div className="flex flex-col lg:items-center lg:justify-center">
               <h2 className="lg:text-[2.2rem] text-[1.5rem] lg:text-center font-semibold lg:mb-[1rem]">
                 <span className="text-[#483d73]">
-                  {Page3Data?.title.trim().replace(/\s+\S+$/, "")}
+                  {ProductGallery?.title.trim().replace(/\s+\S+$/, "")}
                 </span>{" "}
                 <span className="text-red-700">
-                  {Page3Data?.title.trim().match(/\S+$/)}
+                  {ProductGallery?.title.trim().match(/\S+$/)}
                 </span>
               </h2>
               <p className="text-black lg:w-[70%] lg:text-center mb-[1rem] lg:text-[1rem] text-[0.8rem]">
-                {Page3Data.description}
+                {ProductGallery.description}
               </p>
             </div>
             <button

@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState, useRef } from "react";
 import Image from "next/image";
-import { Page1Data } from "../Constants/application/applicationLayout_data.json";
+import { Header } from "../Constants/application/applicationLayout_data.json";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRouter, usePathname } from "next/navigation";
@@ -31,7 +31,7 @@ const Page1: React.FC<Page1Props> = ({ page1product }) => {
   // Update selected product when the route changes
   useEffect(() => {
     if (pathname) {
-      const matchedProduct = Page1Data.icons.find(
+      const matchedProduct = Header.icons.find(
         (item) =>
           encodeURIComponent(item.title).toLowerCase() ===
           pathname.split("/").pop()?.toLowerCase()
@@ -210,7 +210,7 @@ const Page1: React.FC<Page1Props> = ({ page1product }) => {
               ref={carouselRef}
             >
               <div className="w-max lg:mt-[2rem] mt-[0.5rem] flex justify-center lg:pl-[50rem] pl-[45rem]">
-                {Page1Data.icons.map((item, idx) => (
+                {Header.icons.map((item, idx) => (
                   <div
                     key={idx}
                     className="flex flex-col mx-[2vw] lg:w-[6.8rem] w-[4.8rem] items-center group"

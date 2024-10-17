@@ -25,12 +25,12 @@
       "image": "https://www.nesscoindia.com/Assets/images/resource/fully-automatic-paper-cup-making-machine.webp"
     }
   },
-  "Page1Data": {
+  "Header": {
     "applicaion": "Application",
     "title": "Find the right solution for you",
     "paragraph": "Nessco can provide a wide range of feasibility and solutions. Our paper cup machine series has world-leading technology to help you make a variety of different paper cup products. These products will enable our customers to be ahead of their peers in terms of their product quality, materials and specifications."
   },
-  "Page2Data": {
+  "SelectProduct": {
     "placeholder": "Search Product",
     "paperCup": "Paper Cup",
     "viewMore": "View More",
@@ -135,7 +135,7 @@
       }
     ]
   },
-  "Page3Data": {
+  "Technology": {
     "craftsmanshipTechnology": "Craftsmanship And Technology",
     "paragraph": "With world-leading technology and control of craftsmanship details, you can find Ruida's unique advantages:",
     "container": [
@@ -156,7 +156,7 @@
       }
     ]
   },
-  "Page4Data": {
+  "CustomizedProjects": {
     "title": "Start Your Customized Project",
     "paragraph": "There are many details to consider when designing the finished size, of which market acceptance is the most important. Our team of professional designers will work with you to confirm the specifications and produce a prototype for mould design approval",
     "container": [

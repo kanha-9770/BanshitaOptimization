@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
-import { Page3Data } from "@/components/Constants/application/application_data.json";
+import { Technology } from "@/components/Constants/application/application_data.json";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -40,12 +40,12 @@ const Page3: React.FC = () => {
           <div>
             <h2 className="lg:text-[2.2rem] text-[1.5rem] font-semibold">
               <span className="text-[#483d73]">
-                {Page3Data.craftsmanshipTechnology
+                {Technology.craftsmanshipTechnology
                   .trim()
                   .replace(/\s+\S+$/, "")}
               </span>{" "}
               <span className="text-red-700">
-                {Page3Data.craftsmanshipTechnology.trim().match(/\S+$/)}
+                {Technology.craftsmanshipTechnology.trim().match(/\S+$/)}
               </span>
             </h2>
           </div>
@@ -54,11 +54,11 @@ const Page3: React.FC = () => {
             ref={borderRef}
           ></div>
           <div className="lg:w-[45rem] lg:mt-[2rem] mt-[1rem]">
-            <p className="lg:text-[1rem] text-sm">{Page3Data.paragraph}</p>
+            <p className="lg:text-[1rem] text-sm">{Technology.paragraph}</p>
           </div>
         </div>
         <div className="lg:space-y-3 space-y-4">
-          {Page3Data.container.map((item, idx) => (
+          {Technology.container.map((item, idx) => (
             <div
               key={idx}
               className="w-full lg:h-[10rem] h-full lg:space-x-3 flex lg:flex-row flex-col-reverse"

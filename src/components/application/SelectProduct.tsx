@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { Page2Data } from "@/components/Constants/application/application_data.json";
+import { SelectProduct } from "@/components/Constants/application/application_data.json";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Modal from "./Modal";
@@ -9,21 +9,21 @@ import Modal from "./Modal";
 gsap.registerPlugin(ScrollTrigger);
 
 const Page2: React.FC = () => {
-  const [selectedProduct, setSelectedProduct] = useState(Page2Data.products[0]);
+  const [selectedProduct, setSelectedProduct] = useState(SelectProduct.products[0]);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const carouselRef = useRef<HTMLDivElement | null>(null);
   const borderRef = useRef<HTMLDivElement | null>(null);
   const rightContainerRef = useRef<HTMLDivElement | null>(null);
 
   const handleSwipe = (direction: "left" | "right") => {
-    const currentIndex = Page2Data.products.indexOf(selectedProduct);
+    const currentIndex = SelectProduct.products.indexOf(selectedProduct);
     if (direction === "left" && currentIndex > 0) {
-      setSelectedProduct(Page2Data.products[currentIndex - 1]);
+      setSelectedProduct(SelectProduct.products[currentIndex - 1]);
     } else if (
       direction === "right" &&
-      currentIndex < Page2Data.products.length - 1
+      currentIndex < SelectProduct.products.length - 1
     ) {
-      setSelectedProduct(Page2Data.products[currentIndex + 1]);
+      setSelectedProduct(SelectProduct.products[currentIndex + 1]);
     }
   };
 
@@ -95,7 +95,7 @@ const Page2: React.FC = () => {
     }
   }, [selectedProduct]);
 
-  const handleProductClick = (product: (typeof Page2Data.products)[0]) => {
+  const handleProductClick = (product: (typeof SelectProduct.products)[0]) => {
     setSelectedProduct(product);
   };
 
@@ -134,7 +134,7 @@ const Page2: React.FC = () => {
                 </button>
                 <input
                   type="search"
-                  placeholder={Page2Data.placeholder}
+                  placeholder={SelectProduct.placeholder}
                   className="w-full px-[0.5rem] outline-none bg-transparent lg:text-[0.9rem] text-sm text-[#5e5d5d]"
                 />
               </div>
@@ -145,7 +145,7 @@ const Page2: React.FC = () => {
                   className="w-full outline-none font-normal bg-transparent text-[#5e5d5d] lg:text-[0.9rem] text-sm"
                 >
                   <option value="" disabled selected>
-                    {Page2Data.category}
+                    {SelectProduct.category}
                   </option>
                   <option value="item1">Paper Cup</option>
                   <option value="item2">Paper Bowl</option>
@@ -157,7 +157,7 @@ const Page2: React.FC = () => {
             <div className="lg:w-full w-[86vw] mt-[1rem] overflow-hidden">
               <div className="h-full overflow-auto pt-1 lg:px-3 scrollbar-custom scrollbar">
                 <div className="lg:grid lg:grid-cols-3 lg:gap-x-5 gap-x-2 flex">
-                  {Page2Data.products.map((item, idx) => (
+                  {SelectProduct.products.map((item, idx) => (
                     <div
                       key={idx}
                       className="cursor-pointer group"
@@ -200,7 +200,7 @@ const Page2: React.FC = () => {
                 onClick={handleViewAllClick}
                 className="bg-[#f2f2f2] text-[#6f6f6f] py-1 px-2 rounded-[0.5rem] text-sm"
               >
-                {Page2Data.viewAll}
+                {SelectProduct.viewAll}
               </button>
             </div>
           </div>
@@ -248,7 +248,7 @@ const Page2: React.FC = () => {
               aria-label="View More"
               className="text-white lg:text-[1.2rem] absolute left-5 whitespace-nowrap group-hover:text-[#483d73]"
             >
-              {Page2Data.viewMore}
+              {SelectProduct.viewMore}
             </button>
             <button aria-label="Right" className="absolute right-0 group">
               <svg

@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { Page1Data } from "@/components/Constants/product/product_data.json";
+import { Header } from "@/components/Constants/product/product_data.json";
 import { gsap } from "gsap";
 
 export default function ImageSlider() {
@@ -28,14 +28,14 @@ export default function ImageSlider() {
   const prevSlide = (): void => {
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide
-      ? Page1Data.products.length - 1
+      ? Header.products.length - 1
       : currentIndex - 1;
     setCurrentIndex(newIndex);
     animateSlide("prev");
   };
 
   const nextSlide = (): void => {
-    const isLastSlide = currentIndex === Page1Data.products.length - 1;
+    const isLastSlide = currentIndex === Header.products.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
     animateSlide("next"); // Trigger GSAP animation for the next slide
@@ -85,16 +85,16 @@ export default function ImageSlider() {
         {/* Slide content */}
         <div className="lg:w-[50%] lg:pl-[1rem]">
           <h1 className="lg:text-4xl text-[1.4rem] font-bold italic text-[#483d73] mb-[0.5rem]">
-            {Page1Data.products[currentIndex].machineName}
+            {Header.products[currentIndex].machineName}
           </h1>
           <p className="lg:text-[0.9rem] text-black text-[0.7rem] lg:w-[20rem] md:w-[30rem] w-[9rem]">
-            {Page1Data.products[currentIndex].description}
+            {Header.products[currentIndex].description}
           </p>
         </div>
         <div className="lg:w-[50%] flex">
           <Image
-            src={Page1Data.products[currentIndex].machineImg}
-            alt={Page1Data.products[currentIndex].machineName}
+            src={Header.products[currentIndex].machineImg}
+            alt={Header.products[currentIndex].machineName}
             width={400}
             height={400}
             priority
@@ -102,8 +102,8 @@ export default function ImageSlider() {
           />
 
           <Image
-            src={Page1Data.products[currentIndex].productImg}
-            alt={Page1Data.products[currentIndex].machineName}
+            src={Header.products[currentIndex].productImg}
+            alt={Header.products[currentIndex].machineName}
             width={400}
             height={400}
             className="lg:w-[5rem] w-[4rem] lg:-mt-[6.5rem] -mt-[8rem] lg:-ml-2 md:ml-2 -ml-[4rem]"
@@ -148,7 +148,7 @@ export default function ImageSlider() {
         </svg>
       </div>
       <div className="absolute lg:bottom-4 bottom-0 left-1/2 transform -translate-x-1/2 flex space-x-2">
-        {Page1Data.products.map((_, idx) => (
+        {Header.products.map((_, idx) => (
           <div
             key={idx}
             className={`w-2 h-2 rounded-full ${
