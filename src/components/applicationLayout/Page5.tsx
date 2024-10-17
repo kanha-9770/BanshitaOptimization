@@ -126,7 +126,7 @@ const Page5: React.FC = () => {
                     {Page5Data.formTitle}
                   </h3>
                 </div>
-                <p className="text-[#afacac] text-[0.9rem]">
+                <p className="text-[#929191] text-[0.9rem]">
                   {Page5Data.formPara}
                 </p>
               </div>
@@ -138,6 +138,7 @@ const Page5: React.FC = () => {
                     </label>
                     <input
                       className="border-2 py-[0.4rem] px-[0.5rem] text-[0.8rem] rounded-[0.5rem] bg-[#f9fafb]"
+                      aria-label="First Name"
                       type="text"
                       name="firstname"
                       id="firstname"
@@ -150,6 +151,7 @@ const Page5: React.FC = () => {
                     </label>
                     <input
                       className="border-2 py-[0.4rem] px-[0.5rem] text-[0.8rem] rounded-[0.5rem] bg-[#f9fafb]"
+                      aria-label="Last Name"
                       type="text"
                       name="lastname"
                       id="lastname"
@@ -163,6 +165,7 @@ const Page5: React.FC = () => {
                   </label>
                   <input
                     className="border-2 py-[0.4rem] px-[0.5rem] text-[0.8rem] rounded-[0.5rem] bg-[#f9fafb]"
+                    aria-label="Email"
                     type="email"
                     name="email"
                     id="email"
@@ -175,6 +178,7 @@ const Page5: React.FC = () => {
                   </label>
                   <input
                     className="border-2 py-[0.4rem] px-[0.5rem] text-[0.8rem] rounded-[0.5rem] bg-[#f9fafb]"
+                    aria-label="Password"
                     type="password"
                     name="password"
                     id="password"
@@ -186,11 +190,12 @@ const Page5: React.FC = () => {
                   </label>
                   <input
                     className="border-2 py-[0.4rem] px-[0.5rem] text-[0.8rem] rounded-[0.5rem] bg-[#f9fafb]"
+                    aria-label="Twitter Password"
                     type="password"
                     name="twitterpassword"
                   />
                 </div>
-                <button className="border-2 py-[0.5rem] px-[0.5rem] text-[0.8rem] rounded-[0.5rem] bg-[#483d73] text-white w-full mt-[1.8vh]">
+                <button className="border-2 py-[0.5rem] px-[0.5rem] text-[0.8rem] rounded-[0.5rem] bg-[#483d73] text-white w-full mt-[1.8vh]" aria-label="Send Message">
                   {Page5Data.sendMessage}
                 </button>
               </form>

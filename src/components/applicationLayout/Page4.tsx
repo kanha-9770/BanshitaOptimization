@@ -84,6 +84,7 @@ const Page4: React.FC<Page4Props> = ({ page4product }) => {
             </h2>
             <button
               className="absolute lg:right-20 right-16 lg:bottom-4 bottom-3"
+              aria-label="Left"
               onClick={scrollbarLeft}
             >
               <svg
@@ -105,6 +106,7 @@ const Page4: React.FC<Page4Props> = ({ page4product }) => {
             </button>
             <button
               className="absolute lg:right-8 right-4 lg:bottom-4 bottom-3"
+              aria-label="Right"
               onClick={scrollbarRight}
             >
               <svg

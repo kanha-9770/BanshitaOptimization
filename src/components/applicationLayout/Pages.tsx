@@ -9,9 +9,10 @@ import {
   Page4Data,
 } from "@/components/Constants/application/applicationLayout_data.json";
 import Page2 from "@/components/applicationLayout/Page2";
-import Page3 from "@/components/applicationLayout/Page3";
-import Page4 from "@/components/applicationLayout/Page4";
-import Page5 from "@/components/applicationLayout/Page5";
+const Page3=dynamic(()=>import("@/components/applicationLayout/Page3"));
+const Page4=dynamic(()=>import("@/components/applicationLayout/Page4"));
+const Page5=dynamic(()=>import("@/components/applicationLayout/Page5"));
+import dynamic from "next/dynamic";
 
 const Pages = () => {
   const params = useParams() as Record<string, string | string[]> | null;

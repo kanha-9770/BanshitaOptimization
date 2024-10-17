@@ -81,6 +81,7 @@ const Page3: React.FC<Page3Props> = ({ page3product }) => {
             </div>
             <button
               className="absolute lg:bottom-[2.5rem] lg:left-[4rem] right-16 -bottom-8"
+              aria-label="Left"
               onClick={scrollLeft}
             >
               <svg
@@ -102,6 +103,7 @@ const Page3: React.FC<Page3Props> = ({ page3product }) => {
             </button>
             <button
               className="absolute lg:bottom-[2.5rem] lg:right-[4rem] right-4 -bottom-8"
+              aria-label="Right"
               onClick={scrollRight}
             >
               <svg

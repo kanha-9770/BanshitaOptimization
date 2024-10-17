@@ -163,6 +163,7 @@ const Page1: React.FC<Page1Props> = ({ page1product }) => {
           <div className="lg:w-[82vw] w-[95vw] lg:mt-[4rem] overflow-hidden">
             <button
               className="absolute lg:bottom-[4rem] -bottom-[2rem] lg:left-4 right-14"
+              aria-label="Left"
               onClick={scrollLeft}
             >
               <svg
@@ -184,6 +185,7 @@ const Page1: React.FC<Page1Props> = ({ page1product }) => {
             </button>
             <button
               className="absolute lg:bottom-[4rem] -bottom-[2rem] right-4"
+              aria-label="Right"
               onClick={scrollRight}
             >
               <svg
@@ -212,6 +214,7 @@ const Page1: React.FC<Page1Props> = ({ page1product }) => {
                   <div
                     key={idx}
                     className="flex flex-col mx-[2vw] lg:w-[6.8rem] w-[4.8rem] items-center group"
+                    aria-label={item.title}
                     onClick={() => handleProductClick(item)}
                   >
                     <Image
