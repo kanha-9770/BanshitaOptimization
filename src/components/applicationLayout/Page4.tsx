@@ -221,7 +221,7 @@ const Page4: React.FC<Page4Props> = ({ page4product }) => {
                     {/* Checkbox */}
                     <div className="my-4 flex items-center justify-center">
                       <div className="flex items-center space-x-2">
-                        <input type="checkbox" />
+                        <input type="checkbox" aria-label="Checkbox" />
                         <Label
                           htmlFor="addToEnquiry"
                           className="text-sm whitespace-nowrap"

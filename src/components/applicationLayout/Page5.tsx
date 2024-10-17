@@ -126,7 +126,7 @@ const Page5: React.FC = () => {
                     {Page5Data.formTitle}
                   </h3>
                 </div>
-                <p className="text-[#929191] text-[0.9rem]">
+                <p className="text-[#727272] text-[0.9rem]">
                   {Page5Data.formPara}
                 </p>
               </div>
