@@ -1,0 +1,543 @@
+{
+    "Product": [
+        {
+            "productSeoData": {
+                "title": "Product Manufacturer and Supplier - Nessco India",
+                "description": "Trusted Product Manufacturer since 1978. Nessco offers a wide range of paper cup making machine pairing with the latest technology. Enquire now!",
+                "keywords": "Nessco India",
+                "openGraph": {
+                    "title": "Product Manufacturer and Supplier - Nessco India",
+                    "description": "Trusted Product Manufacturer since 1978. Nessco offers a wide range of paper cup making machine pairing with the latest technology. Enquire now!",
+                    "images": [
+                        {
+                            "url": "https://www.nesscoindia.com/Assets/images/resource/fully-automatic-paper-cup-making-machine.webp",
+                            "alt": "Fully Automatic Paper Cup Making Machine"
+                        }
+                    ]
+                },
+                "robots": "index, follow",
+                "alternates": {
+                    "canonical": "https://www.nesscoindia.com"
+                },
+                "twitter": {
+                    "card": "summary_large_image",
+                    "site": "@NesscoIndia",
+                    "title": "Product Manufacturer - Nessco India",
+                    "description": "Nessco India provides top-quality paper cup making machines paired with the latest technology. Enquire today!",
+                    "image": "https://www.nesscoindia.com/Assets/images/resource/fully-automatic-paper-cup-making-machine.webp"
+                }
+            },
+            "Header": {
+                "ourProduct": "Our Products",
+                "description": "Nessco is an experienced company focusing on the development, manufacturing and sales of paper cup forming machines. With advanced technology, we provide first-class paper containers to our customers.",
+                "featuredProducts": "Featured Products",
+                "products": [
+                    {
+                        "machineName": "NS-300",
+                        "description": "This paper container machine or paper bowl making machine from Nessco is designed with high level of accuracy and international standards. This machine makes paper containers and bowls for food packaging and serving.",
+                        "machineImg": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                        "productImg": "/assets/Product/productImg1.svg"
+                    },
+                    {
+                        "machineName": "NS-200",
+                        "description": "This paper container machine or paper bowl making machine from Nessco is designed with high level of accuracy and international standards. This machine makes paper containers and bowls for food packaging and serving.",
+                        "machineImg": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                        "productImg": "/assets/Product/productImg1.svg"
+                    },
+                    {
+                        "machineName": "NS-100",
+                        "description": "This paper container machine or paper bowl making machine from Nessco is designed with high level of accuracy and international standards. This machine makes paper containers and bowls for food packaging and serving.",
+                        "machineImg": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                        "productImg": "/assets/Product/productImg1.svg"
+                    },
+                    {
+                        "machineName": "NS-400",
+                        "description": "This paper container machine or paper bowl making machine from Nessco is designed with high level of accuracy and international standards. This machine makes paper containers and bowls for food packaging and serving.",
+                        "machineImg": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                        "productImg": "/assets/Product/productImg1.svg"
+                    }
+                ]
+            },
+            "ProductCatalouge": {
+                "viewAllMachines": "View All Machines",
+                "viewMachine": " View Machine",
+                "card": [
+                    {
+                        "img": "/assets/Product/PaperCupImg.svg",
+                        "title": "Paper Cup Machine",
+                        "description": "Nessco is an experienced company focusing on the development, manufacturing and sales of paper cup forming machines. With advanced technology, we provide first-class paper containers to our customers.",
+                        "container": [
+                            {
+                                "h1": "Die Cutting Machine",
+                                "h2": "NS-950",
+                                "h3": "950mm Roll Width Die Cutting Machine",
+                                "s": "S",
+                                "sInformation": "Servo Driven",
+                                "img": "/assets/ApplicationLayout/MachineImg1.png",
+                                "image": "/assets/Product/PaperCupImg.svg",
+                                "imageInformation": "Paper Plate",
+                                "information": "More information about this item.",
+                                "inquiry": "Added to inquiry"
+                            },
+                            {
+                                "h1": "Die Cutting Machine",
+                                "h2": "NS-950",
+                                "h3": "950mm Roll Width Die Cutting Machine",
+                                "s": "S",
+                                "sInformation": "Servo Driven",
+                                "img": "/assets/ApplicationLayout/MachineImg1.png",
+                                "image": "/assets/Product/PaperCupImg.svg",
+                                "imageInformation": "Paper Plate",
+                                "inquiry": "Added to inquiry",
+                                "information": "More information about this item."
+                            },
+                            {
+                                "h1": "Die Cutting Machine",
+                                "h2": "NS-950",
+                                "h3": "950mm Roll Width Die Cutting Machine",
+                                "s": "S",
+                                "sInformation": "Servo Driven",
+                                "img": "/assets/ApplicationLayout/MachineImg1.png",
+                                "image": "/assets/Product/PaperCupImg.svg",
+                                "imageInformation": "Paper Plate",
+                                "inquiry": "Added to inquiry",
+                                "information": "More information about this item."
+                            },
+                            {
+                                "h1": "Die Cutting Machine",
+                                "h2": "NS-950",
+                                "h3": "950mm Roll Width Die Cutting Machine",
+                                "s": "S",
+                                "sInformation": "Servo Driven",
+                                "img": "/assets/ApplicationLayout/MachineImg1.png",
+                                "image": "/assets/Product/PaperCupImg.svg",
+                                "imageInformation": "Paper Plate",
+                                "inquiry": "Added to inquiry",
+                                "information": "More information about this item."
+                            },
+                            {
+                                "h1": "Die Cutting Machine",
+                                "h2": "NS-950",
+                                "h3": "950mm Roll Width Die Cutting Machine",
+                                "s": "S",
+                                "sInformation": "Servo Driven",
+                                "img": "/assets/ApplicationLayout/MachineImg1.png",
+                                "image": "/assets/Product/PaperCupImg.svg",
+                                "imageInformation": "Paper Plate",
+                                "inquiry": "Added to inquiry",
+                                "information": "More information about this item."
+                            },
+                            {
+                                "h1": "Die Cutting Machine",
+                                "h2": "NS-950",
+                                "h3": "950mm Roll Width Die Cutting Machine",
+                                "s": "S",
+                                "sInformation": "Servo Driven",
+                                "img": "/assets/ApplicationLayout/MachineImg1.png",
+                                "image": "/assets/Product/PaperCupImg.svg",
+                                "imageInformation": "Paper Plate",
+                                "inquiry": "Added to inquiry",
+                                "information": "More information about this item."
+                            }
+                        ]
+                    },
+                    {
+                        "img": "/assets/Product/PaperBowlImg.svg",
+                        "title": "Paper Bowl Machine",
+                        "description": "Nessco is an experienced company focusing on the development, manufacturing and sales of paper bowl forming machines. With advanced technology, we provide first-class paper containers to our customers.",
+                        "container": [
+                            {
+                                "h1": "Die Cutting Machine",
+                                "h2": "NS-950",
+                                "h3": "950mm Roll Width Die Cutting Machine",
+                                "s": "S",
+                                "sInformation": "Servo Driven",
+                                "img": "/assets/ApplicationLayout/MachineImg1.png",
+                                "image": "/assets/Product/PaperCupImg.svg",
+                                "imageInformation": "Paper Plate",
+                                "inquiry": "Added to inquiry",
+                                "information": "More information about this item."
+                            },
+                            {
+                                "h1": "Die Cutting Machine",
+                                "h2": "NS-950",
+                                "h3": "950mm Roll Width Die Cutting Machine",
+                                "s": "S",
+                                "sInformation": "Servo Driven",
+                                "img": "/assets/ApplicationLayout/MachineImg1.png",
+                                "image": "/assets/Product/PaperCupImg.svg",
+                                "imageInformation": "Paper Plate",
+                                "inquiry": "Added to inquiry",
+                                "information": "More information about this item."
+                            },
+                            {
+                                "h1": "Die Cutting Machine",
+                                "h2": "NS-950",
+                                "h3": "950mm Roll Width Die Cutting Machine",
+                                "s": "S",
+                                "sInformation": "Servo Driven",
+                                "img": "/assets/ApplicationLayout/MachineImg1.png",
+                                "image": "/assets/Product/PaperCupImg.svg",
+                                "imageInformation": "Paper Plate",
+                                "inquiry": "Added to inquiry",
+                                "information": "More information about this item."
+                            },
+                            {
+                                "h1": "Die Cutting Machine",
+                                "h2": "NS-950",
+                                "h3": "950mm Roll Width Die Cutting Machine",
+                                "s": "S",
+                                "sInformation": "Servo Driven",
+                                "img": "/assets/ApplicationLayout/MachineImg1.png",
+                                "image": "/assets/Product/PaperCupImg.svg",
+                                "imageInformation": "Paper Plate",
+                                "inquiry": "Added to inquiry",
+                                "information": "More information about this item."
+                            },
+                            {
+                                "h1": "Die Cutting Machine",
+                                "h2": "NS-950",
+                                "h3": "950mm Roll Width Die Cutting Machine",
+                                "s": "S",
+                                "sInformation": "Servo Driven",
+                                "img": "/assets/ApplicationLayout/MachineImg1.png",
+                                "image": "/assets/Product/PaperCupImg.svg",
+                                "imageInformation": "Paper Plate",
+                                "inquiry": "Added to inquiry",
+                                "information": "More information about this item."
+                            },
+                            {
+                                "h1": "Die Cutting Machine",
+                                "h2": "NS-950",
+                                "h3": "950mm Roll Width Die Cutting Machine",
+                                "s": "S",
+                                "sInformation": "Servo Driven",
+                                "img": "/assets/ApplicationLayout/MachineImg1.png",
+                                "image": "/assets/Product/PaperCupImg.svg",
+                                "imageInformation": "Paper Plate",
+                                "inquiry": "Added to inquiry",
+                                "information": "More information about this item."
+                            }
+                        ]
+                    },
+                    {
+                        "img": "/assets/Product/PaperPlateImg.svg",
+                        "title": "Paper Plate Machine",
+                        "description": "Nessco is an experienced company focusing on the development, manufacturing and sales of paper plate forming machines. With advanced technology, we provide first-class paper containers to our customers.",
+                        "container": [
+                            {
+                                "h1": "Die Cutting Machine",
+                                "h2": "NS-950",
+                                "h3": "950mm Roll Width Die Cutting Machine",
+                                "s": "S",
+                                "sInformation": "Servo Driven",
+                                "img": "/assets/ApplicationLayout/MachineImg1.png",
+                                "image": "/assets/Product/PaperCupImg.svg",
+                                "imageInformation": "Paper Plate",
+                                "inquiry": "Added to inquiry",
+                                "information": "More information about this item."
+                            },
+                            {
+                                "h1": "Die Cutting Machine",
+                                "h2": "NS-950",
+                                "h3": "950mm Roll Width Die Cutting Machine",
+                                "s": "S",
+                                "sInformation": "Servo Driven",
+                                "img": "/assets/ApplicationLayout/MachineImg1.png",
+                                "image": "/assets/Product/PaperCupImg.svg",
+                                "imageInformation": "Paper Plate",
+                                "inquiry": "Added to inquiry",
+                                "information": "More information about this item."
+                            },
+                            {
+                                "h1": "Die Cutting Machine",
+                                "h2": "NS-950",
+                                "h3": "950mm Roll Width Die Cutting Machine",
+                                "s": "S",
+                                "sInformation": "Servo Driven",
+                                "img": "/assets/ApplicationLayout/MachineImg1.png",
+                                "image": "/assets/Product/PaperCupImg.svg",
+                                "imageInformation": "Paper Plate",
+                                "inquiry": "Added to inquiry",
+                                "information": "More information about this item."
+                            },
+                            {
+                                "h1": "Die Cutting Machine",
+                                "h2": "NS-950",
+                                "h3": "950mm Roll Width Die Cutting Machine",
+                                "s": "S",
+                                "sInformation": "Servo Driven",
+                                "img": "/assets/ApplicationLayout/MachineImg1.png",
+                                "image": "/assets/Product/PaperCupImg.svg",
+                                "imageInformation": "Paper Plate",
+                                "inquiry": "Added to inquiry",
+                                "information": "More information about this item."
+                            },
+                            {
+                                "h1": "Die Cutting Machine",
+                                "h2": "NS-950",
+                                "h3": "950mm Roll Width Die Cutting Machine",
+                                "s": "S",
+                                "sInformation": "Servo Driven",
+                                "img": "/assets/ApplicationLayout/MachineImg1.png",
+                                "image": "/assets/Product/PaperCupImg.svg",
+                                "imageInformation": "Paper Plate",
+                                "inquiry": "Added to inquiry",
+                                "information": "More information about this item."
+                            },
+                            {
+                                "h1": "Die Cutting Machine",
+                                "h2": "NS-950",
+                                "h3": "950mm Roll Width Die Cutting Machine",
+                                "s": "S",
+                                "sInformation": "Servo Driven",
+                                "img": "/assets/ApplicationLayout/MachineImg1.png",
+                                "image": "/assets/Product/PaperCupImg.svg",
+                                "imageInformation": "Paper Plate",
+                                "inquiry": "Added to inquiry",
+                                "information": "More information about this item."
+                            }
+                        ]
+                    },
+                    {
+                        "img": "/assets/Product/PaperCupImg.svg",
+                        "title": "Paper Cup Machine",
+                        "description": "Nessco is an experienced company focusing on the development, manufacturing and sales of paper cup forming machines. With advanced technology, we provide first-class paper containers to our customers.",
+                        "container": [
+                            {
+                                "h1": "Die Cutting Machine",
+                                "h2": "NS-950",
+                                "h3": "950mm Roll Width Die Cutting Machine",
+                                "s": "S",
+                                "sInformation": "Servo Driven",
+                                "img": "/assets/ApplicationLayout/MachineImg1.png",
+                                "image": "/assets/Product/PaperCupImg.svg",
+                                "imageInformation": "Paper Plate",
+                                "inquiry": "Added to inquiry",
+                                "information": "More information about this item."
+                            },
+                            {
+                                "h1": "Die Cutting Machine",
+                                "h2": "NS-950",
+                                "h3": "950mm Roll Width Die Cutting Machine",
+                                "s": "S",
+                                "sInformation": "Servo Driven",
+                                "img": "/assets/ApplicationLayout/MachineImg1.png",
+                                "image": "/assets/Product/PaperCupImg.svg",
+                                "imageInformation": "Paper Plate",
+                                "inquiry": "Added to inquiry",
+                                "information": "More information about this item."
+                            },
+                            {
+                                "h1": "Die Cutting Machine",
+                                "h2": "NS-950",
+                                "h3": "950mm Roll Width Die Cutting Machine",
+                                "s": "S",
+                                "sInformation": "Servo Driven",
+                                "img": "/assets/ApplicationLayout/MachineImg1.png",
+                                "image": "/assets/Product/PaperCupImg.svg",
+                                "imageInformation": "Paper Plate",
+                                "inquiry": "Added to inquiry",
+                                "information": "More information about this item."
+                            },
+                            {
+                                "h1": "Die Cutting Machine",
+                                "h2": "NS-950",
+                                "h3": "950mm Roll Width Die Cutting Machine",
+                                "s": "S",
+                                "sInformation": "Servo Driven",
+                                "img": "/assets/ApplicationLayout/MachineImg1.png",
+                                "image": "/assets/Product/PaperCupImg.svg",
+                                "imageInformation": "Paper Plate",
+                                "inquiry": "Added to inquiry",
+                                "information": "More information about this item."
+                            },
+                            {
+                                "h1": "Die Cutting Machine",
+                                "h2": "NS-950",
+                                "h3": "950mm Roll Width Die Cutting Machine",
+                                "s": "S",
+                                "sInformation": "Servo Driven",
+                                "img": "/assets/ApplicationLayout/MachineImg1.png",
+                                "image": "/assets/Product/PaperCupImg.svg",
+                                "imageInformation": "Paper Plate",
+                                "inquiry": "Added to inquiry",
+                                "information": "More information about this item."
+                            },
+                            {
+                                "h1": "Die Cutting Machine",
+                                "h2": "NS-950",
+                                "h3": "950mm Roll Width Die Cutting Machine",
+                                "s": "S",
+                                "sInformation": "Servo Driven",
+                                "img": "/assets/ApplicationLayout/MachineImg1.png",
+                                "image": "/assets/Product/PaperCupImg.svg",
+                                "imageInformation": "Paper Plate",
+                                "inquiry": "Added to inquiry",
+                                "information": "More information about this item."
+                            }
+                        ]
+                    },
+                    {
+                        "img": "/assets/Product/PaperBowlImg.svg",
+                        "title": "Paper Bowl Machine",
+                        "description": "Nessco is an experienced company focusing on the development, manufacturing and sales of paper bowl forming machines. With advanced technology, we provide first-class paper containers to our customers.",
+                        "container": [
+                            {
+                                "h1": "Die Cutting Machine",
+                                "h2": "NS-950",
+                                "h3": "950mm Roll Width Die Cutting Machine",
+                                "s": "S",
+                                "sInformation": "Servo Driven",
+                                "img": "/assets/ApplicationLayout/MachineImg1.png",
+                                "image": "/assets/Product/PaperCupImg.svg",
+                                "imageInformation": "Paper Plate",
+                                "inquiry": "Added to inquiry",
+                                "information": "More information about this item."
+                            },
+                            {
+                                "h1": "Die Cutting Machine",
+                                "h2": "NS-950",
+                                "h3": "950mm Roll Width Die Cutting Machine",
+                                "s": "S",
+                                "sInformation": "Servo Driven",
+                                "img": "/assets/ApplicationLayout/MachineImg1.png",
+                                "image": "/assets/Product/PaperCupImg.svg",
+                                "imageInformation": "Paper Plate",
+                                "inquiry": "Added to inquiry",
+                                "information": "More information about this item."
+                            },
+                            {
+                                "h1": "Die Cutting Machine",
+                                "h2": "NS-950",
+                                "h3": "950mm Roll Width Die Cutting Machine",
+                                "s": "S",
+                                "sInformation": "Servo Driven",
+                                "img": "/assets/ApplicationLayout/MachineImg1.png",
+                                "image": "/assets/Product/PaperCupImg.svg",
+                                "imageInformation": "Paper Plate",
+                                "inquiry": "Added to inquiry",
+                                "information": "More information about this item."
+                            },
+                            {
+                                "h1": "Die Cutting Machine",
+                                "h2": "NS-950",
+                                "h3": "950mm Roll Width Die Cutting Machine",
+                                "s": "S",
+                                "sInformation": "Servo Driven",
+                                "img": "/assets/ApplicationLayout/MachineImg1.png",
+                                "image": "/assets/Product/PaperCupImg.svg",
+                                "imageInformation": "Paper Plate",
+                                "inquiry": "Added to inquiry",
+                                "information": "More information about this item."
+                            },
+                            {
+                                "h1": "Die Cutting Machine",
+                                "h2": "NS-950",
+                                "h3": "950mm Roll Width Die Cutting Machine",
+                                "s": "S",
+                                "sInformation": "Servo Driven",
+                                "img": "/assets/ApplicationLayout/MachineImg1.png",
+                                "image": "/assets/Product/PaperCupImg.svg",
+                                "imageInformation": "Paper Plate",
+                                "inquiry": "Added to inquiry",
+                                "information": "More information about this item."
+                            },
+                            {
+                                "h1": "Die Cutting Machine",
+                                "h2": "NS-950",
+                                "h3": "950mm Roll Width Die Cutting Machine",
+                                "s": "S",
+                                "sInformation": "Servo Driven",
+                                "img": "/assets/ApplicationLayout/MachineImg1.png",
+                                "image": "/assets/Product/PaperCupImg.svg",
+                                "imageInformation": "Paper Plate",
+                                "inquiry": "Added to inquiry",
+                                "information": "More information about this item."
+                            }
+                        ]
+                    },
+                    {
+                        "img": "/assets/Product/PaperPlateImg.svg",
+                        "title": "Paper Plate Machine",
+                        "description": "Nessco is an experienced company focusing on the development, manufacturing and sales of paper plate forming machines. With advanced technology, we provide first-class paper containers to our customers.",
+                        "container": [
+                            {
+                                "h1": "Die Cutting Machine",
+                                "h2": "NS-950",
+                                "h3": "950mm Roll Width Die Cutting Machine",
+                                "s": "S",
+                                "sInformation": "Servo Driven",
+                                "img": "/assets/ApplicationLayout/MachineImg1.png",
+                                "image": "/assets/Product/PaperCupImg.svg",
+                                "imageInformation": "Paper Plate",
+                                "inquiry": "Added to inquiry",
+                                "information": "More information about this item."
+                            },
+                            {
+                                "h1": "Die Cutting Machine",
+                                "h2": "NS-950",
+                                "h3": "950mm Roll Width Die Cutting Machine",
+                                "s": "S",
+                                "sInformation": "Servo Driven",
+                                "img": "/assets/ApplicationLayout/MachineImg1.png",
+                                "image": "/assets/Product/PaperCupImg.svg",
+                                "imageInformation": "Paper Plate",
+                                "inquiry": "Added to inquiry",
+                                "information": "More information about this item."
+                            },
+                            {
+                                "h1": "Die Cutting Machine",
+                                "h2": "NS-950",
+                                "h3": "950mm Roll Width Die Cutting Machine",
+                                "s": "S",
+                                "sInformation": "Servo Driven",
+                                "img": "/assets/ApplicationLayout/MachineImg1.png",
+                                "image": "/assets/Product/PaperCupImg.svg",
+                                "imageInformation": "Paper Plate",
+                                "inquiry": "Added to inquiry",
+                                "information": "More information about this item."
+                            },
+                            {
+                                "h1": "Die Cutting Machine",
+                                "h2": "NS-950",
+                                "h3": "950mm Roll Width Die Cutting Machine",
+                                "s": "S",
+                                "sInformation": "Servo Driven",
+                                "img": "/assets/ApplicationLayout/MachineImg1.png",
+                                "image": "/assets/Product/PaperCupImg.svg",
+                                "imageInformation": "Paper Plate",
+                                "inquiry": "Added to inquiry",
+                                "information": "More information about this item."
+                            },
+                            {
+                                "h1": "Die Cutting Machine",
+                                "h2": "NS-950",
+                                "h3": "950mm Roll Width Die Cutting Machine",
+                                "s": "S",
+                                "sInformation": "Servo Driven",
+                                "img": "/assets/ApplicationLayout/MachineImg1.png",
+                                "image": "/assets/Product/PaperCupImg.svg",
+                                "imageInformation": "Paper Plate",
+                                "inquiry": "Added to inquiry",
+                                "information": "More information about this item."
+                            },
+                            {
+                                "h1": "Die Cutting Machine",
+                                "h2": "NS-950",
+                                "h3": "950mm Roll Width Die Cutting Machine",
+                                "s": "S",
+                                "sInformation": "Servo Driven",
+                                "img": "/assets/ApplicationLayout/MachineImg1.png",
+                                "image": "/assets/Product/PaperCupImg.svg",
+                                "imageInformation": "Paper Plate",
+                                "inquiry": "Added to inquiry",
+                                "information": "More information about this item."
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

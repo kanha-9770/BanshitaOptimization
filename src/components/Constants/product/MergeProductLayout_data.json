@@ -1,0 +1,808 @@
+{
+    "ProductLayout": [
+        {
+            "productLayoutSeoData": {
+                "title": "Product Layout Manufacturer and Supplier - Nessco India",
+                "description": "Trusted Product Layout Manufacturer since 1978. Nessco offers a wide range of paper cup making machine pairing with the latest technology. Enquire now!",
+                "keywords": "Nessco India",
+                "openGraph": {
+                    "title": "Product Layout Manufacturer and Supplier - Nessco India",
+                    "description": "Trusted Product Layout Manufacturer since 1978. Nessco offers a wide range of paper cup making machine pairing with the latest technology. Enquire now!",
+                    "images": [
+                        {
+                            "url": "https://www.nesscoindia.com/Assets/images/resource/fully-automatic-paper-cup-making-machine.webp",
+                            "alt": "Fully Automatic Paper Cup Making Machine"
+                        }
+                    ]
+                },
+                "robots": "index, follow",
+                "alternates": {
+                    "canonical": "https://www.nesscoindia.com"
+                },
+                "twitter": {
+                    "card": "summary_large_image",
+                    "site": "@NesscoIndia",
+                    "title": "Product Layout Manufacturer - Nessco India",
+                    "description": "Nessco India provides top-quality paper cup making machines paired with the latest technology. Enquire today!",
+                    "image": "https://www.nesscoindia.com/Assets/images/resource/fully-automatic-paper-cup-making-machine.webp"
+                }
+            },
+            "Header": {
+                "data": [
+                    {
+                        "title": "Paper Cup Machine",
+                        "description": "Paper Cup Machine Nessco is an experienced company focusing on the development, manufacturing and sales of paper cup forming machines. With advanced technology, we provide first-class paper containers to our customers.",
+                        "image": "/assets/ApplicationLayout/1.svg"
+                    },
+                    {
+                        "title": "Paper Bowl Machine",
+                        "description": "Paper Cup Machine Nessco is an experienced company focusing on the development, manufacturing and sales of paper cup forming machines. With advanced technology, we provide first-class paper containers to our customers.",
+                        "image": "/assets/ApplicationLayout/2.svg"
+                    },
+                    {
+                        "title": "Paper Plate Machine",
+                        "description": "Paper Plate Machine Nessco is an experienced company focusing on the development, manufacturing and sales of paper cup forming machines. With advanced technology, we provide first-class paper containers to our customers.",
+                        "image": "/assets/ApplicationLayout/3.svg"
+                    },
+                    {
+                        "title": "Paper Roll Machine",
+                        "description": "Paper Roll Machine Nessco is an experienced company focusing on the development, manufacturing and sales of paper cup forming machines. With advanced technology, we provide first-class paper containers to our customers.",
+                        "image": "/assets/ApplicationLayout/4.svg"
+                    }
+                ]
+            },
+            "ProductsGrid": {
+                "inquiry": "Added to inquiry",
+                "placeholder": "Search Machine...",
+                "all": "All",
+                "servoDriven": "Servo Driven",
+                "mechanicalCam": "Mechanical Cam",
+                "readMore": "Read More",
+                "readLess": "Read Less",
+                "viewMachine": " View Machine",
+                "data": [
+                    {
+                        "title": "Paper Cup Machine",
+                        "heading": "Our world class Paper cup machines",
+                        "paragraph": "Nessco is an experienced company focusing on the development, manufacturing and sales of paper cup forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers.",
+                        "all": [
+                            {
+                                "servoDriven": [
+                                    {
+                                        "h1": "Die Cutting Machine",
+                                        "h2": "NS-950",
+                                        "h3": "950mm Roll Width Die Cutting Machine",
+                                        "s": "S",
+                                        "sInformation": "Servo Driven",
+                                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                                        "rangeTitle": "Wide Range",
+                                        "range": "2-20oz",
+                                        "punchTitle": "Punch / Min",
+                                        "punch": "320",
+                                        "weightTitle": "Roll Weight",
+                                        "weight": "1200kg",
+                                        "image": "/assets/Product/PaperCupImg.svg",
+                                        "imageInformation": "Paper Cup",
+                                        "information": "More information about this item."
+                                    },
+                                    {
+                                        "h1": "Die Cutting Machine",
+                                        "h2": "NS-950",
+                                        "h3": "950mm Roll Width Die Cutting Machine",
+                                        "s": "S",
+                                        "sInformation": "Servo Driven",
+                                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                                        "rangeTitle": "Wide Range",
+                                        "range": "2-20oz",
+                                        "punchTitle": "Punch / Min",
+                                        "punch": "320",
+                                        "weightTitle": "Roll Weight",
+                                        "weight": "1200kg",
+                                        "image": "/assets/Product/PaperCupImg.svg",
+                                        "imageInformation": "Paper Cup",
+                                        "information": "More information about this item."
+                                    },
+                                    {
+                                        "h1": "Die Cutting Machine",
+                                        "h2": "NS-950",
+                                        "h3": "950mm Roll Width Die Cutting Machine",
+                                        "s": "S",
+                                        "sInformation": "Servo Driven",
+                                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                                        "rangeTitle": "Wide Range",
+                                        "range": "2-20oz",
+                                        "punchTitle": "Punch / Min",
+                                        "punch": "320",
+                                        "weightTitle": "Roll Weight",
+                                        "weight": "1200kg",
+                                        "image": "/assets/Product/PaperCupImg.svg",
+                                        "imageInformation": "Paper Cup",
+                                        "information": "More information about this item."
+                                    },
+                                    {
+                                        "h1": "Die Cutting Machine",
+                                        "h2": "NS-950",
+                                        "h3": "950mm Roll Width Die Cutting Machine",
+                                        "s": "S",
+                                        "sInformation": "Servo Driven",
+                                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                                        "rangeTitle": "Wide Range",
+                                        "range": "2-20oz",
+                                        "punchTitle": "Punch / Min",
+                                        "punch": "320",
+                                        "weightTitle": "Roll Weight",
+                                        "weight": "1200kg",
+                                        "image": "/assets/Product/PaperCupImg.svg",
+                                        "imageInformation": "Paper Cup",
+                                        "information": "More information about this item."
+                                    },
+                                    {
+                                        "h1": "Die Cutting Machine",
+                                        "h2": "NS-950",
+                                        "h3": "950mm Roll Width Die Cutting Machine",
+                                        "s": "S",
+                                        "sInformation": "Servo Driven",
+                                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                                        "rangeTitle": "Wide Range",
+                                        "range": "2-20oz",
+                                        "punchTitle": "Punch / Min",
+                                        "punch": "320",
+                                        "weightTitle": "Roll Weight",
+                                        "weight": "1200kg",
+                                        "image": "/assets/Product/PaperCupImg.svg",
+                                        "imageInformation": "Paper Cup",
+                                        "information": "More information about this item."
+                                    }
+                                ]
+                            },
+                            {
+                                "mechanicalCam": [
+                                    {
+                                        "h1": "Die Cutting Machine",
+                                        "h2": "NS-950",
+                                        "h3": "950mm Roll Width Die Cutting Machine",
+                                        "s": "M",
+                                        "sInformation": "Mechanical Cam",
+                                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                                        "rangeTitle": "Wide Range",
+                                        "range": "2-20oz",
+                                        "punchTitle": "Punch / Min",
+                                        "punch": "320",
+                                        "weightTitle": "Roll Weight",
+                                        "weight": "1200kg",
+                                        "image": "/assets/Product/PaperCupImg.svg",
+                                        "imageInformation": "Paper Cup",
+                                        "information": "More information about this item."
+                                    },
+                                    {
+                                        "h1": "Die Cutting Machine",
+                                        "h2": "NS-950",
+                                        "h3": "950mm Roll Width Die Cutting Machine",
+                                        "s": "M",
+                                        "sInformation": "Mechanical Cam",
+                                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                                        "rangeTitle": "Wide Range",
+                                        "range": "2-20oz",
+                                        "punchTitle": "Punch / Min",
+                                        "punch": "320",
+                                        "weightTitle": "Roll Weight",
+                                        "weight": "1200kg",
+                                        "image": "/assets/Product/PaperCupImg.svg",
+                                        "imageInformation": "Paper Cup",
+                                        "information": "More information about this item."
+                                    },
+                                    {
+                                        "h1": "Die Cutting Machine",
+                                        "h2": "NS-950",
+                                        "h3": "950mm Roll Width Die Cutting Machine",
+                                        "s": "M",
+                                        "sInformation": "Mechanical Cam",
+                                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                                        "rangeTitle": "Wide Range",
+                                        "range": "2-20oz",
+                                        "punchTitle": "Punch / Min",
+                                        "punch": "320",
+                                        "weightTitle": "Roll Weight",
+                                        "weight": "1200kg",
+                                        "image": "/assets/Product/PaperCupImg.svg",
+                                        "imageInformation": "Paper Cup",
+                                        "information": "More information about this item."
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Paper Bowl Machine",
+                        "heading": "Our world class Paper Bowl machines",
+                        "paragraph": "Nessco is an experienced company focusing on the development, manufacturing and sales of paper Bowl forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers.",
+                        "all": [
+                            {
+                                "servoDriven": [
+                                    {
+                                        "h1": "Die Cutting Machine",
+                                        "h2": "NS-950",
+                                        "h3": "950mm Roll Width Die Cutting Machine",
+                                        "s": "S",
+                                        "sInformation": "Servo Driven",
+                                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                                        "rangeTitle": "Wide Range",
+                                        "range": "2-20oz",
+                                        "punchTitle": "Punch / Min",
+                                        "punch": "320",
+                                        "weightTitle": "Roll Weight",
+                                        "weight": "1200kg",
+                                        "image": "/assets/Product/PaperCupImg.svg",
+                                        "imageInformation": "Paper Bowl",
+                                        "information": "More information about this item."
+                                    },
+                                    {
+                                        "h1": "Die Cutting Machine",
+                                        "h2": "NS-950",
+                                        "h3": "950mm Roll Width Die Cutting Machine",
+                                        "s": "S",
+                                        "sInformation": "Servo Driven",
+                                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                                        "rangeTitle": "Wide Range",
+                                        "range": "2-20oz",
+                                        "punchTitle": "Punch / Min",
+                                        "punch": "320",
+                                        "weightTitle": "Roll Weight",
+                                        "weight": "1200kg",
+                                        "image": "/assets/Product/PaperCupImg.svg",
+                                        "imageInformation": "Paper Bowl",
+                                        "information": "More information about this item."
+                                    }
+                                ]
+                            },
+                            {
+                                "mechanicalCam": [
+                                    {
+                                        "h1": "Die Cutting Machine",
+                                        "h2": "NS-950",
+                                        "h3": "950mm Roll Width Die Cutting Machine",
+                                        "s": "M",
+                                        "sInformation": "Mechanical Cam",
+                                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                                        "rangeTitle": "Wide Range",
+                                        "range": "2-20oz",
+                                        "punchTitle": "Punch / Min",
+                                        "punch": "320",
+                                        "weightTitle": "Roll Weight",
+                                        "weight": "1200kg",
+                                        "image": "/assets/Product/PaperCupImg.svg",
+                                        "imageInformation": "Paper Bowl",
+                                        "information": "More information about this item."
+                                    },
+                                    {
+                                        "h1": "Die Cutting Machine",
+                                        "h2": "NS-950",
+                                        "h3": "950mm Roll Width Die Cutting Machine",
+                                        "s": "M",
+                                        "sInformation": "Mechanical Cam",
+                                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                                        "rangeTitle": "Wide Range",
+                                        "range": "2-20oz",
+                                        "punchTitle": "Punch / Min",
+                                        "punch": "320",
+                                        "weightTitle": "Roll Weight",
+                                        "weight": "1200kg",
+                                        "image": "/assets/Product/PaperCupImg.svg",
+                                        "imageInformation": "Paper Bowl",
+                                        "information": "More information about this item."
+                                    },
+                                    {
+                                        "h1": "Die Cutting Machine",
+                                        "h2": "NS-950",
+                                        "h3": "950mm Roll Width Die Cutting Machine",
+                                        "s": "M",
+                                        "sInformation": "Mechanical Cam",
+                                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                                        "rangeTitle": "Wide Range",
+                                        "range": "2-20oz",
+                                        "punchTitle": "Punch / Min",
+                                        "punch": "320",
+                                        "weightTitle": "Roll Weight",
+                                        "weight": "1200kg",
+                                        "image": "/assets/Product/PaperCupImg.svg",
+                                        "imageInformation": "Paper Bowl",
+                                        "information": "More information about this item."
+                                    },
+                                    {
+                                        "h1": "Die Cutting Machine",
+                                        "h2": "NS-950",
+                                        "h3": "950mm Roll Width Die Cutting Machine",
+                                        "s": "M",
+                                        "sInformation": "Mechanical Cam",
+                                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                                        "rangeTitle": "Wide Range",
+                                        "range": "2-20oz",
+                                        "punchTitle": "Punch / Min",
+                                        "punch": "320",
+                                        "weightTitle": "Roll Weight",
+                                        "weight": "1200kg",
+                                        "image": "/assets/Product/PaperCupImg.svg",
+                                        "imageInformation": "Paper Bowl",
+                                        "information": "More information about this item."
+                                    },
+                                    {
+                                        "h1": "Die Cutting Machine",
+                                        "h2": "NS-950",
+                                        "h3": "950mm Roll Width Die Cutting Machine",
+                                        "s": "M",
+                                        "sInformation": "Mechanical Cam",
+                                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                                        "rangeTitle": "Wide Range",
+                                        "range": "2-20oz",
+                                        "punchTitle": "Punch / Min",
+                                        "punch": "320",
+                                        "weightTitle": "Roll Weight",
+                                        "weight": "1200kg",
+                                        "image": "/assets/Product/PaperCupImg.svg",
+                                        "imageInformation": "Paper Bowl",
+                                        "information": "More information about this item."
+                                    },
+                                    {
+                                        "h1": "Die Cutting Machine",
+                                        "h2": "NS-950",
+                                        "h3": "950mm Roll Width Die Cutting Machine",
+                                        "s": "M",
+                                        "sInformation": "Mechanical Cam",
+                                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                                        "rangeTitle": "Wide Range",
+                                        "range": "2-20oz",
+                                        "punchTitle": "Punch / Min",
+                                        "punch": "320",
+                                        "weightTitle": "Roll Weight",
+                                        "weight": "1200kg",
+                                        "image": "/assets/Product/PaperCupImg.svg",
+                                        "imageInformation": "Paper Bowl",
+                                        "information": "More information about this item."
+                                    },
+                                    {
+                                        "h1": "Die Cutting Machine",
+                                        "h2": "NS-950",
+                                        "h3": "950mm Roll Width Die Cutting Machine",
+                                        "s": "M",
+                                        "sInformation": "Mechanical Cam",
+                                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                                        "rangeTitle": "Wide Range",
+                                        "range": "2-20oz",
+                                        "punchTitle": "Punch / Min",
+                                        "punch": "320",
+                                        "weightTitle": "Roll Weight",
+                                        "weight": "1200kg",
+                                        "image": "/assets/Product/PaperCupImg.svg",
+                                        "imageInformation": "Paper Bowl",
+                                        "information": "More information about this item."
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Paper Plate Machine",
+                        "heading": "Our world class Paper Plate machines",
+                        "paragraph": "Nessco is an experienced company focusing on the development, manufacturing and sales of paper Plate forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers.",
+                        "all": [
+                            {
+                                "servoDriven": [
+                                    {
+                                        "h1": "Die Cutting Machine",
+                                        "h2": "NS-950",
+                                        "h3": "950mm Roll Width Die Cutting Machine",
+                                        "s": "S",
+                                        "sInformation": "Servo Driven",
+                                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                                        "rangeTitle": "Wide Range",
+                                        "range": "2-20oz",
+                                        "punchTitle": "Punch / Min",
+                                        "punch": "320",
+                                        "weightTitle": "Roll Weight",
+                                        "weight": "1200kg",
+                                        "image": "/assets/Product/PaperCupImg.svg",
+                                        "imageInformation": "Paper Plate",
+                                        "information": "More information about this item."
+                                    },
+                                    {
+                                        "h1": "Die Cutting Machine",
+                                        "h2": "NS-950",
+                                        "h3": "950mm Roll Width Die Cutting Machine",
+                                        "s": "S",
+                                        "sInformation": "Servo Driven",
+                                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                                        "rangeTitle": "Wide Range",
+                                        "range": "2-20oz",
+                                        "punchTitle": "Punch / Min",
+                                        "punch": "320",
+                                        "weightTitle": "Roll Weight",
+                                        "weight": "1200kg",
+                                        "image": "/assets/Product/PaperCupImg.svg",
+                                        "imageInformation": "Paper Plate",
+                                        "information": "More information about this item."
+                                    },
+                                    {
+                                        "h1": "Die Cutting Machine",
+                                        "h2": "NS-950",
+                                        "h3": "950mm Roll Width Die Cutting Machine",
+                                        "s": "S",
+                                        "sInformation": "Servo Driven",
+                                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                                        "rangeTitle": "Wide Range",
+                                        "range": "2-20oz",
+                                        "punchTitle": "Punch / Min",
+                                        "punch": "320",
+                                        "weightTitle": "Roll Weight",
+                                        "weight": "1200kg",
+                                        "image": "/assets/Product/PaperCupImg.svg",
+                                        "imageInformation": "Paper Plate",
+                                        "information": "More information about this item."
+                                    },
+                                    {
+                                        "h1": "Die Cutting Machine",
+                                        "h2": "NS-950",
+                                        "h3": "950mm Roll Width Die Cutting Machine",
+                                        "s": "S",
+                                        "sInformation": "Servo Driven",
+                                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                                        "rangeTitle": "Wide Range",
+                                        "range": "2-20oz",
+                                        "punchTitle": "Punch / Min",
+                                        "punch": "320",
+                                        "weightTitle": "Roll Weight",
+                                        "weight": "1200kg",
+                                        "image": "/assets/Product/PaperCupImg.svg",
+                                        "imageInformation": "Paper Plate",
+                                        "information": "More information about this item."
+                                    }
+                                ]
+                            },
+                            {
+                                "mechanicalCam": [
+                                    {
+                                        "h1": "Die Cutting Machine",
+                                        "h2": "NS-950",
+                                        "h3": "950mm Roll Width Die Cutting Machine",
+                                        "s": "M",
+                                        "sInformation": "Mechanical Cam",
+                                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                                        "rangeTitle": "Wide Range",
+                                        "range": "2-20oz",
+                                        "punchTitle": "Punch / Min",
+                                        "punch": "320",
+                                        "weightTitle": "Roll Weight",
+                                        "weight": "1200kg",
+                                        "image": "/assets/Product/PaperCupImg.svg",
+                                        "imageInformation": "Paper Plate",
+                                        "information": "More information about this item."
+                                    },
+                                    {
+                                        "h1": "Die Cutting Machine",
+                                        "h2": "NS-950",
+                                        "h3": "950mm Roll Width Die Cutting Machine",
+                                        "s": "M",
+                                        "sInformation": "Mechanical Cam",
+                                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                                        "rangeTitle": "Wide Range",
+                                        "range": "2-20oz",
+                                        "punchTitle": "Punch / Min",
+                                        "punch": "320",
+                                        "weightTitle": "Roll Weight",
+                                        "weight": "1200kg",
+                                        "image": "/assets/Product/PaperCupImg.svg",
+                                        "imageInformation": "Paper Plate",
+                                        "information": "More information about this item."
+                                    },
+                                    {
+                                        "h1": "Die Cutting Machine",
+                                        "h2": "NS-950",
+                                        "h3": "950mm Roll Width Die Cutting Machine",
+                                        "s": "M",
+                                        "sInformation": "Mechanical Cam",
+                                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                                        "rangeTitle": "Wide Range",
+                                        "range": "2-20oz",
+                                        "punchTitle": "Punch / Min",
+                                        "punch": "320",
+                                        "weightTitle": "Roll Weight",
+                                        "weight": "1200kg",
+                                        "image": "/assets/Product/PaperCupImg.svg",
+                                        "imageInformation": "Paper Plate",
+                                        "information": "More information about this item."
+                                    },
+                                    {
+                                        "h1": "Die Cutting Machine",
+                                        "h2": "NS-950",
+                                        "h3": "950mm Roll Width Die Cutting Machine",
+                                        "s": "M",
+                                        "sInformation": "Mechanical Cam",
+                                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                                        "rangeTitle": "Wide Range",
+                                        "range": "2-20oz",
+                                        "punchTitle": "Punch / Min",
+                                        "punch": "320",
+                                        "weightTitle": "Roll Weight",
+                                        "weight": "1200kg",
+                                        "image": "/assets/Product/PaperCupImg.svg",
+                                        "imageInformation": "Paper Plate",
+                                        "information": "More information about this item."
+                                    },
+                                    {
+                                        "h1": "Die Cutting Machine",
+                                        "h2": "NS-950",
+                                        "h3": "950mm Roll Width Die Cutting Machine",
+                                        "s": "M",
+                                        "sInformation": "Mechanical Cam",
+                                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                                        "rangeTitle": "Wide Range",
+                                        "range": "2-20oz",
+                                        "punchTitle": "Punch / Min",
+                                        "punch": "320",
+                                        "weightTitle": "Roll Weight",
+                                        "weight": "1200kg",
+                                        "image": "/assets/Product/PaperCupImg.svg",
+                                        "imageInformation": "Paper Plate",
+                                        "information": "More information about this item."
+                                    },
+                                    {
+                                        "h1": "Die Cutting Machine",
+                                        "h2": "NS-950",
+                                        "h3": "950mm Roll Width Die Cutting Machine",
+                                        "s": "M",
+                                        "sInformation": "Mechanical Cam",
+                                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                                        "rangeTitle": "Wide Range",
+                                        "range": "2-20oz",
+                                        "punchTitle": "Punch / Min",
+                                        "punch": "320",
+                                        "weightTitle": "Roll Weight",
+                                        "weight": "1200kg",
+                                        "image": "/assets/Product/PaperCupImg.svg",
+                                        "imageInformation": "Paper Plate",
+                                        "information": "More information about this item."
+                                    },
+                                    {
+                                        "h1": "Die Cutting Machine",
+                                        "h2": "NS-950",
+                                        "h3": "950mm Roll Width Die Cutting Machine",
+                                        "s": "M",
+                                        "sInformation": "Mechanical Cam",
+                                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                                        "rangeTitle": "Wide Range",
+                                        "range": "2-20oz",
+                                        "punchTitle": "Punch / Min",
+                                        "punch": "320",
+                                        "weightTitle": "Roll Weight",
+                                        "weight": "1200kg",
+                                        "image": "/assets/Product/PaperCupImg.svg",
+                                        "imageInformation": "Paper Plate",
+                                        "information": "More information about this item."
+                                    },
+                                    {
+                                        "h1": "Die Cutting Machine",
+                                        "h2": "NS-950",
+                                        "h3": "950mm Roll Width Die Cutting Machine",
+                                        "s": "M",
+                                        "sInformation": "Mechanical Cam",
+                                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                                        "rangeTitle": "Wide Range",
+                                        "range": "2-20oz",
+                                        "punchTitle": "Punch / Min",
+                                        "punch": "320",
+                                        "weightTitle": "Roll Weight",
+                                        "weight": "1200kg",
+                                        "image": "/assets/Product/PaperCupImg.svg",
+                                        "imageInformation": "Paper Plate",
+                                        "information": "More information about this item."
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Paper Roll Machine",
+                        "heading": "Our world class Paper Roll machines",
+                        "paragraph": "Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers. Nessco is an experienced company focusing on the development, manufacturing and sales of paper Roll forming machines. With advanced technology, we provide first-class paper containers to our customers.",
+                        "all": [
+                            {
+                                "servoDriven": [
+                                    {
+                                        "h1": "Die Cutting Machine",
+                                        "h2": "NS-950",
+                                        "h3": "950mm Roll Width Die Cutting Machine",
+                                        "s": "S",
+                                        "sInformation": "Servo Driven",
+                                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                                        "rangeTitle": "Wide Range",
+                                        "range": "2-20oz",
+                                        "punchTitle": "Punch / Min",
+                                        "punch": "320",
+                                        "weightTitle": "Roll Weight",
+                                        "weight": "1200kg",
+                                        "image": "/assets/Product/PaperCupImg.svg",
+                                        "imageInformation": "Paper Roll",
+                                        "information": "More information about this item."
+                                    },
+                                    {
+                                        "h1": "Die Cutting Machine",
+                                        "h2": "NS-950",
+                                        "h3": "950mm Roll Width Die Cutting Machine",
+                                        "s": "S",
+                                        "sInformation": "Servo Driven",
+                                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                                        "rangeTitle": "Wide Range",
+                                        "range": "2-20oz",
+                                        "punchTitle": "Punch / Min",
+                                        "punch": "320",
+                                        "weightTitle": "Roll Weight",
+                                        "weight": "1200kg",
+                                        "image": "/assets/Product/PaperCupImg.svg",
+                                        "imageInformation": "Paper Roll",
+                                        "information": "More information about this item."
+                                    },
+                                    {
+                                        "h1": "Die Cutting Machine",
+                                        "h2": "NS-950",
+                                        "h3": "950mm Roll Width Die Cutting Machine",
+                                        "s": "S",
+                                        "sInformation": "Servo Driven",
+                                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                                        "rangeTitle": "Wide Range",
+                                        "range": "2-20oz",
+                                        "punchTitle": "Punch / Min",
+                                        "punch": "320",
+                                        "weightTitle": "Roll Weight",
+                                        "weight": "1200kg",
+                                        "image": "/assets/Product/PaperCupImg.svg",
+                                        "imageInformation": "Paper Roll",
+                                        "information": "More information about this item."
+                                    }
+                                ]
+                            },
+                            {
+                                "mechanicalCam": [
+                                    {
+                                        "h1": "Die Cutting Machine",
+                                        "h2": "NS-950",
+                                        "h3": "950mm Roll Width Die Cutting Machine",
+                                        "s": "M",
+                                        "sInformation": "Mechanical Cam",
+                                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                                        "rangeTitle": "Wide Range",
+                                        "range": "2-20oz",
+                                        "punchTitle": "Punch / Min",
+                                        "punch": "320",
+                                        "weightTitle": "Roll Weight",
+                                        "weight": "1200kg",
+                                        "image": "/assets/Product/PaperCupImg.svg",
+                                        "imageInformation": "Paper Roll",
+                                        "information": "More information about this item."
+                                    },
+                                    {
+                                        "h1": "Die Cutting Machine",
+                                        "h2": "NS-950",
+                                        "h3": "950mm Roll Width Die Cutting Machine",
+                                        "s": "M",
+                                        "sInformation": "Mechanical Cam",
+                                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                                        "rangeTitle": "Wide Range",
+                                        "range": "2-20oz",
+                                        "punchTitle": "Punch / Min",
+                                        "punch": "320",
+                                        "weightTitle": "Roll Weight",
+                                        "weight": "1200kg",
+                                        "image": "/assets/Product/PaperCupImg.svg",
+                                        "imageInformation": "Paper Roll",
+                                        "information": "More information about this item."
+                                    },
+                                    {
+                                        "h1": "Die Cutting Machine",
+                                        "h2": "NS-950",
+                                        "h3": "950mm Roll Width Die Cutting Machine",
+                                        "s": "M",
+                                        "sInformation": "Mechanical Cam",
+                                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                                        "rangeTitle": "Wide Range",
+                                        "range": "2-20oz",
+                                        "punchTitle": "Punch / Min",
+                                        "punch": "320",
+                                        "weightTitle": "Roll Weight",
+                                        "weight": "1200kg",
+                                        "image": "/assets/Product/PaperCupImg.svg",
+                                        "imageInformation": "Paper Roll",
+                                        "information": "More information about this item."
+                                    },
+                                    {
+                                        "h1": "Die Cutting Machine",
+                                        "h2": "NS-950",
+                                        "h3": "950mm Roll Width Die Cutting Machine",
+                                        "s": "M",
+                                        "sInformation": "Mechanical Cam",
+                                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                                        "rangeTitle": "Wide Range",
+                                        "range": "2-20oz",
+                                        "punchTitle": "Punch / Min",
+                                        "punch": "320",
+                                        "weightTitle": "Roll Weight",
+                                        "weight": "1200kg",
+                                        "image": "/assets/Product/PaperCupImg.svg",
+                                        "imageInformation": "Paper Roll",
+                                        "information": "More information about this item."
+                                    },
+                                    {
+                                        "h1": "Die Cutting Machine",
+                                        "h2": "NS-950",
+                                        "h3": "950mm Roll Width Die Cutting Machine",
+                                        "s": "M",
+                                        "sInformation": "Mechanical Cam",
+                                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                                        "rangeTitle": "Wide Range",
+                                        "range": "2-20oz",
+                                        "punchTitle": "Punch / Min",
+                                        "punch": "320",
+                                        "weightTitle": "Roll Weight",
+                                        "weight": "1200kg",
+                                        "image": "/assets/Product/PaperCupImg.svg",
+                                        "imageInformation": "Paper Roll",
+                                        "information": "More information about this item."
+                                    },
+                                    {
+                                        "h1": "Die Cutting Machine",
+                                        "h2": "NS-950",
+                                        "h3": "950mm Roll Width Die Cutting Machine",
+                                        "s": "M",
+                                        "sInformation": "Mechanical Cam",
+                                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                                        "rangeTitle": "Wide Range",
+                                        "range": "2-20oz",
+                                        "punchTitle": "Punch / Min",
+                                        "punch": "320",
+                                        "weightTitle": "Roll Weight",
+                                        "weight": "1200kg",
+                                        "image": "/assets/Product/PaperCupImg.svg",
+                                        "imageInformation": "Paper Roll",
+                                        "information": "More information about this item."
+                                    },
+                                    {
+                                        "h1": "Die Cutting Machine",
+                                        "h2": "NS-950",
+                                        "h3": "950mm Roll Width Die Cutting Machine",
+                                        "s": "M",
+                                        "sInformation": "Mechanical Cam",
+                                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                                        "rangeTitle": "Wide Range",
+                                        "range": "2-20oz",
+                                        "punchTitle": "Punch / Min",
+                                        "punch": "320",
+                                        "weightTitle": "Roll Weight",
+                                        "weight": "1200kg",
+                                        "image": "/assets/Product/PaperCupImg.svg",
+                                        "imageInformation": "Paper Roll",
+                                        "information": "More information about this item."
+                                    },
+                                    {
+                                        "h1": "Die Cutting Machine",
+                                        "h2": "NS-950",
+                                        "h3": "950mm Roll Width Die Cutting Machine",
+                                        "s": "M",
+                                        "sInformation": "Mechanical Cam",
+                                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                                        "rangeTitle": "Wide Range",
+                                        "range": "2-20oz",
+                                        "punchTitle": "Punch / Min",
+                                        "punch": "320",
+                                        "weightTitle": "Roll Weight",
+                                        "weight": "1200kg",
+                                        "image": "/assets/Product/PaperCupImg.svg",
+                                        "imageInformation": "Paper Roll",
+                                        "information": "More information about this item."
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

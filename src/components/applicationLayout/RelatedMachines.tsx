@@ -204,7 +204,7 @@ const Page4: React.FC<Page4Props> = ({ page4product }) => {
                     {/* Image */}
                     <div className="flex justify-center items-center">
                       <div className="mt-[0.8rem] w-[70%] lg:h-[10rem] flex justify-center items-center">
-                        <Image src={item.img} alt="" width={400} height={400} />
+                        <Image src={item.img} alt="Machine" width={400} height={400} />
                       </div>
                     </div>
 
