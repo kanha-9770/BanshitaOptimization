@@ -26,8 +26,9 @@ const Page2: React.FC<Page2Props> = ({ page2product }) => {
           className="lg:w-[50%] h-full w-full mb-[1rem] lg:mb-0  rounded-[1rem]"
           width={600}
           height={600}
+          priority
           src={page2product.image}
-          alt=""
+          alt="Product"
         />
       </div>
     </>
