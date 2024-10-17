@@ -1,74 +1,109 @@
-"use client";
+import Pages from "@/components/applicationLayout/Pages";
 import React from "react";
-import Page1 from "@/components/applicationLayout/Page1";
-import { notFound, useParams } from "next/navigation";
-import {
-  Page1Data,
-  Page2Data,
-  Page3Data,
-  Page4Data,
-} from "@/components/Constants/application/applicationLayout_data.json";
-import Page2 from "@/components/applicationLayout/Page2";
-import Page3 from "@/components/applicationLayout/Page3";
-import Page4 from "@/components/applicationLayout/Page4";
-import Page5 from "@/components/applicationLayout/Page5";
+import seoData from "@/components/Constants/application/applicationLayout_data.json";
+import { Metadata } from "next";
 
-const Page = () => {
-  const params = useParams() as Record<string, string | string[]> | null;
+// Define ApplicationLayoutSeoData interface to match your JSON structure
+interface ApplicationLayoutSeoData {
+  title: string;
+  description: string;
+  keywords: string;
+  openGraph: {
+    title: string;
+    description: string;
+    images: { url: string; alt: string }[];
+  };
+  robots: string;
+  alternates: {
+    canonical: string;
+  };
+  twitter: {
+    card: string;
+    site: string;
+    title: string;
+    description: string;
+    image: string;
+  };
+}
 
-  if (!params || !params.id) {
-    return notFound();
+export async function generateMetadata(): Promise<Metadata> {
+  const metadata: ApplicationLayoutSeoData | undefined =
+    seoData?.applicationLayoutSeoData;
+
+  if (!metadata) {
+    return {
+      title: "Default Title",
+      description: "Default Description",
+      keywords: "default, keywords",
+      openGraph: {
+        title: "Default OG Title",
+        description: "Default OG Description",
+        images: [
+          {
+            url: "/default-image.webp",
+            alt: "Default Image Alt",
+          },
+        ],
+      },
+      robots: "index, follow",
+      alternates: {
+        canonical: "https://www.default.com",
+      },
+      twitter: {
+        card: "summary_large_image", // Fix: Ensure it uses the union type.
+        site: "@DefaultTwitter",
+        title: "Default Twitter Title",
+        description: "Default Twitter Description",
+        images: [
+          // Fix: Change 'image' to 'images'
+          {
+            url: "/default-image.webp",
+            alt: "Default Twitter Image",
+          },
+        ],
+      },
+    };
   }
 
-  let productname = "";
+  return {
+    title: metadata.title,
+    description: metadata.description,
+    keywords: metadata.keywords,
+    openGraph: {
+      title: metadata.openGraph.title,
+      description: metadata.openGraph.description,
+      images: metadata.openGraph.images.map((image) => ({
+        url: image.url,
+        alt: image.alt,
+      })),
+    },
+    robots: metadata.robots,
 
-  if (Array.isArray(params.id)) {
-    // Join array elements into a single string and normalize spaces
-    productname = decodeURIComponent(params.id.join(" "))
-      .replace(/\+/g, " ")
-      .trim();
-  } else if (typeof params.id === "string") {
-    // Decode and normalize the single string
-    productname = decodeURIComponent(params.id).replace(/\+/g, " ").trim();
-  }
+    alternates: {
+      canonical: metadata.alternates.canonical,
+    },
+    twitter: {
+      card: "summary_large_image", // Fix: Use appropriate union type
+      site: metadata.twitter.site,
+      title: metadata.twitter.title,
+      description: metadata.twitter.description,
+      images: [
+        // Fix: Change 'image' to 'images'
+        {
+          url: metadata.twitter.image,
+          alt: "Twitter Image",
+        },
+      ],
+    },
+  };
+}
 
-  if (!productname) {
-    return notFound();
-  }
-
-  // Helper function to normalize title for comparison
-  const normalizeTitle = (title: string) =>
-    title.toLowerCase().replace(/\s+/g, " ").trim();
-
-  // Find the product by its normalized title
-  const normalizedProductname = normalizeTitle(productname);
-
-  const page1product = Page1Data.icons.find(
-    (m) => normalizeTitle(m.title) === normalizedProductname
-  );
-  const page2product = Page2Data.products.find(
-    (m) => normalizeTitle(m.title) === normalizedProductname
-  );
-  const page3product = Page3Data.images.find(
-    (m) => normalizeTitle(m.title) === normalizedProductname
-  );
-  const page4product = Page4Data.imageDescription.find(
-    (m) => normalizeTitle(m.title) === normalizedProductname
-  );
-
-  if (!page1product || !page2product || !page3product || !page4product) {
-    return notFound();
-  }
-
+const page = () => {
   return (
     <>
-      <Page1 page1product={page1product} />
-      <Page2 page2product={page2product} />
-      <Page4 page4product={page4product} />
-      <Page3 page3product={page3product} />
-      <Page5/>
+      <Pages />
     </>
   );
 };
 
-export default Page;
+export default page;

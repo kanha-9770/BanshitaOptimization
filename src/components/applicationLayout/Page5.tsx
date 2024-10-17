@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import { Page5Data } from "../Constants/application/applicationLayout_data.json";
-// import { BsDashLg, BsPlusLg } from "react-icons/bs";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -74,11 +73,37 @@ const Page5: React.FC = () => {
                       <h2 className="lg:text-[1.1rem] w-[70%] text-[0.9rem] font-medium font-poppins">
                         {item.que}
                       </h2>
-                      {/* {expandedIndex === idx ? (
-                        <BsDashLg className="lg:text-2xl text-xl text-red-700 font-bold" />
+                      {expandedIndex === idx ? (
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          className="w-6 h-6 stroke-red-700"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M20 12H4"
+                          />
+                        </svg>
                       ) : (
-                        <BsPlusLg className="lg:text-2xl text-xl" />
-                      )} */}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          className="w-6 h-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M12 4v16m8-8H4"
+                          />
+                        </svg>
+                      )}
                     </div>
                     <div className=" border-[#d3d2d2] border-t-2 border-solid  mt-[0.2rem] lg:w-[70%] w-[80%]"></div>
 

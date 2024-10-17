@@ -1,4 +1,30 @@
 {
+  "applicationLayoutSeoData": {
+    "title": "Application Layout Manufacturer and Supplier - Nessco India",
+    "description": "Trusted Application Layout Manufacturer since 1978. Nessco offers a wide range of paper cup making machine pairing with the latest technology. Enquire now!",
+    "keywords": "Nessco India",
+    "openGraph": {
+      "title": "Application Layout Manufacturer and Supplier - Nessco India",
+      "description": "Trusted Application Layout Manufacturer since 1978. Nessco offers a wide range of paper cup making machine pairing with the latest technology. Enquire now!",
+      "images": [
+        {
+          "url": "https://www.nesscoindia.com/Assets/images/resource/fully-automatic-paper-cup-making-machine.webp",
+          "alt": "Fully Automatic Paper Cup Making Machine"
+        }
+      ]
+    },
+    "robots": "index, follow",
+    "alternates": {
+      "canonical": "https://www.nesscoindia.com"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "site": "@NesscoIndia",
+      "title": "Application Layout Manufacturer - Nessco India",
+      "description": "Nessco India provides top-quality paper cup making machines paired with the latest technology. Enquire today!",
+      "image": "https://www.nesscoindia.com/Assets/images/resource/fully-automatic-paper-cup-making-machine.webp"
+    }
+  },
   "Page1Data": {
     "icons": [
       {
@@ -429,7 +455,7 @@
             "information": "More information about this item."
           },
           {
-           "h1": "Die Cutting Machine",
+            "h1": "Die Cutting Machine",
             "h2": "NS-950",
             "h3": "950mm Roll Width Die Cutting Machine",
             "s": "S",

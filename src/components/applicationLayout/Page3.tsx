@@ -80,7 +80,7 @@ const Page3: React.FC<Page3Props> = ({ page3product }) => {
               </p>
             </div>
             <button
-              className="absolute lg:bottom-[2.5rem] lg:left-[2.5rem] right-16 -bottom-8"
+              className="absolute lg:bottom-[2.5rem] lg:left-[4rem] right-16 -bottom-8"
               onClick={scrollLeft}
             >
               <svg
@@ -92,7 +92,7 @@ const Page3: React.FC<Page3Props> = ({ page3product }) => {
                   cx="32"
                   cy="32"
                   r="32"
-                  className="fill-black hover:fill-red-700 cursor-pointer"
+                  className="fill-[#cccaca] hover:fill-red-700 cursor-pointer"
                 />
                 <path
                   d="M39 20 L27 32 L39 44"
@@ -101,7 +101,7 @@ const Page3: React.FC<Page3Props> = ({ page3product }) => {
               </svg>
             </button>
             <button
-              className="absolute lg:bottom-[2.5rem] lg:right-[2.5rem] right-4 -bottom-8"
+              className="absolute lg:bottom-[2.5rem] lg:right-[4rem] right-4 -bottom-8"
               onClick={scrollRight}
             >
               <svg
@@ -113,7 +113,7 @@ const Page3: React.FC<Page3Props> = ({ page3product }) => {
                   cx="32"
                   cy="32"
                   r="32"
-                  className="fill-black hover:fill-red-700 cursor-pointer"
+                  className="fill-[#cccaca] hover:fill-red-700 cursor-pointer"
                 />
                 <path
                   d="M25 20 L37 32 L25 44"

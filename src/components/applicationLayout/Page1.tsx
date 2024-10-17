@@ -162,7 +162,7 @@ const Page1: React.FC<Page1Props> = ({ page1product }) => {
 
           <div className="lg:w-[82vw] w-[95vw] lg:mt-[4rem] overflow-hidden">
             <button
-              className="absolute lg:bottom-[3rem] -bottom-[2rem] lg:left-4 right-14"
+              className="absolute lg:bottom-[4rem] -bottom-[2rem] lg:left-4 right-14"
               onClick={scrollLeft}
             >
               <svg
@@ -174,7 +174,7 @@ const Page1: React.FC<Page1Props> = ({ page1product }) => {
                   cx="32"
                   cy="32"
                   r="32"
-                  className="fill-[#483d73] hover:fill-[#9e9c9c] cursor-pointer"
+                  className="fill-[#cccaca] hover:fill-[#483d73] cursor-pointer"
                 />
                 <path
                   d="M39 20 L27 32 L39 44"
@@ -183,7 +183,7 @@ const Page1: React.FC<Page1Props> = ({ page1product }) => {
               </svg>
             </button>
             <button
-              className="absolute lg:bottom-[3rem] -bottom-[2rem] right-4"
+              className="absolute lg:bottom-[4rem] -bottom-[2rem] right-4"
               onClick={scrollRight}
             >
               <svg
@@ -195,7 +195,7 @@ const Page1: React.FC<Page1Props> = ({ page1product }) => {
                   cx="32"
                   cy="32"
                   r="32"
-                  className="fill-[#483d73] hover:fill-[#9e9c9c] cursor-pointer"
+                  className="fill-[#cccaca] hover:fill-[#483d73] cursor-pointer"
                 />
                 <path
                   d="M25 20 L37 32 L25 44"

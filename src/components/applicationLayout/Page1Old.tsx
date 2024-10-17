@@ -104,7 +104,7 @@ const Page1: React.FC<Page1Props> = ({ page1product }) => {
 
   // Image div height change on scroll
   useEffect(() => {
-    imageRefs.current.forEach((imageRef, index) => {
+    imageRefs.current.forEach((imageRef) => {
       if (imageRef) {
         gsap.fromTo(
           imageRef,
