@@ -2,7 +2,8 @@
 import React, { useRef, useState } from "react";
 import Image from "next/image";
 import { TrendingNews } from "@/components/Constants/media-room/media-room_data.json";
-import Modal from "@/components/media-room/Modal";
+import dynamic from "next/dynamic";
+const Modal = dynamic(() => import("@/components/media-room/Modal"));
 
 const Page2 = () => {
   const carouselRef = useRef<HTMLDivElement | null>(null);
