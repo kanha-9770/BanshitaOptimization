@@ -103,7 +103,7 @@ const Page1 = () => {
           <div className="flex lg:space-x-8 space-x-4 lg:mr-[2rem] mr-[1rem] w-[75%] overflow-x-scroll scrollbar-hide">
             {Header.filters.map((item, index) => (
               <div key={index} className="">
-                <p className="lg:text-lg text-sm font-normal">{item}</p>
+                <p className="lg:text-lg text-sm font-normal">{item.title}</p>
               </div>
             ))}
           </div>
@@ -141,7 +141,7 @@ const Page1 = () => {
             <ul className="p-2">
               {Header.filters.map((item, index) => (
                 <li key={index} className="py-2 px-4 hover:bg-gray-100">
-                  {item}
+                  {item.title}
                 </li>
               ))}
             </ul>
@@ -172,15 +172,15 @@ const Page1 = () => {
                     >
                       <label
                         className="font-poppins my-[0.2rem]"
-                        htmlFor={item}
+                        htmlFor={item.title}
                       >
-                        {item}
+                        {item.title}
                       </label>
                       <input
                         type="checkbox"
-                        id={item}
-                        name={item}
-                        value={item}
+                        id={item.title}
+                        name={item.title}
+                        value={item.title}
                       />
                     </div>
                   ))}

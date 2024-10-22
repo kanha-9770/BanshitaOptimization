@@ -43,15 +43,15 @@ const Filter = () => {
           <div className="mt-3 lg:h-full h-[14rem] lg:overflow-auto overflow-y-scroll scrollbar-custom scrollbar">
             {Header.categories.map((item, index) => (
               <div key={index} className="flex justify-between items-center">
-                <label className="font-poppins my-[0.2rem]" htmlFor={item}>
-                  {item}
+                <label className="font-poppins my-[0.2rem]" htmlFor={item.title}>
+                  {item.title}
                 </label>
                 <input
                   arial-label="Checkbox"
                   type="checkbox"
-                  id={item}
-                  name={item}
-                  value={item}
+                  id={item.title}
+                  name={item.title}
+                  value={item.title}
                   className="mr-1"
                 />
               </div>

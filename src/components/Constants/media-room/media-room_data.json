@@ -33,41 +33,68 @@
         "byCategory": "By Category",
         "placeholder": "Search...",
         "filters": [
-            "Tech",
-            "Science",
-            "AI",
-            "Machine",
-            "Videos",
-            "Machines",
-            "Reviews",
-            "Tech",
-            "Tech",
-            "Science",
-            "AI",
-            "Machine",
-            "Videos",
-            "Machines",
-            "Reviews",
-            "Tech",
-            "Tech",
-            "Science",
-            "AI",
-            "Machine",
-            "Videos",
-            "Machines",
-            "Reviews",
-            "Tech"
+            {
+                "title": "Tech"
+            },
+            {
+                "title": "Science"
+            },
+            {
+                "title": "AI"
+            },
+            {
+                "title": "Machine"
+            },
+            {
+                "title": "Video"
+            },
+            {
+                "title": "Machine"
+            },
+            {
+                "title": "Reviews"
+            },
+            {
+                "title": "Tech"
+            },
+            {
+                "title": "AI"
+            },
+            {
+                "title": "Science"
+            },
+            {
+                "title": "Video"
+            },
+            {
+                "title": "Tech"
+            },
+            {
+                "title": "Machine"
+            }
         ],
         "categories": [
-            "All Categories",
-            "Salad Bowls",
-            "Popcorn Tub",
-            "Ice Cream Cup",
-            "Sustainability",
-            "Fries Bowls",
-            "Coffee Cup",
-            "Paper Cup",
-            "Bowls"
+            {
+                "title": "All Categories"
+            },
+            {
+                "title": "Salad Bowls"
+            },
+            {
+                "title": "Popcorn Tub"
+            },
+            {
+                "title": "Ice Cream Cup"
+            },
+            {
+                "title": "Sustainability"
+            },
+            {
+                "title": "Fries Bowls"
+            },
+            {
+                "title": "Paper Cup"
+            }
         ]
     },
     "TrendingNews": {
