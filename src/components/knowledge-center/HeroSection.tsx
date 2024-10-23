@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect, useRef } from "react";
-import Giphy from "../../../public/assets/knowledgeCenter/Giphy.webp";
 import Image from "next/image";
 import "./style.css";
 import Light from "../../../public/assets/knowledgeCenter/Light.svg";
@@ -49,7 +48,7 @@ const HeroSection = () => {
       <div className="h-[90%] flex w-full">
         <div className="w-1/2 ">
           <Image
-            src={Giphy}
+            src="https://res.cloudinary.com/dfryvystt/image/upload/v1729658363/Giphy_jnwcn8.webp"
             className="h-full w-full object-contain"
             height={600}
             width={600}
