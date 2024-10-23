@@ -1,0 +1,77 @@
+{
+    "knowledgeCenter": [
+        {
+            "knowLedgeCenterSeoData": {
+                "title": "Knowledge Center Manufacturer and Supplier - Nessco India",
+                "description": "Trusted Knowledge Center Manufacturer since 1978. Nessco offers a wide range of paper cup making machine pairing with the latest technology. Enquire now!",
+                "keywords": "Nessco India",
+                "openGraph": {
+                    "title": "Knowledge Center Manufacturer and Supplier - Nessco India",
+                    "description": "Trusted Knowledge Center Manufacturer since 1978. Nessco offers a wide range of paper cup making machine pairing with the latest technology. Enquire now!",
+                    "images": [
+                        {
+                            "url": "https://www.nesscoindia.com/Assets/images/resource/fully-automatic-paper-cup-making-machine.webp",
+                            "alt": "Fully Automatic Paper Cup Making Machine"
+                        }
+                    ]
+                },
+                "robots": "index, follow",
+                "alternates": {
+                    "canonical": "https://www.nesscoindia.com"
+                },
+                "twitter": {
+                    "card": "summary_large_image",
+                    "site": "@NesscoIndia",
+                    "title": "Knowledge Center Manufacturer - Nessco India",
+                    "description": "Nessco India provides top-quality paper cup making machines paired with the latest technology. Enquire today!",
+                    "image": "https://www.nesscoindia.com/Assets/images/resource/fully-automatic-paper-cup-making-machine.webp"
+                }
+            },
+            "Hero": {
+                "title": "Knowledge Center",
+                "subtitle": "Master Your Product, Machine, and Business with NESSCO",
+                "section": [
+                    {
+                        "title": "Know Your Products",
+                        "img": "/assets/knowledgeCenter/Product.svg"
+                    },
+                    {
+                        "title": "Know Your Machine",
+                        "img": "/assets/knowledgeCenter/Machine.svg"
+                    },
+                    {
+                        "title": "Know Your Bussiness",
+                        "img": "/assets/knowledgeCenter/Bussiness.svg"
+                    }
+                ]
+            },
+            "Section": {
+                "button": "Read More",
+                "sections": [
+                    {
+                        "number": 1,
+                        "title": "Know Your Product",
+                        "description": "At Nessco India, our Knowledge Center is your ultimate resource for mastering every aspect of your bussiness  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, ducimus. Qui adipisci eum laudantium amet consectetur itaque! Adipisci, unde debitis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, ducimus. Qui adipisci eum laudantium amet consectetur itaque! Adipisci, unde debitis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, ducimus. Qui adipisci eum laudantium amet consectetur itaque! Adipisci, unde debitis.",
+                        "img": "/assets/knowledgeCenter/Product.svg"
+                    },
+                    {
+                        "number": 2,
+                        "title": "Know Your Machine",
+                        "description": "At Nessco India, our Knowledge Center is your ultimate resource for mastering every aspect of your bussiness  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, ducimus. Qui adipisci eum laudantium amet consectetur itaque! Adipisci, unde debitis.  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, ducimus. Qui adipisci eum laudantium amet consectetur itaque! Adipisci, unde debitis.  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, ducimus. Qui adipisci eum laudantium amet consectetur itaque! Adipisci, unde debitis.",
+                        "img": "/assets/knowledgeCenter/Machine.svg"
+                    },
+                    {
+                        "number": 3,
+                        "title": "Know Your Bussiness",
+                        "description": "At Nessco India, our Knowledge Center is your ultimate resource for mastering every aspect of your bussiness  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, ducimus. Qui adipisci eum laudantium amet consectetur itaque! Adipisci, unde debitis.  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, ducimus. Qui adipisci eum laudantium amet consectetur itaque! Adipisci, unde debitis.  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, ducimus. Qui adipisci eum laudantium amet consectetur itaque! Adipisci, unde debitis.",
+                        "img": "/assets/knowledgeCenter/Bussiness.svg"
+                    }
+                ]
+            },
+            "SubSection": {
+                "title": "Insight. Precision. Growth.",
+                "description": " At Nessco India, our Knowledge Center is your ultimate resource for mastering every aspect of your business. Whether it's understanding the nuances of your product, optimizing your machinery, or driving business growth, we provide the insights and tools you need to succeed. Our focus is on empowering you with the knowledge to make informed decisions, streamline operations, and enhance your competitive edge in the market."
+            }
+        }
+    ]
+}
