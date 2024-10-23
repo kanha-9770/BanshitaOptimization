@@ -12,7 +12,7 @@ const Page1 = () => {
               <span className="text-[#483d73] block">
                 {Header.title.split(" ").slice(0, -2).join(" ")}
               </span>{" "}
-              <span className="text-red-700 ">
+              <span className="text-black">
                 {Header.title.split(" ").slice(-2).join(" ")}
               </span>
             </h1> 

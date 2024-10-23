@@ -1,0 +1,86 @@
+{
+    "Maintainance": [
+        {
+            "maintainanceSeoData": {
+                "title": "Maintainance Manufacturer and Supplier - Nessco India",
+                "description": "Trusted Maintainance Manufacturer since 1978. Nessco offers a wide range of paper cup making machine pairing with the latest technology. Enquire now!",
+                "keywords": "Nessco India",
+                "openGraph": {
+                    "title": "Maintainance Manufacturer and Supplier - Nessco India",
+                    "description": "Trusted Maintainance Manufacturer since 1978. Nessco offers a wide range of paper cup making machine pairing with the latest technology. Enquire now!",
+                    "images": [
+                        {
+                            "url": "https://www.nesscoindia.com/Assets/images/resource/fully-automatic-paper-cup-making-machine.webp",
+                            "alt": "Fully Automatic Paper Cup Making Machine"
+                        }
+                    ]
+                },
+                "robots": "index, follow",
+                "alternates": {
+                    "canonical": "https://www.nesscoindia.com"
+                },
+                "twitter": {
+                    "card": "summary_large_image",
+                    "site": "@NesscoIndia",
+                    "title": "Maintainance Manufacturer - Nessco India",
+                    "description": "Nessco India provides top-quality paper cup making machines paired with the latest technology. Enquire today!",
+                    "image": "https://www.nesscoindia.com/Assets/images/resource/fully-automatic-paper-cup-making-machine.webp"
+                }
+            },
+            "Header": {
+                "title": "Maintainance",
+                "description": "At Nessco, we ensure top-notch machine performance by offering maintenance services with 100+ checkpoints, guaranteeing smooth and efficient operation for all your  paper product machinery.",
+                "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                "points": [
+                    {
+                        "number": "1.",
+                        "title": "Startup Guide"
+                    },
+                    {
+                        "number": "2.",
+                        "title": "Troubleshooting"
+                    },
+                    {
+                        "number": "3.",
+                        "title": "Mechanical Checkpoints"
+                    },
+                    {
+                        "number": "4.",
+                        "title": "Electrical Checkpoints"
+                    },
+                    {
+                        "number": "5.",
+                        "title": "Pneumatic Checkpoints"
+                    },
+                    {
+                        "number": "6.",
+                        "title": "Hydraulic Checkpoints"
+                    }
+                ],
+                "categories": [
+                    {
+                        "title": "All Categories"
+                    },
+                    {
+                        "title": "Salad Bowls"
+                    },
+                    {
+                        "title": "Popcorn Tub"
+                    },
+                    {
+                        "title": "Ice Cream Cup"
+                    },
+                    {
+                        "title": "Sustainability"
+                    },
+                    {
+                        "title": "Fries Bowls"
+                    },
+                    {
+                        "title": "Paper Cup"
+                    }
+                ]
+            }
+        }
+    ]
+}

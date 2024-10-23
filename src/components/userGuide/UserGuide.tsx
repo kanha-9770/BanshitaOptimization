@@ -229,16 +229,16 @@ export function UserGuide() {
           ) : null}
         </AnimatePresence>
 
-        <ul className="w-full bg-[#f5f5f5] bgLines bg-grid-black/[0.2] mx-auto pr-10 py-8 relative z-0 flex">
+        <ul className="w-full bg-[#f5f5f5] bgLines bg-grid-black/[0.2] mx-auto px-10 py-8 relative z-0 flex">
           <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-[#f5f5f5] [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] -z-10"></div>
 
-          <div className="lg:w-[20%] px-10 border-r-2 lg:block hidden bg-[#f5f5f5]">
+          <div className="lg:w-[20%] p-6 lg:block hidden mt-4 bg-white rounded-2xl shadow-2xl">
             <p className="mb-2 font-poppins invisible lg:visible">
               {data.filter}
             </p>
 
             {/* Search Field */}
-            <div className="flex rounded-[1rem]  bg-white overflow-hidden">
+            <div className="flex rounded-[1rem]  bg-[#f5f5f5] overflow-hidden">
               <input
                 type="search"
                 placeholder="Search"
@@ -278,7 +278,7 @@ export function UserGuide() {
                     id={item.title}
                     name={item.title}
                     value={item.title}
-                    className="mr-1"
+                    className="mr-1 accent-[#483d73]"
                   />
                 </div>
               ))}
@@ -314,7 +314,7 @@ export function UserGuide() {
                   layoutId={`card-${card.title}-${index}-${id}`}
                   key={`${card.title}-${index}`}
                   onClick={() => setActive({ ...card, index })} // Pass index when setting active
-                  className="p-5 flex flex-col lg:flex-row bg-white justify-center items-center border-[0.1rem] border-[#f5f5f5] hover:border-[#483d73] rounded-xl cursor-pointer"
+                  className="p-5 flex flex-col lg:flex-row shadow-2xl bg-white justify-center items-center border-[0.1rem] border-[#f5f5f5] hover:border-[#483d73] rounded-xl cursor-pointer"
                 >
                   <div className="flex lg:w-[45%] w-full lg:border-r-2 border-[#5d5d5e] gap-4 flex-col md:flex-row items-center">
                     <motion.div layoutId={`image-${card.title}-${index}-${id}`}>

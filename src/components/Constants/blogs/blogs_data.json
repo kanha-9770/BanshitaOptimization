@@ -1,0 +1,311 @@
+{
+  "blogsSeoData": {
+    "title": "Blogs Manufacturer and Supplier - Nessco India",
+    "description": "Trusted Blogs Manufacturer since 1978. Nessco offers a wide range of paper cup making machine pairing with the latest technology. Enquire now!",
+    "keywords": "Nessco India",
+    "openGraph": {
+      "title": "Blogs Manufacturer and Supplier - Nessco India",
+      "description": "Trusted Blogs Manufacturer since 1978. Nessco offers a wide range of paper cup making machine pairing with the latest technology. Enquire now!",
+      "images": [
+        {
+          "url": "https://www.nesscoindia.com/Assets/images/resource/fully-automatic-paper-cup-making-machine.webp",
+          "alt": "Fully Automatic Paper Cup Making Machine"
+        }
+      ]
+    },
+    "robots": "index, follow",
+    "alternates": {
+      "canonical": "https://www.nesscoindia.com"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "site": "@NesscoIndia",
+      "title": "Blogs Manufacturer - Nessco India",
+      "description": "Nessco India provides top-quality paper cup making machines paired with the latest technology. Enquire today!",
+      "image": "https://www.nesscoindia.com/Assets/images/resource/fully-automatic-paper-cup-making-machine.webp"
+    }
+  },
+  "Filter": {
+    "filter": "Filters",
+    "byCategory": "By Category",
+    "placeholder": "Search...",
+    "categories": [
+      {
+        "title": "All Categories"
+      },
+      {
+        "title": "Salad Bowls"
+      },
+      {
+        "title": "Popcorn Tub"
+      },
+      {
+        "title": "Ice Cream Cup"
+      },
+      {
+        "title": "Sustainability"
+      },
+      {
+        "title": "Fries Bowls"
+      },
+      {
+        "title": "Bowls"
+      }
+    ],
+    "moreCategories": "9 More"
+  },
+  "AllBlogs": {
+    "cancel": "Cancel",
+    "apply": "Apply",
+    "blogs": {
+      "headBlogs": {
+        "allBlogs": "All Blogs",
+        "fullCoverage": "Full Coverage",
+        "machineImg": "/assets/Blogs/Machine.png",
+        "machineBg": "/assets/Blogs/MachineBg.mp4",
+        "imgTitle": "Revolutionary Speed Unveiled",
+        "imgParagraph": "Nessco India launches its new 160-speed paper cup machine, setting new standards in efficiency and productivity.",
+        "paragraphList": [
+          "25% Higher Productivity",
+          "Better Cup Strength",
+          "Double Curling Station",
+          "Class Leading Consistency with 24x7 production capacity."
+        ]
+      },
+      "subBlogs": [
+        {
+          "img": "/assets/Blogs/DialogImg.jpg",
+          "title": "Excellence Showcased at DRUPA",
+          "description": "Nessco India proudly showcased its cutting-edge innovations at the recent DRUPA exhibition.",
+          "fullCoverage": "Full Coverage"
+        },
+        {
+          "img": "/assets/Blogs/DialogImg.jpg",
+          "title": "Excellence Showcased at DRUPA",
+          "description": "Nessco India proudly showcased its cutting-edge innovations at the recent DRUPA exhibition.",
+          "fullCoverage": "Full Coverage"
+        },
+        {
+          "img": "/assets/Blogs/DialogImg.jpg",
+          "title": "Excellence Showcased at DRUPA",
+          "description": "Nessco India proudly showcased its cutting-edge innovations at the recent DRUPA exhibition.",
+          "fullCoverage": "Full Coverage"
+        },
+        {
+          "img": "/assets/Blogs/DialogImg.jpg",
+          "title": "Excellence Showcased at DRUPA",
+          "description": "Nessco India proudly showcased its cutting-edge innovations at the recent DRUPA exhibition.",
+          "fullCoverage": "Full Coverage"
+        },
+        {
+          "img": "/assets/Blogs/DialogImg.jpg",
+          "title": "Excellence Showcased at DRUPA",
+          "description": "Nessco India proudly showcased its cutting-edge innovations at the recent DRUPA exhibition.",
+          "fullCoverage": "Full Coverage"
+        }
+      ]
+    },
+    "bowls": {
+      "headBowls": {
+        "allBlogs": "Bowls",
+        "fullCoverage": "Full Coverage",
+        "machineImg": "/assets/Blogs/Machine.png",
+        "machineBg": "/assets/Blogs/MachineBg.mp4",
+        "imgTitle": "Revolutionary Speed Unveiled",
+        "imgParagraph": "Nessco India launches its new 160-speed paper cup machine, setting new standards in efficiency and productivity.",
+        "paragraphList": [
+          "25% Higher Productivity",
+          "Better Cup Strength",
+          "Double Curling Station",
+          "Class Leading Consistency with 24x7 production capacity."
+        ]
+      },
+      "subBowls": [
+        {
+          "img": "/assets/Blogs/DialogImg.jpg",
+          "title": "Bowls Showcased at DRUPA",
+          "description": "Nessco India proudly showcased its cutting-edge innovations at the recent DRUPA exhibition.",
+          "fullCoverage": "Full Coverage"
+        },
+        {
+          "img": "/assets/Blogs/DialogImg.jpg",
+          "title": "Excellence Showcased at DRUPA",
+          "description": "Nessco India proudly showcased its cutting-edge innovations at the recent DRUPA exhibition.",
+          "fullCoverage": "Full Coverage"
+        },
+        {
+          "img": "/assets/Blogs/DialogImg.jpg",
+          "title": "Excellence Showcased at DRUPA",
+          "description": "Nessco India proudly showcased its cutting-edge innovations at the recent DRUPA exhibition.",
+          "fullCoverage": "Full Coverage"
+        },
+        {
+          "img": "/assets/Blogs/DialogImg.jpg",
+          "title": "Excellence Showcased at DRUPA",
+          "description": "Nessco India proudly showcased its cutting-edge innovations at the recent DRUPA exhibition.",
+          "fullCoverage": "Full Coverage"
+        },
+        {
+          "img": "/assets/Blogs/DialogImg.jpg",
+          "title": "Excellence Showcased at DRUPA",
+          "description": "Nessco India proudly showcased its cutting-edge innovations at the recent DRUPA exhibition.",
+          "fullCoverage": "Full Coverage"
+        }
+      ]
+    }
+  },
+  "FeaturedBlogs": {
+    "featuredBlogs": "Featured Blogs",
+    "picksForYou": "Picks For You",
+    "featured": [
+      {
+        "img": "/assets/Blogs/DialogImg.jpg",
+        "description": "Paper One Show Dubai May 26, 2025. Hall 23 / A15"
+      },
+      {
+        "img": "/assets/Blogs/DialogImg.jpg",
+        "description": "Paper One Show Dubai May 26, 2025. Hall 23 / A15"
+      },
+      {
+        "img": "/assets/Blogs/DialogImg.jpg",
+        "description": "Paper One Show Dubai May 26, 2025. Hall 23 / A15"
+      }
+    ]
+  },
+  "ForYou": {
+    "title": "For You",
+    "for": [
+      {
+        "img": "/assets/Blogs/DialogImg.jpg",
+        "title": "Excellence Showcased 1",
+        "description": "Nessco India proudly showcased its cutting-edge recent DRUPA exhibition."
+      },
+      {
+        "img": "/assets/Blogs/DialogImg.jpg",
+        "title": "Excellence Showcased 2",
+        "description": "Nessco India proudly showcased its cutting-edge recent DRUPA exhibition."
+      },
+      {
+        "img": "/assets/Blogs/DialogImg.jpg",
+        "title": "Excellence Showcased 3",
+        "description": "Nessco India proudly showcased its cutting-edge recent DRUPA exhibition."
+      },
+      {
+        "img": "/assets/Blogs/DialogImg.jpg",
+        "title": "Excellence Showcased 4",
+        "description": "Nessco India proudly showcased its cutting-edge recent DRUPA exhibition."
+      },
+      {
+        "img": "/assets/Blogs/DialogImg.jpg",
+        "title": "Excellence Showcased 5",
+        "description": "Nessco India proudly showcased its cutting-edge recent DRUPA exhibition."
+      },
+      {
+        "img": "/assets/Blogs/DialogImg.jpg",
+        "title": "Excellence Showcased 6",
+        "description": "Nessco India proudly showcased its cutting-edge recent DRUPA exhibition."
+      },
+      {
+        "img": "/assets/Blogs/DialogImg.jpg",
+        "title": "Excellence Showcased 7",
+        "description": "Nessco India proudly showcased its cutting-edge recent DRUPA exhibition."
+      }
+    ]
+  },
+  "Sources": {
+    "title": "Sources",
+    "mainHeading": "Main Heading",
+    "mainDescription": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, quis.",
+    "allCard": [
+      {
+        "topHeadings": "Top Headings",
+        "card": [
+          {
+            "img": "/assets/Blogs/DialogImg.jpg",
+            "description": "Paper One Show Dubai May 26, 2025. Hall 23 / A15"
+          },
+          {
+            "img": "/assets/Blogs/DialogImg.jpg",
+            "description": "Paper One Show Dubai May 26, 2025. Hall 23 / A15"
+          },
+          {
+            "img": "/assets/Blogs/DialogImg.jpg",
+            "description": "Paper One Show Dubai May 26, 2025. Hall 23 / A15"
+          },
+          {
+            "img": "/assets/Blogs/DialogImg.jpg",
+            "description": "Paper One Show Dubai May 26, 2025. Hall 23 / A15"
+          }
+        ]
+      },
+      {
+        "topHeadings": "Top Headings",
+        "card": [
+          {
+            "img": "/assets/Blogs/DialogImg.jpg",
+            "description": "Paper One Show Dubai May 26, 2025. Hall 23 / A15"
+          },
+          {
+            "img": "/assets/Blogs/DialogImg.jpg",
+            "description": "Paper One Show Dubai May 26, 2025. Hall 23 / A15"
+          },
+          {
+            "img": "/assets/Blogs/DialogImg.jpg",
+            "description": "Paper One Show Dubai May 26, 2025. Hall 23 / A15"
+          }
+        ]
+      },
+      {
+        "topHeadings": "Top Headings",
+        "card": [
+          {
+            "img": "/assets/Blogs/DialogImg.jpg",
+            "description": "Paper One Show Dubai May 26, 2025. Hall 23 / A15"
+          },
+          {
+            "img": "/assets/Blogs/DialogImg.jpg",
+            "description": "Paper One Show Dubai May 26, 2025. Hall 23 / A15"
+          },
+          {
+            "img": "/assets/Blogs/DialogImg.jpg",
+            "description": "Paper One Show Dubai May 26, 2025. Hall 23 / A15"
+          }
+        ]
+      },
+      {
+        "topHeadings": "Top Headings",
+        "card": [
+          {
+            "img": "/assets/Blogs/DialogImg.jpg",
+            "description": "Paper One Show Dubai May 26, 2025. Hall 23 / A15"
+          },
+          {
+            "img": "/assets/Blogs/DialogImg.jpg",
+            "description": "Paper One Show Dubai May 26, 2025. Hall 23 / A15"
+          },
+          {
+            "img": "/assets/Blogs/DialogImg.jpg",
+            "description": "Paper One Show Dubai May 26, 2025. Hall 23 / A15"
+          }
+        ]
+      },
+      {
+        "topHeadings": "Top Headings",
+        "card": [
+          {
+            "img": "/assets/Blogs/DialogImg.jpg",
+            "description": "Paper One Show Dubai May 26, 2025. Hall 23 / A15"
+          },
+          {
+            "img": "/assets/Blogs/DialogImg.jpg",
+            "description": "Paper One Show Dubai May 26, 2025. Hall 23 / A15"
+          },
+          {
+            "img": "/assets/Blogs/DialogImg.jpg",
+            "description": "Paper One Show Dubai May 26, 2025. Hall 23 / A15"
+          }
+        ]
+      }
+    ]
+  }
+}

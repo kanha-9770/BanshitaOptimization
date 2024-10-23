@@ -1,0 +1,55 @@
+{
+    "Support": [
+        {
+            "supportSeoData": {
+                "title": "Support Manufacturer and Supplier - Nessco India",
+                "description": "Trusted Support Manufacturer since 1978. Nessco offers a wide range of paper cup making machine pairing with the latest technology. Enquire now!",
+                "keywords": "Nessco India",
+                "openGraph": {
+                    "title": "Support Manufacturer and Supplier - Nessco India",
+                    "description": "Trusted Support Manufacturer since 1978. Nessco offers a wide range of paper cup making machine pairing with the latest technology. Enquire now!",
+                    "images": [
+                        {
+                            "url": "https://www.nesscoindia.com/Assets/images/resource/fully-automatic-paper-cup-making-machine.webp",
+                            "alt": "Fully Automatic Paper Cup Making Machine"
+                        }
+                    ]
+                },
+                "robots": "index, follow",
+                "alternates": {
+                    "canonical": "https://www.nesscoindia.com"
+                },
+                "twitter": {
+                    "card": "summary_large_image",
+                    "site": "@NesscoIndia",
+                    "title": "Support Manufacturer - Nessco India",
+                    "description": "Nessco India provides top-quality paper cup making machines paired with the latest technology. Enquire today!",
+                    "image": "https://www.nesscoindia.com/Assets/images/resource/fully-automatic-paper-cup-making-machine.webp"
+                }
+            },
+            "Header": {
+                "title": "Nessco Support",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ea tenetur magni?",
+                "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                "cards": [
+                    {
+                        "title": "Services",
+                        "img": "/assets/Support/Services.svg"
+                    },
+                    {
+                        "title": "Genuine Parts",
+                        "img": "/assets/Support/GenuineParts.svg"
+                    },
+                    {
+                        "title": "User Guide",
+                        "img": "/assets/Support/UserGuide.svg"
+                    },
+                    {
+                        "title": "Maintainance",
+                        "img": "/assets/Support/Maintainance.svg"
+                    }
+                ]
+            }
+        }
+    ]
+}

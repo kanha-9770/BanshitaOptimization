@@ -39,7 +39,7 @@ const Page1 = () => {
       <div className="font-poppins font-regular flex lg:flex-row flex-col">
         <div className="lg:w-[50%] bg-white px-[2rem] lg:pt-10 pt-5 lg:h-screen h-full">
           <h1 className="mt-[4rem] lg:text-[3rem] text-3xl lg:leading-[3.2rem] w-[12rem]">
-            <span className="text-[#5d5d5e] font-semibold lg:block">
+            <span className="text-[#483d73] font-semibold lg:block">
               {Header.title.split(" ").slice(0, -2).join(" ")}
             </span>{" "}
             <span className="text-black font-bold w-4">
