@@ -14,10 +14,10 @@ export function UserGuide() {
     null
   );
 
-  const [isFilterModalOpen, setIsFilterModalOpen] = useState(false); //first Modal state
+  const [isFilterModalOpen, setIsFilterModalOpen] = useState(false); //filter Modal state
   const ref = useRef<HTMLDivElement>(null);
   const id = useId();
-  const [isModalOpen, setIsModalOpen] = useState(false); //first Modal state
+  const [isModalOpen, setIsModalOpen] = useState(false); //Download Modal state
 
   // Function to open the modal
   const handleOpenFilter = () => {
@@ -393,7 +393,7 @@ export function UserGuide() {
                     </motion.button>
                   </div>
                 </motion.div>
-                {/* Modal for Form Submission */}
+                {/* Modal for Download */}
                 {isModalOpen && (
                   <div className="fixed inset-0 bg-black bg-opacity-80 backdrop-blur flex justify-center items-center z-50 lg:px-0 px-4 ">
                     <div className="bg-white relative rounded-lg lg:w-[50rem] lg:h-[28rem] shadow-xl font-poppins font-regular flex  items-center justify-center">

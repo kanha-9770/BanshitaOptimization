@@ -29,6 +29,19 @@
             },
             "Header": {
                 "title": "Maintainance",
+                "maintainance": "MAINTAINANCE",
+                "filter": "Filters",
+                "cancel": "Cancel",
+                "apply": "Apply",
+                "submit": "Submit",
+                "name": "Name",
+                "email": "Email",
+                "phone": "Phone",
+                "formTitle": "Get Maintainance Guide",
+                "footer": "Nessco © 2024 All Right Reserved",
+                "checkListTitle": "Maintainance Check List",
+                "formDescription": "Fill the form below to get your user guide",
+                "download": "Download Maintainance Check Sheet",
                 "description": "At Nessco, we ensure top-notch machine performance by offering maintenance services with 100+ checkpoints, guaranteeing smooth and efficient operation for all your  paper product machinery.",
                 "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
                 "points": [
@@ -78,6 +91,23 @@
                     },
                     {
                         "title": "Paper Cup"
+                    }
+                ],
+                "cards": [
+                    {
+                        "title": "Paper Cup Machine",
+                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                        "button": "Download"
+                    },
+                    {
+                        "title": "Paper Roll Machine",
+                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                        "button": "Download"
+                    },
+                    {
+                        "title": "Paper Bowl Machine",
+                        "img": "https://res.cloudinary.com/dfryvystt/image/upload/v1728992407/i6ofsqna3hvnebkqicfz.webp",
+                        "button": "Download"
                     }
                 ]
             }
