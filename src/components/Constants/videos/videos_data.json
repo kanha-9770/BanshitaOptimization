@@ -1,0 +1,145 @@
+{
+  "Videos": [
+    {
+      "videosSeoData": {
+        "title": "Videos Manufacturer and Supplier - Nessco India",
+        "description": "Trusted Videos Manufacturer since 1978. Nessco offers a wide range of paper cup making machine pairing with the latest technology. Enquire now!",
+        "keywords": "Nessco India",
+        "openGraph": {
+          "title": "Videos Manufacturer and Supplier - Nessco India",
+          "description": "Trusted Videos Manufacturer since 1978. Nessco offers a wide range of paper cup making machine pairing with the latest technology. Enquire now!",
+          "images": [
+            {
+              "url": "https://www.nesscoindia.com/Assets/images/resource/fully-automatic-paper-cup-making-machine.webp",
+              "alt": "Fully Automatic Paper Cup Making Machine"
+            }
+          ]
+        },
+        "robots": "index, follow",
+        "alternates": {
+          "canonical": "https://www.nesscoindia.com"
+        },
+        "twitter": {
+          "card": "summary_large_image",
+          "site": "@NesscoIndia",
+          "title": "Videos Manufacturer - Nessco India",
+          "description": "Nessco India provides top-quality paper cup making machines paired with the latest technology. Enquire today!",
+          "image": "https://www.nesscoindia.com/Assets/images/resource/fully-automatic-paper-cup-making-machine.webp"
+        }
+      },
+      "Header": {
+        "filter": "Filter",
+        "byCategory": "By Category",
+        "byApplications": "By Applications",
+        "title": "All Videos",
+        "cancel": "Cancel",
+        "apply": "Apply",
+        "categories": [
+          {
+            "title": "All Categories"
+          },
+          {
+            "title": "Salad Bowls"
+          },
+          {
+            "title": "Popcorn Tub"
+          },
+          {
+            "title": "Paper Cup"
+          }
+        ],
+        "applications": [
+          {
+            "title": "All Categories"
+          },
+          {
+            "title": "Paper Bag"
+          },
+          {
+            "title": "Paper Bowl"
+          },
+          {
+            "title": "Paper Box"
+          },
+          {
+            "title": "Paper Bucket"
+          },
+          {
+            "title": "Paper Cup"
+          },
+          {
+            "title": "Paper Cutlery"
+          },
+          {
+            "title": "Paper Lid"
+          },
+          {
+            "title": "Paper Sleeve"
+          },
+          {
+            "title": "Paper Straw"
+          },
+          {
+            "title": "Paper Tray"
+          }
+        ],
+        "VideosRef": [
+          {
+            "url": "https://www.youtube.com/embed/AE0QMNZleJs?si=XiKVWtni11M9AwXU",
+            "title": "Paper Salad Bowl Machine | Nessco India",
+            "tag": "Salad Bowls",
+            "speed": ""
+          },
+          {
+            "url": "https://www.youtube.com/embed/FdEXg31rN4E?si=_08DUcgBjqWFegU_",
+            "title": "Paper Salad Bowl Bowl Machine",
+            "tag": "Salad Bowls",
+            "speed": ""
+          },
+          {
+            "url": "https://www.youtube.com/embed/zKsYvNSPdEQ?si=7jafaUOyHflsbBEf",
+            "title": "Popcorn Bucket Making Machine | Fully Automatic Machine | Nessco",
+            "tag": "Popcorn Tub",
+            "speed": ""
+          },
+          {
+            "url": "https://www.youtube.com/embed/fdy9OrKdGhc?si=Gz2VRF3hO7HeyFEE",
+            "title": "High Speed Paper Cup Machine (Popular India Market)",
+            "tag": "Popcorn Tub",
+            "speed": ""
+          },
+          {
+            "url": "https://www.youtube.com/embed/bzolCaOtU0A?si=_8CcbXYbUPWYbItN",
+            "title": "Paper Cup Making Machine | A Leading Machinery Supplier | Nessco",
+            "tag": "Popcorn Tub",
+            "speed": ""
+          },
+          {
+            "url": "https://www.youtube.com/embed/P1RhGuYdDhQ?si=WNT7QPjISig1KCJV",
+            "title": "High Speed Paper Cup Machine With Automatic Collection & Packaging Unit | Nessco India",
+            "tag": "Paper Cup",
+            "speed": ""
+          },
+          {
+            "url": "https://www.youtube.com/embed/bzolCaOtU0A?si=f7bLb8d0iAVVlESv",
+            "title": "Paper Cup Making Machine | A Leading Machinery Supplier | Nessco",
+            "tag": "Paper Cup",
+            "speed": ""
+          },
+          {
+            "url": "https://www.youtube.com/embed/PZqbGQqYFD4?si=XPQyvo7YuOMRZeIi",
+            "title": "Automatic Paper Cup Packing Machine | Nessco India",
+            "tag": "Paper Cup",
+            "speed": ""
+          },
+          {
+            "url": "https://www.youtube.com/embed/PZqbGQqYFD4?si=XPQyvo7YuOMRZeIi",
+            "title": "Automatic Paper Cup Packing Machine | Nessco India",
+            "tag": "Paper Cup",
+            "speed": ""
+          }
+        ]
+      }
+    }
+  ]
+}
