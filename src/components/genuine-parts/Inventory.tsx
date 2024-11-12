@@ -1,10 +1,11 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Inventory } from "@/components/Constants/genuine-parts/genuineParts_data.json";
 import Image from "next/image";
 
 interface Part {
   title: string;
+  categoryType: string;
   description: string;
   code: string;
   img: string;
@@ -12,58 +13,96 @@ interface Part {
 }
 
 const Page2 = () => {
-  // Use an object to keep track of parts in the enquiry using part code
   const [enquiryState, setEnquiryState] = useState<Record<string, boolean>>({});
-
-  // State to store parts added to the inventory
   const [inventoryItems, setInventoryItems] = useState<Part[]>([]);
-
-  const [isModalOpen, setIsModalOpen] = useState(false); //Proceed button Modal state
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [isPartsModalOpen, setIsPartsModalOpen] = useState(false);
   const [isMachineModalOpen, setIsMachineModalOpen] = useState(false);
+  const [machineFilters, setMachineFilters] = useState<string[]>([]);
+  const [sidebarSearchTerm, setSidebarSearchTerm] = useState("");
+  const [headerSearchTerm, setHeaderSearchTerm] = useState("");
+  const [filteredParts, setFilteredParts] = useState(Inventory.parts);
 
   const openModal = () => setIsPartsModalOpen(true);
   const closeModal = () => setIsPartsModalOpen(false);
-
   const openMachineModal = () => setIsMachineModalOpen(true);
   const closeMachineModal = () => setIsMachineModalOpen(false);
 
-  // Function to handle adding a part to the enquiry
+  useEffect(() => {
+    filterParts();
+  }, [machineFilters, headerSearchTerm]);
+
+  const filterParts = () => {
+    let filtered = Inventory.parts;
+    if (machineFilters.length > 0) {
+      filtered = filtered.filter((part) =>
+        machineFilters.some(
+          (filter) =>
+            part.categoryType.toLowerCase().includes(filter.toLowerCase()) ||
+            part.description.toLowerCase().includes(filter.toLowerCase())
+        )
+      );
+    }
+
+    if (headerSearchTerm) {
+      filtered = filtered.filter(
+        (part) =>
+          part.title.toLowerCase().includes(headerSearchTerm.toLowerCase()) ||
+          part.description
+            .toLowerCase()
+            .includes(headerSearchTerm.toLowerCase()) ||
+          part.code.toLowerCase().includes(headerSearchTerm.toLowerCase())
+      );
+    }
+
+    setFilteredParts(filtered);
+  };
+
+  const handleMachineFilterChange = (filter: string) => {
+    setMachineFilters((prev) =>
+      prev.includes(filter)
+        ? prev.filter((f) => f !== filter)
+        : [...prev, filter]
+    );
+  };
+  const handleMachineFilterChangeFilter=(filter:string)=>{
+    setMachineFilters([filter])
+  }
+
+  const handleSidebarSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSidebarSearchTerm(e.target.value);
+  };
+
+  const handleHeaderSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setHeaderSearchTerm(e.target.value);
+  };
+
   const handleButtonClick = (part: Part) => {
     setEnquiryState((prevState) => ({
       ...prevState,
-      [part.code]: true, // Mark this part as added to enquiry based on its code
+      [part.code]: true,
     }));
-
-    // Add the part to the inventory if it's not already there
     setInventoryItems((prevItems) => [...prevItems, part]);
   };
 
-  // Function to handle removing a part from the enquiry
   const handleRemoveFromInventory = (part: Part) => {
-    // Remove the specific part from inventoryItems based on code
     setInventoryItems((prevItems) =>
       prevItems.filter((item) => item.code !== part.code)
     );
-
-    // Reset enquiry state for the corresponding part
     setEnquiryState((prevState) => ({
       ...prevState,
-      [part.code]: false, // Reset the state for this part
+      [part.code]: false,
     }));
   };
 
-  // Function to toggle modal visibility
   const handleProceedClick = () => {
-    setIsModalOpen(true); // Open the modal when "Proceed" is clicked
+    setIsModalOpen(true);
   };
 
-  // Function to close the modal
   const handleCloseModal = () => {
-    setIsModalOpen(false); // Close the modal
+    setIsModalOpen(false);
   };
 
-  // Function to get the count of inventory items
   const getInventoryCount = () => {
     return inventoryItems.length;
   };
@@ -79,37 +118,40 @@ const Page2 = () => {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="1.2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="1.2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             className="w-6 h-6 ml-1"
           >
-            <line x1="4" y1="6" x2="16" y2="6" />
-            <line x1="8" y1="11" x2="20" y2="11" />
-            <line x1="4" y1="16" x2="16" y2="16" />
-            <circle cx="18" cy="6" r="2" />
-            <circle cx="6" cy="11" r="2" />
-            <circle cx="18" cy="16" r="2" />
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
           </svg>
-
           <input
             type="search"
             placeholder={Inventory.searchFilter}
             className="w-full px-2 outline-none bg-transparent text-black font-poppins text-xs"
+            value={sidebarSearchTerm}
+            onChange={handleSidebarSearch}
           />
         </div>
-        {Inventory.machineFilter.map((item, idx) => (
-          <div key={idx} className="mb-4 flex items-center relative">
-            <label htmlFor={`item-${idx}`} className="text-sm lg:w-[90%]">
-              {item.title}
-            </label>
-            <input
-              type="checkbox"
-              id={`item-${idx}`}
-              className="absolute right-0"
-            />
-          </div>
-        ))}
+        {Inventory.machineFilter
+          .filter((item) =>
+            item.title.toLowerCase().includes(sidebarSearchTerm.toLowerCase())
+          )
+          .map((item, idx) => (
+            <div key={idx} className="mb-4 flex items-center relative">
+              <label htmlFor={`item-${idx}`} className="text-sm lg:w-[90%]">
+                {item.title}
+              </label>
+              <input
+                type="checkbox"
+                id={`item-${idx}`}
+                className="absolute right-0"
+                checked={machineFilters.includes(item.title)}
+                onChange={() => handleMachineFilterChange(item.title)}
+              />
+            </div>
+          ))}
       </div>
 
       {/* Right container*/}
@@ -125,9 +167,9 @@ const Page2 = () => {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="1.2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="1.2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               className="w-6 h-6 ml-2 stroke-white"
             >
               <line x1="4" y1="6" x2="16" y2="6" />
@@ -151,9 +193,9 @@ const Page2 = () => {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="1.2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="1.2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               className="w-6 h-6 ml-2 stroke-white"
             >
               <line x1="4" y1="6" x2="16" y2="6" />
@@ -178,9 +220,9 @@ const Page2 = () => {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               className="feather feather-search"
             >
               <circle cx="10" cy="10" r="8"></circle>
@@ -190,6 +232,8 @@ const Page2 = () => {
               type="search"
               placeholder={Inventory.searchParts}
               className="px-2 outline-none bg-transparent text-black font-poppins text-xs"
+              value={headerSearchTerm}
+              onChange={handleHeaderSearch}
             />
           </div>
           <svg
@@ -197,9 +241,9 @@ const Page2 = () => {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="1.2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="1.2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             className="w-6 h-6 ml-2 lg:visible invisible"
           >
             <line x1="4" y1="6" x2="16" y2="6" />
@@ -214,6 +258,7 @@ const Page2 = () => {
             {Inventory.Filter.map((item, idx) => (
               <div
                 key={idx}
+                onClick={() => handleMachineFilterChangeFilter(item.title)}
                 className="border border-black rounded-lg hover:bg-black hover:text-white cursor-pointer flex items-center justify-center space-x-2 py-1 px-3"
               >
                 <Image
@@ -223,12 +268,15 @@ const Page2 = () => {
                   height={400}
                   className="w-5"
                 />
-                <h3 className="text-sm">{item.title}</h3>
+                <h3
+                  className="text-sm"
+                >
+                  {item.title}
+                </h3>
               </div>
             ))}
           </div>
         </div>
-
         <div className="lg:flex lg:static sticky top-14 z-50">
           {/* Inventory items */}
           <div className="bg-white lg:w-[85%] lg:h-full h-[11.4rem] rounded-lg px-4 py-2 lg:mr-2 lg:block hidden">
@@ -239,7 +287,7 @@ const Page2 = () => {
             <div className="float-right flex">
               <div className="w-12 h-6 bg-black flex rounded-full">
                 <div className="bg-white text-red-700 text-xs rounded-full h-4 w-4 m-1 flex items-center justify-center font-medium">
-                  {getInventoryCount()} {/* Display the inventory count here */}
+                  {getInventoryCount()}
                 </div>
               </div>
               <div className="border-solid border-2 border-black bg-[#f5f5f5] p-1 flex items-center jystify-center rounded-full z-10 -ml-6 -mt-[0.095rem]">
@@ -248,9 +296,9 @@ const Page2 = () => {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   className="w-4 h-4"
                   onClick={handleProceedClick}
                 >
@@ -262,7 +310,6 @@ const Page2 = () => {
               </div>
             </div>
             <div className="w-full overflow-x-scroll flex space-x-4 scrollbar-custom scrollbar py-1 min-h-[4.7rem]">
-              {/* Render parts added to enquiry */}
               {inventoryItems.map((item, idx) => (
                 <div
                   key={idx}
@@ -296,9 +343,9 @@ const Page2 = () => {
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       className="w-3 h-3 stroke-white"
                     >
                       <line x1="18" y1="6" x2="6" y2="18" />
@@ -316,9 +363,9 @@ const Page2 = () => {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="black"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 className="feather feather-info w-4 h-4 mr-2"
               >
                 <circle cx="12" cy="12" r="10"></circle>
@@ -361,8 +408,7 @@ const Page2 = () => {
                 <div className="flex">
                   <div className="w-12 h-6 bg-black flex rounded-full">
                     <div className="bg-white text-red-700 text-xs rounded-full h-4 w-4 m-1 flex items-center justify-center font-medium">
-                      {getInventoryCount()}{" "}
-                      {/* Display the inventory count here */}
+                      {getInventoryCount()}
                     </div>
                   </div>
                   <div className="border-solid border-2 border-black bg-[#f5f5f5] p-1 flex items-center jystify-center rounded-full z-10 -ml-6 -mt-[0.050rem]">
@@ -371,9 +417,9 @@ const Page2 = () => {
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       className="w-4 h-4"
                       onClick={handleProceedClick}
                     >
@@ -430,9 +476,9 @@ const Page2 = () => {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   className="feather feather-search"
                 >
                   <circle cx="10" cy="10" r="8"></circle>
@@ -442,6 +488,8 @@ const Page2 = () => {
                   type="search"
                   placeholder={Inventory.searchParts}
                   className="w-full px-2 outline-none bg-transparent text-black font-poppins text-sm"
+                  value={headerSearchTerm}
+                  onChange={handleHeaderSearch}
                 />
               </div>
             </div>
@@ -451,7 +499,7 @@ const Page2 = () => {
         {/* parts section*/}
         <div className="">
           <div className="w-full mt-2 lg:max-h-[154.1vh] lg:overflow-y-scroll grid lg:grid-cols-3 gap-2 scrollbar-custom scrollbar">
-            {Inventory.parts.map((item, idx) => (
+            {filteredParts.map((item, idx) => (
               <div key={idx} className="bg-white rounded-lg p-2">
                 <div className="flex relative px-1">
                   <div>
@@ -463,7 +511,6 @@ const Page2 = () => {
                     </h3>
                     <h3 className="text-sm whitespace-nowrap">{item.code}</h3>
                   </div>
-                  {/* <BsFillLightningChargeFill className="absolute right-6" /> */}
                   <div className="cursor-pointer group absolute right-0 flex">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -472,9 +519,9 @@ const Page2 = () => {
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="black"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       className="feather feather-info w-4 h-4 hover:stroke-red-700"
                     >
                       <circle cx="12" cy="12" r="10"></circle>
@@ -550,7 +597,7 @@ const Page2 = () => {
           </div>
         </div>
 
-        {/* invertory section in mobile view */}
+        {/* inventory section in mobile view */}
         <div className="bg-white lg:w-[85%] h-max custom-gradient-border rounded-lg px-4 py-2 lg:mr-2 lg:hidden my-2">
           <h2 className="text-sm font-medium float-left">
             {Inventory.inventory}
@@ -559,7 +606,7 @@ const Page2 = () => {
           <div className="float-right flex">
             <div className="w-12 h-6 bg-black flex rounded-full">
               <div className="bg-white text-red-700 text-xs rounded-full h-4 w-4 m-1 flex items-center justify-center font-medium">
-                {getInventoryCount()} {/* Display the inventory count here */}
+                {getInventoryCount()}
               </div>
             </div>
             <div className="border-solid border-2 border-black bg-[#f5f5f5] p-1 flex items-center jystify-center rounded-full z-10 -ml-6 -mt-[0.050rem]">
@@ -568,9 +615,9 @@ const Page2 = () => {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 className="w-4 h-4"
                 onClick={handleProceedClick}
               >
@@ -582,7 +629,6 @@ const Page2 = () => {
             </div>
           </div>
           <div className="w-full overflow-x-scroll flex space-x-4  scrollbar py-1 min-h-[6.8rem]">
-            {/* Render parts added to enquiry */}
             {inventoryItems.map((item, idx) => (
               <div
                 key={idx}
@@ -615,9 +661,9 @@ const Page2 = () => {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     className="w-3 h-3 stroke-white"
                   >
                     <line x1="18" y1="6" x2="6" y2="18" />
@@ -635,9 +681,9 @@ const Page2 = () => {
               viewBox="0 0 24 24"
               fill="none"
               stroke="black"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               className="feather feather-info w-4 h-4 mr-2"
             >
               <circle cx="12" cy="12" r="10"></circle>
@@ -645,32 +691,6 @@ const Page2 = () => {
               <line x1="12" y1="8" x2="12" y2="8"></line>
             </svg>
             <p className="text-xs text-black">{Inventory.iButton}</p>
-          </div>
-          {/* Proceed Button */}
-          <div className="flex lg:justify-end">
-            <button
-              aria-label="Proceed"
-              className="group text-xs mt-1 bg-gradient-to-r from-[#483d73] to-red-700 font-medium text-white lg:px-2 lg:py-1 py-2 px-3 rounded-md  flex items-center justify-center lg:w-max w-full"
-              onClick={handleProceedClick}
-            >
-              <p className="mr-2 text-lg">{Inventory.proceed}</p>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 64 64"
-                className="w-4 h-4"
-              >
-                <circle
-                  cx="32"
-                  cy="32"
-                  r="32"
-                  className="fill-white cursor-pointer"
-                />
-                <path
-                  d="M25 20 L37 32 L25 44"
-                  className="stroke-black group-hover:stroke-red-700 stroke-[4px] fill-none stroke-linecap-round stroke-linejoin-round "
-                />
-              </svg>
-            </button>
           </div>
         </div>
       </div>

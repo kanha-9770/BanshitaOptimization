@@ -1,9 +1,7 @@
 "use client";
+
 import React, { useState } from "react";
-import {
-  Filter,
-  AllBlogs,
-} from "@/components/Constants/blogs/blogs_data.json";
+import { Filter, AllBlogs } from "@/components/Constants/blogs/blogs_data.json";
 import Image from "next/image";
 import Page1 from "./Filter";
 
@@ -16,17 +14,35 @@ interface BlogType {
   title: string;
   description: string;
   fullCoverage: string;
-  dialogImg: string;
-  dialogTitle: string;
-  dialogDescription: string;
+  dialogImg?: string;
+  dialogTitle?: string;
+  dialogDescription?: string;
 }
+
+const CategoryHeading: React.FC<{ categories: string[] }> = ({
+  categories,
+}) => {
+  if (categories.length === 0 || categories.includes("All Categories")) {
+    return <h1>{AllBlogs.blogs.headBlogs.allBlogs}</h1>;
+  }
+
+  return (
+    <h1>
+      {categories.map((category, index) => (
+        <React.Fragment key={category}>
+          {index > 0 && <span className="text-gray-400 mx-2">&gt;</span>}
+          {category}
+        </React.Fragment>
+      ))}
+    </h1>
+  );
+};
 
 const Page2: React.FC<Page2Props> = ({ selectedCategories }) => {
   const [isPage1Visible, setPage1Visible] = useState(false);
 
   const togglePage1Visibility = () => {
     if (window.innerWidth < 1024) {
-      // Check if the viewport is mobile
       setPage1Visible(!isPage1Visible);
     }
   };
@@ -35,13 +51,23 @@ const Page2: React.FC<Page2Props> = ({ selectedCategories }) => {
   const getHeadingData = () => {
     if (selectedCategories.length === 1) {
       switch (selectedCategories[0]) {
+        case "Salad Bowls":
+          return AllBlogs.saladBowls.headSaladBowls;
+        case "Popcorn Tub":
+          return AllBlogs.popcornTub.headPopcornTub;
+        case "Ice Cream Cup":
+          return AllBlogs.iceCreamCup.headIceCreamCup;
+        case "Sustainability":
+          return AllBlogs.sustainability.headSustainability;
+        case "Fries Bowls":
+          return AllBlogs.friesBowls.headFriesBowls;
         case "Bowls":
           return AllBlogs.bowls.headBowls;
         default:
           return AllBlogs.blogs.headBlogs;
       }
     }
-    return AllBlogs.blogs.headBlogs; // default if multiple categories or none are selected
+    return AllBlogs.blogs.headBlogs; // Default if multiple categories or none are selected
   };
 
   // Filter data based on selectedCategories
@@ -57,6 +83,36 @@ const Page2: React.FC<Page2Props> = ({ selectedCategories }) => {
 
     selectedCategories.forEach((category) => {
       switch (category) {
+        case "Salad Bowls":
+          filteredData = [
+            ...filteredData,
+            ...AllBlogs.saladBowls.subSaladBowls,
+          ];
+          break;
+        case "Popcorn Tub":
+          filteredData = [
+            ...filteredData,
+            ...AllBlogs.popcornTub.subPopcornTub,
+          ];
+          break;
+        case "Ice Cream Cup":
+          filteredData = [
+            ...filteredData,
+            ...AllBlogs.iceCreamCup.subIceCreamCup,
+          ];
+          break;
+        case "Sustainability":
+          filteredData = [
+            ...filteredData,
+            ...AllBlogs.sustainability.subSustainability,
+          ];
+          break;
+        case "Fries Bowls":
+          filteredData = [
+            ...filteredData,
+            ...AllBlogs.friesBowls.subFriesBowls,
+          ];
+          break;
         case "Bowls":
           filteredData = [...filteredData, ...AllBlogs.bowls.subBowls];
           break;
@@ -88,9 +144,9 @@ const Page2: React.FC<Page2Props> = ({ selectedCategories }) => {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               className="w-6 h-6 stroke-black absolute right-2"
             >
               <line x1="4" y1="6" x2="16" y2="6" />
@@ -116,9 +172,7 @@ const Page2: React.FC<Page2Props> = ({ selectedCategories }) => {
                     </button>
                   </div>
                   <div className="flex justify-center items-center w-[50%] mb-[0.5rem] font-poppins font-medium">
-                    <button className="text-[#dc0e2a]">
-                      {AllBlogs.apply}
-                    </button>
+                    <button className="text-[#dc0e2a]">{AllBlogs.apply}</button>
                   </div>
                 </div>
                 <Page1
@@ -128,25 +182,26 @@ const Page2: React.FC<Page2Props> = ({ selectedCategories }) => {
             </div>
           )}
 
-          <div className="my-[1.4rem] mx-[1.2rem] text-[1.5rem] font-poppins text-[#3a2a79] flex">
-            <h1>{headingData.allBlogs}</h1>
-            <p className="mt-[0.3rem]">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={3}
-                stroke="currentColor"
-                className="w-8 h-8 stroke-[#483d73]"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </p>
+          {/* Heading */}
+          <div className="my-[1.4rem] mx-[1.2rem] text-[1.5rem] font-poppins text-[#3a2a79] flex items-center">
+            <CategoryHeading categories={selectedCategories} />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={3}
+              stroke="currentColor"
+              className="w-8 h-8 stroke-[#483d73] ml-2"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
           </div>
+
+          {/* Filtered Data Display */}
           <div className="overflow-auto scrollbar-custom scrollbar h-full">
             <div className="mx-[1rem] relative flex lg:flex-row flex-col border-solid border-b-2 border-[#E6E7E6] mb-[0.8rem]">
               <div className="lg:w-[40%] w-full relative flex items-center justify-center">
@@ -210,10 +265,9 @@ const Page2: React.FC<Page2Props> = ({ selectedCategories }) => {
                         ry="10"
                         fill="none"
                         stroke="black"
-                        stroke-width="10"
+                        strokeWidth="10"
                         className="group-hover:stroke-white"
                       />
-
                       <rect
                         x="40"
                         y="40"
@@ -222,7 +276,6 @@ const Page2: React.FC<Page2Props> = ({ selectedCategories }) => {
                         fill="black"
                         className="group-hover:fill-white"
                       />
-
                       <rect
                         x="90"
                         y="40"
@@ -264,7 +317,6 @@ const Page2: React.FC<Page2Props> = ({ selectedCategories }) => {
                         className="group-hover:fill-white"
                       />
                     </svg>
-
                     <p className="text-[0.7rem] ml-2">
                       {headingData.fullCoverage}
                     </p>
@@ -272,6 +324,8 @@ const Page2: React.FC<Page2Props> = ({ selectedCategories }) => {
                 </div>
               </div>
             </div>
+
+            {/* Blogs List */}
             <div className="w-full lg:overflow-y-auto overflow-x-auto scrollbar-custom scrollbar">
               <div className="lg:w-full lg:space-x-0 space-x-4 w-max flex lg:flex-col flex-row overflow-x-hidden px-[1rem]">
                 {getFilteredData().map((item, idx) => (
@@ -281,7 +335,7 @@ const Page2: React.FC<Page2Props> = ({ selectedCategories }) => {
                   >
                     <Image
                       src={item.img}
-                      alt={"Blogs Image"}
+                      alt="Blogs Image"
                       width={400}
                       height={400}
                       className="lg:w-[7.5rem] lg:h-[6rem] w-[6rem] h-[5rem] rounded-[0.5rem] object-cover"
@@ -326,10 +380,9 @@ const Page2: React.FC<Page2Props> = ({ selectedCategories }) => {
                               ry="10"
                               fill="none"
                               stroke="black"
-                              stroke-width="10"
+                              strokeWidth="10"
                               className="group-hover:stroke-white"
                             />
-
                             <rect
                               x="40"
                               y="40"
@@ -338,7 +391,6 @@ const Page2: React.FC<Page2Props> = ({ selectedCategories }) => {
                               fill="black"
                               className="group-hover:fill-white"
                             />
-
                             <rect
                               x="90"
                               y="40"
@@ -380,7 +432,6 @@ const Page2: React.FC<Page2Props> = ({ selectedCategories }) => {
                               className="group-hover:fill-white"
                             />
                           </svg>
-
                           <p className="text-[0.7rem] ml-2">
                             {item.fullCoverage}
                           </p>

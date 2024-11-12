@@ -1,17 +1,42 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { MostRead } from "@/components/Constants/media-room/media-room_data.json";
 import dynamic from "next/dynamic";
 const Modal = dynamic(() => import("@/components/media-room/Modal"));
 
-const Page4 = () => {
+interface MostReadProps {
+  searchQuery: string;
+  selectedCategories: string[];
+  mostReadData: {
+    title: string;
+    sections: Array<{
+      id: number;
+      img: string;
+      filter: string;
+      title: string;
+      continueReading: string;
+      dialogDescription: string;
+    }>;
+  };
+}
+
+const Page4: React.FC<MostReadProps> = ({ searchQuery, selectedCategories, mostReadData }) => {
   const [isModalOpen, setModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState({
     img: "",
     title: "",
     dialogDescription: "",
   });
+  const [filteredNews, setFilteredNews] = useState(mostReadData.sections);
+
+  useEffect(() => {
+    const filtered = mostReadData.sections.filter((item) => {
+      const matchesSearch = item.title.toLowerCase().includes(searchQuery.toLowerCase());
+      const matchesCategory = selectedCategories.length === 0 || selectedCategories.includes(item.filter);
+      return matchesSearch && matchesCategory;
+    });
+    setFilteredNews(filtered);
+  }, [searchQuery, selectedCategories, mostReadData.sections]);
 
   const openModal = (content: {
     img: string;
@@ -27,12 +52,12 @@ const Page4 = () => {
   return (
     <>
       <div className="bg-white h-full lg:w-[30%] rounded-2xl font-poppins px-[1rem]">
-        <h2 className="text-[#483d73] text-2xl my-4">{MostRead.title}</h2>
+        <h2 className="text-[#483d73] text-2xl my-4">{mostReadData.title}</h2>
         <div className="h-[37rem] overflow-hidden mb-4">
           <div className="overflow-y-auto h-full scrollbar space-y-5 pr-1">
-            {MostRead.sections.map((item, index) => (
+            {filteredNews.map((item) => (
               <div
-                key={index}
+                key={item.id}
                 className="flex items-center border-b-2 pb-[1.1rem] space-x-1"
               >
                 <div className="w-[65%] relative">
@@ -63,9 +88,9 @@ const Page4 = () => {
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       className="w-4 h-4 ml-2 stroke-black group-hover:stroke-white"
                     >
                       <path d="M5 12h14M12 5l7 7-7 7" />

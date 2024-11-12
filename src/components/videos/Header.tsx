@@ -1,71 +1,79 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import data from "@/components/Constants/videos/videos_data.json";
 
 const Header = () => {
   const [showApplications, setShowApplications] = useState(false);
   const [showCategories, setShowCategories] = useState(false);
-  const [selectedCategories, setSelectedCategories] = useState([
-    "All Categories",
-  ]);
+  const [selectedCategories, setSelectedCategories] = useState<string[]>(["All Categories"]);
+  const [selectedApplications, setSelectedApplications] = useState<string[]>(["All Categories"]);
   const [searchTerm, setSearchTerm] = useState("");
-  const [isFilterModalOpen, setIsFilterModalOpen] = useState(false); //filter Modal state
+  const [categorySearch, setCategorySearch] = useState("");
+  const [applicationSearch, setApplicationSearch] = useState("");
+  const [isFilterModalOpen, setIsFilterModalOpen] = useState(false);
 
-  // Function to open the modal
   const handleOpenFilter = () => {
-    setIsFilterModalOpen(true); // Close the modal
+    setIsFilterModalOpen(true);
   };
 
-  // Function to close the modal
   const handleCloseFilter = () => {
-    setIsFilterModalOpen(false); // Close the modal
+    setIsFilterModalOpen(false);
   };
 
-  const displayApplications = showApplications
-    ? data.Videos[0]?.Header.applications
-    : data.Videos[0]?.Header.applications.slice(0, 3);
+  const filterItems = (items: any[], search: string) => {
+    return items.filter(item => 
+      item.title.toLowerCase().includes(search.toLowerCase())
+    );
+  };
 
-  const displayCategories = showCategories
-    ? data.Videos[0]?.Header.categories
-    : data.Videos[0]?.Header.categories.slice(0, 3);
-
-  const filteredVideos = (
-    selectedCategories.includes("All Categories") ||
-    selectedCategories.length === 0
-      ? data.Videos[0]?.Header.VideosRef
-      : data.Videos[0]?.Header.VideosRef.filter((video) =>
-          selectedCategories.includes(video.tag)
-        )
-  ).filter((video) =>
-    video.title.toLowerCase().includes(searchTerm.toLowerCase())
+  const displayApplications = filterItems(
+    showApplications
+      ? data.Videos[0]?.Header.applications
+      : data.Videos[0]?.Header.applications.slice(0, 3),
+    applicationSearch
   );
 
-  // Handle category checkbox changes
-  const handleCategoryChange = (event: {
-    target: { name: any; checked: any };
-  }) => {
-    const { name, checked } = event.target;
+  const displayCategories = filterItems(
+    showCategories
+      ? data.Videos[0]?.Header.categories
+      : data.Videos[0]?.Header.categories.slice(0, 3),
+    categorySearch
+  );
 
-    if (name === "All Categories") {
-      setSelectedCategories(["All Categories"]);
-    } else {
-      setSelectedCategories((prev) => {
+  const filteredVideos = data.Videos[0]?.Header.VideosRef.filter(video => {
+    const categoryMatch = selectedCategories.includes("All Categories") || selectedCategories.includes(video.tag);
+    const applicationMatch = selectedApplications.includes("All Categories") || selectedApplications.includes(video.tag);
+    const searchMatch = video.title.toLowerCase().includes(searchTerm.toLowerCase());
+    return categoryMatch && applicationMatch && searchMatch;
+  });
+
+  const handleSelectionChange = (
+    event: React.ChangeEvent<HTMLInputElement>,
+    setSelected: React.Dispatch<React.SetStateAction<string[]>>,
+    allOption: string
+  ) => {
+    const { name, checked } = event.target;
+    setSelected(prev => {
+      if (name === allOption) {
+        return checked ? [allOption] : [];
+      } else {
+        const withoutAll = prev.filter(item => item !== allOption);
         if (checked) {
-          return prev
-            .filter((category) => category !== "All Categories")
-            .concat(name);
+          return [...withoutAll, name];
         } else {
-          const newCategories = prev.filter((category) => category !== name);
-          return newCategories.length === 0
-            ? ["All Categories"]
-            : newCategories;
+          const newSelection = withoutAll.filter(item => item !== name);
+          return newSelection.length === 0 ? [allOption] : newSelection;
         }
-      });
-    }
+      }
+    });
   };
 
-  const handleSearchChange = (event: { target: { value: string } }) => {
-    setSearchTerm(event.target.value);
+  const handleCategoryChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    handleSelectionChange(event, setSelectedCategories, "All Categories");
+  };
+
+  const handleApplicationChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    handleSelectionChange(event, setSelectedApplications, "All Categories");
   };
 
   return (
@@ -74,18 +82,16 @@ const Header = () => {
         {/* Filter Section */}
         <div className="w-[18%] lg:block hidden h-[82vh] pr-5 border-r-2 border-[#E6E7E6] overflow-auto sticky top-[5.2rem] scrollbar-hide">
           <p className="mb-2">{data.Videos[0]?.Header.filter}</p>
-          <p className="font-medium mb-2">
-            {data.Videos[0]?.Header.byCategory}
-          </p>
+          <p className="font-medium mb-2">{data.Videos[0]?.Header.byCategory}</p>
 
-          {/* Search Field */}
+          {/* Category Search Field */}
           <div className="flex rounded-[1rem] bg-white overflow-hidden">
             <input
               type="search"
-              placeholder="Search..."
-              value={searchTerm}
-              onChange={handleSearchChange}
-              className="w-full py-[0.3rem] px-[1rem] outline-none bg-transparent text-black "
+              placeholder="Search categories..."
+              value={categorySearch}
+              onChange={(e) => setCategorySearch(e.target.value)}
+              className="w-full py-[0.3rem] px-[1rem] outline-none bg-transparent text-black"
             />
             <button className="mr-[0.8rem] text-[#9CA3AF]">
               <svg
@@ -95,9 +101,9 @@ const Header = () => {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 className="feather feather-search"
               >
                 <circle cx="10" cy="10" r="8"></circle>
@@ -105,46 +111,42 @@ const Header = () => {
               </svg>
             </button>
           </div>
-          {/* By Category */}
-          <div className="mt-5 ">
-            <div className="mt-5">
-              {displayCategories.map((item, index) => (
-                <div key={index} className="flex justify-between items-center">
-                  <label
-                    className="font-montserrat my-[0.2rem]"
-                    htmlFor={item.title}
-                  >
-                    {item.title}
-                  </label>
-                  <input
-                    type="checkbox"
-                    id={item.title}
-                    name={item.title}
-                    value={item.title}
-                    checked={selectedCategories.includes(item.title)}
-                    onChange={handleCategoryChange}
-                    className="ml-2"
-                  />
-                </div>
-              ))}
-              <button
-                onClick={() => setShowCategories(!showCategories)}
-                className="text-red-600 font-montserrat mt-1"
-              >
-                {showCategories ? "Less" : "Expand"}
-              </button>
-            </div>
-          </div>
-          <p className="font-medium mb-2 mt-9">
-            {data.Videos[0]?.Header.byApplications}
-          </p>
 
-          {/* Search Field */}
-          <div className="flex rounded-[1rem]  bg-white overflow-hidden">
+          {/* By Category */}
+          <div className="mt-5">
+            {displayCategories.map((item, index) => (
+              <div key={index} className="flex justify-between items-center">
+                <label className="font-montserrat my-[0.2rem]" htmlFor={item.title}>
+                  {item.title}
+                </label>
+                <input
+                  type="checkbox"
+                  id={item.title}
+                  name={item.title}
+                  checked={selectedCategories.includes(item.title)}
+                  onChange={handleCategoryChange}
+                  className="ml-2"
+                />
+              </div>
+            ))}
+            <button
+              onClick={() => setShowCategories(!showCategories)}
+              className="text-red-600 font-montserrat mt-1"
+            >
+              {showCategories ? "Less" : "Expand"}
+            </button>
+          </div>
+
+          <p className="font-medium mb-2 mt-9">{data.Videos[0]?.Header.byApplications}</p>
+
+          {/* Application Search Field */}
+          <div className="flex rounded-[1rem] bg-white overflow-hidden">
             <input
               type="search"
-              placeholder="Search..."
-              className="w-full py-[0.3rem] px-[1rem] outline-none bg-transparent text-black "
+              placeholder="Search applications..."
+              value={applicationSearch}
+              onChange={(e) => setApplicationSearch(e.target.value)}
+              className="w-full py-[0.3rem] px-[1rem] outline-none bg-transparent text-black"
             />
             <button className="mr-[0.8rem] text-[#9CA3AF]">
               <svg
@@ -154,9 +156,9 @@ const Header = () => {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 className="feather feather-search"
               >
                 <circle cx="10" cy="10" r="8"></circle>
@@ -164,6 +166,7 @@ const Header = () => {
               </svg>
             </button>
           </div>
+
           {/* By Application */}
           <div className="mt-5">
             {displayApplications.map((item, index) => (
@@ -175,7 +178,8 @@ const Header = () => {
                   type="checkbox"
                   id={item.title}
                   name={item.title}
-                  value={item.title}
+                  checked={selectedApplications.includes(item.title)}
+                  onChange={handleApplicationChange}
                   className="ml-2"
                 />
               </div>
@@ -199,9 +203,9 @@ const Header = () => {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             className="w-6 h-6 stroke-black absolute right-4"
             onClick={handleOpenFilter}
           >
@@ -219,6 +223,15 @@ const Header = () => {
           <h1 className="text-[#483d73] text-2xl font-poppins font-medium">
             {data.Videos[0]?.Header.title}
           </h1>
+          {/* <div className="my-4">
+            <input
+              type="search"
+              placeholder="Search videos..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="w-full py-2 px-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div> */}
           <div className="grid lg:grid-cols-3 md:grid-cols-2 my-4 gap-8">
             {filteredVideos.map((item, idx) => (
               <div key={idx} className="w-full h-full">
@@ -234,6 +247,7 @@ const Header = () => {
           </div>
         </div>
       </div>
+
       {/* Filter Modal in Mobile */}
       {isFilterModalOpen && (
         <div className="fixed inset-0 bg-[#f5f5f5] bg-opacity-50 backdrop-blur z-50 flex items-center justify-center lg:mt-14">
@@ -245,35 +259,58 @@ const Header = () => {
                 </button>
               </div>
               <div className="flex justify-center items-center w-[50%] mb-[0.5rem] font-poppins font-medium">
-                <button className="text-red-700">
+                <button onClick={handleCloseFilter} className="text-red-700">
                   {data.Videos[0]?.Header.apply}
                 </button>
               </div>
             </div>
 
-            <div className="h-[22rem] mt-4 p-[1rem] bg-[#f5f5f5] rounded-lg">
-              {/* By Category */}
-              <div className="h-[14rem] overflow-y-scroll scrollbar-hide">
-                {data.Videos[0]?.Header.categories.map((item, index) => (
-                  <div
-                    key={index}
-                    className="flex justify-between items-center"
-                  >
-                    <label
-                      className="font-poppins my-[0.2rem]"
-                      htmlFor={item.title}
-                    >
-                      {item.title}
-                    </label>
-                    <input
-                      type="checkbox"
-                      id={item.title}
-                      name={item.title}
-                      value={item.title}
-                    />
-                  </div>
-                ))}
-              </div>
+            <div className="h-[22rem] mt-4 p-[1rem] bg-[#f5f5f5] rounded-lg overflow-y-auto">
+              <p className="font-medium mb-2">{data.Videos[0]?.Header.byCategory}</p>
+              <input
+                type="search"
+                placeholder="Search categories..."
+                value={categorySearch}
+                onChange={(e) => setCategorySearch(e.target.value)}
+                className="w-full py-2 px-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 mb-2"
+              />
+              {filterItems(data.Videos[0]?.Header.categories, categorySearch).map((item, index) => (
+                <div key={index} className="flex justify-between items-center">
+                  <label className="font-poppins my-[0.2rem]" htmlFor={`mobile-category-${item.title}`}>
+                    {item.title}
+                  </label>
+                  <input
+                    type="checkbox"
+                    id={`mobile-category-${item.title}`}
+                    name={item.title}
+                    checked={selectedCategories.includes(item.title)}
+                    onChange={handleCategoryChange}
+                  />
+                </div>
+              ))}
+
+              <p className="font-medium mb-2 mt-4">{data.Videos[0]?.Header.byApplications}</p>
+              <input
+                type="search"
+                placeholder="Search applications..."
+                value={applicationSearch}
+                onChange={(e) => setApplicationSearch(e.target.value)}
+                className="w-full py-2 px-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 mb-2"
+              />
+              {filterItems(data.Videos[0]?.Header.applications, applicationSearch).map((item, index) => (
+                <div key={index} className="flex justify-between items-center">
+                  <label className="font-poppins my-[0.2rem]" htmlFor={`mobile-application-${item.title}`}>
+                    {item.title}
+                  </label>
+                  <input
+                    type="checkbox"
+                    id={`mobile-application-${item.title}`}
+                    name={item.title}
+                    checked={selectedApplications.includes(item.title)}
+                    onChange={handleApplicationChange}
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>

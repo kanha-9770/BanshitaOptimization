@@ -5,12 +5,13 @@ import { SelectProduct } from "@/components/Constants/application/application_da
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Modal from "./Modal";
-
+import { Product } from "./Pages";
 gsap.registerPlugin(ScrollTrigger);
 
-const Page2: React.FC = () => {
-  const [selectedProduct, setSelectedProduct] = useState(SelectProduct.products[0]);
+const Page2 = ({selectedProduct, updateData }: { selectedProduct: Product; updateData: (newData: Product) => void }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("");
   const carouselRef = useRef<HTMLDivElement | null>(null);
   const borderRef = useRef<HTMLDivElement | null>(null);
   const rightContainerRef = useRef<HTMLDivElement | null>(null);
@@ -18,12 +19,12 @@ const Page2: React.FC = () => {
   const handleSwipe = (direction: "left" | "right") => {
     const currentIndex = SelectProduct.products.indexOf(selectedProduct);
     if (direction === "left" && currentIndex > 0) {
-      setSelectedProduct(SelectProduct.products[currentIndex - 1]);
+      updateData(SelectProduct.products[currentIndex - 1]);
     } else if (
       direction === "right" &&
       currentIndex < SelectProduct.products.length - 1
     ) {
-      setSelectedProduct(SelectProduct.products[currentIndex + 1]);
+      updateData(SelectProduct.products[currentIndex + 1]);
     }
   };
 
@@ -96,12 +97,26 @@ const Page2: React.FC = () => {
   }, [selectedProduct]);
 
   const handleProductClick = (product: (typeof SelectProduct.products)[0]) => {
-    setSelectedProduct(product);
+    updateData(product);
   };
 
   const handleViewAllClick = () => {
-    setIsModalOpen(true); // Open modal
+    setIsModalOpen(true);
   };
+
+  const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchTerm(event.target.value);
+  };
+
+  const handleCategoryChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    setSelectedCategory(event.target.value);
+  };
+
+  const filteredProducts = SelectProduct.products.filter((product) => {
+    const matchesSearch = product.title.toLowerCase().includes(searchTerm.toLowerCase());
+    const matchesCategory = selectedCategory === "" || product.title === selectedCategory;
+    return matchesSearch && matchesCategory;
+  });
 
   return (
     <>
@@ -109,7 +124,7 @@ const Page2: React.FC = () => {
         {/* Left-side product grid */}
         <div className="lg:w-[40%] lg:mx-[1rem] lg:pl-[4rem]">
           {/* Product Grid */}
-          <div className="lg:w-[24.5rem] lg:h-[35.5rem] bg-white rounded-[0.8rem] lg:px-[1rem] px-[0.5rem] py-[1rem] flex flex-col items-center justify-center">
+          <div className={`lg:w-[24.5rem] ${filteredProducts.length>15?'lg:h-[35.5rem]':'lg:h-auto'} bg-white rounded-[0.8rem] lg:px-[1rem] px-[0.5rem] py-[1rem] flex flex-col items-center justify-center`}>
             <div className="flex w-full">
               <div className="flex w-[60%] lg:h-[2.2rem] h-[1.8rem] rounded-[2rem] bg-[#f2f2f2] border-2 border-solid border-[#f2f2f2] overflow-hidden hover:border-[#d9d9d8] lg:mr-[1rem] mr-[0.4rem] text-[#6f6f6f] items-center">
                 <button
@@ -136,6 +151,8 @@ const Page2: React.FC = () => {
                   type="search"
                   placeholder={SelectProduct.placeholder}
                   className="w-full px-[0.5rem] outline-none bg-transparent lg:text-[0.9rem] text-sm text-[#5e5d5d]"
+                  value={searchTerm}
+                  onChange={handleSearchChange}
                 />
               </div>
               <div className="w-[40%] lg:h-[2.2rem] h-[1.8rem] rounded-[2rem] bg-[#f2f2f2] border-2 border-solid border-[#f2f2f2] overflow-hidden hover:border-[#d9d9d8] px-[0.5rem] flex items-center">
@@ -143,13 +160,13 @@ const Page2: React.FC = () => {
                   id="Category"
                   name="Category"
                   className="w-full outline-none font-normal bg-transparent text-[#5e5d5d] lg:text-[0.9rem] text-sm"
+                  value={selectedCategory}
+                  onChange={handleCategoryChange}
                 >
-                  <option value="" disabled selected>
-                    {SelectProduct.category}
-                  </option>
-                  <option value="item1">Paper Cup</option>
-                  <option value="item2">Paper Bowl</option>
-                  <option value="item3">Paper Roll</option>
+                  <option value="">{SelectProduct.category}</option>
+                  {SelectProduct.products.map((item, index) => (
+                    <option key={index} value={item.title}>{item.title}</option>
+                  ))}
                 </select>
               </div>
             </div>
@@ -157,7 +174,7 @@ const Page2: React.FC = () => {
             <div className="lg:w-full w-[86vw] mt-[1rem] overflow-hidden">
               <div className="h-full overflow-auto pt-1 lg:px-3 scrollbar-custom scrollbar">
                 <div className="lg:grid lg:grid-cols-3 lg:gap-x-5 gap-x-2 flex">
-                  {SelectProduct.products.map((item, idx) => (
+                  {filteredProducts.map((item, idx) => (
                     <div
                       key={idx}
                       className="cursor-pointer group"
@@ -276,7 +293,7 @@ const Page2: React.FC = () => {
       {isModalOpen && (
         <Modal
           setIsModalOpen={setIsModalOpen}
-          setSelectedProduct={setSelectedProduct}
+          setSelectedProduct={updateData}
           selectedProduct={selectedProduct}
         />
       )}

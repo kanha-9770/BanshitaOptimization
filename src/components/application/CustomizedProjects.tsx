@@ -4,10 +4,14 @@ import Image from "next/image";
 import { CustomizedProjects } from "@/components/Constants/application/application_data.json";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Product } from "./Pages";
 
 gsap.registerPlugin(ScrollTrigger);
+interface Page3Props {
+  selectedProduct: Product;
+}
 
-const Page4: React.FC = () => {
+const Page4: React.FC<Page3Props> = ({ selectedProduct }) => {
   const carouselRef = useRef<HTMLDivElement | null>(null);
   const borderRef = useRef<HTMLDivElement | null>(null);
   const borderImgRef = useRef<HTMLDivElement | null>(null);
@@ -98,6 +102,8 @@ const Page4: React.FC = () => {
     });
   }, []);
 
+  const productItems = CustomizedProjects.container[selectedProduct?.title as keyof typeof CustomizedProjects.container];
+
   return (
     <>
       <div
@@ -129,43 +135,50 @@ const Page4: React.FC = () => {
             className="border-solid lg:border-r-[0.2rem] border-r-2 border-red-700 absolute lg:-top-[2rem] -top-[1rem] lg:right-[5.5rem] right-[2rem] -z-10"
             ref={borderImgRef}
           ></div>
-          {CustomizedProjects.container.map((item, idx) => (
-            <div key={idx} className="flex lg:my-[3rem] my-[1rem]">
-              <div className="lg:w-[65%] w-[60%] lg:pl-[1rem] pl-[0.5rem]">
-                <h2 className="lg:text-[1.6rem] text-[1.1rem] text-[#483d73] font-medium lg:mb-[0.8rem] mb-[0.4rem]">
-                  {item.title1}
-                </h2>
-                <p className="lg:text-[1rem] text-sm">{item.description}</p>
-              </div>
-              <div className="lg:w-[35%] w-[40%] flex justify-end items-center">
-                <div className="h-full flex items-end">
-                  <h3
-                    className="bg-gradient-to-r from-[#483d73] to-red-700 text-white lg:text-[1.1rem] text-[0.5rem] lg:py-[0.2rem] lg:px-[2.5vw] px-[0.5rem] rounded-[2rem]"
+
+          {productItems && productItems.length > 0 ? (
+            productItems.map((item, idx) => (
+              <div key={idx} className="flex lg:my-[3rem] my-[1rem]">
+                <div className="lg:w-[65%] w-[60%] lg:pl-[1rem] pl-[0.5rem]">
+                  <h2 className="lg:text-[1.6rem] text-[1.1rem] text-[#483d73] font-medium lg:mb-[0.8rem] mb-[0.4rem]">
+                    {item.title1}
+                  </h2>
+                  <p className="lg:text-[1rem] text-sm">{item.description}</p>
+                </div>
+                <div className="lg:w-[35%] w-[40%] flex justify-end items-center">
+                  <div className="h-full flex items-end">
+                    <h3
+                      className="bg-gradient-to-r from-[#483d73] to-red-700 text-white lg:text-[1.1rem] text-[0.5rem] lg:py-[0.2rem] lg:px-[2.5vw] px-[0.5rem] rounded-[2rem]"
+                      ref={(el) => {
+                        title2Refs.current[idx] = el;
+                      }}
+                    >
+                      {item.title2}
+                    </h3>
+                  </div>
+                  <div
+                    className="lg:w-[11rem] w-[4rem] h-[4rem] lg:h-[11rem] border-2 border-solid border-[#483d73] rounded-full overflow-hidden"
+                    onClick={() => openModal(item.img, item.title2)} // On click, open the modal
                     ref={(el) => {
-                      title2Refs.current[idx] = el;
+                      imageRefs.current[idx] = el;
                     }}
                   >
-                    {item.title2}
-                  </h3>
-                </div>
-                <div
-                  className="lg:w-[11rem] w-[4rem] h-[4rem] lg:h-[11rem] border-2 border-solid border-[#483d73] rounded-full overflow-hidden"
-                  onClick={() => openModal(item.img, item.title2)} // On click, open the modal
-                  ref={(el) => {
-                    imageRefs.current[idx] = el;
-                  }}
-                >
-                  <Image
-                    className="object-fill h-full w-full"
-                    width={300}
-                    height={300}
-                    src={item.img}
-                    alt={item.title1}
-                  />
+                    <Image
+                      className="object-fill h-full w-full"
+                      width={300}
+                      height={300}
+                      src={item.img}
+                      alt={item.title1}
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))
+          ) : (
+            <p className="text-red-700 text-center font-medium mt-8">
+              No items available for this product.
+            </p>
+          )}
         </div>
       </div>
 

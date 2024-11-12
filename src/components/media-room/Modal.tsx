@@ -21,9 +21,8 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
         onClick={(e) => e.stopPropagation()}
       >
         <button
-          arial-label="Close"
+          aria-label="Close"
           onClick={onClose}
-          aria-label="Close modal"
           className="absolute top-[0.5rem] right-[1rem]"
         >
           ✖

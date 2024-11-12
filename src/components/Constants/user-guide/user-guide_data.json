@@ -41,50 +41,56 @@
         "cards": [
           {
             "description": "NS-900",
+            "category":"All Categories,Sustainability",
             "title": "Model No. :",
             "description2": "Paper Cup Machine",
             "title2": "Product Category :",
-            "src": "/assets/application/CraftsmanshipImg.png",
+            "src": "https://i.pinimg.com/564x/44/1e/0b/441e0b2db22ec277b652fd5a6c45cd25.jpg",
             "ctaText": "Download",
             "index": 1,
             "content": "1Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos porro quaerat alias magni consequatur aut consequuntur molestias, delectus hic modi distinctio. Vero reiciendis ut accusamus voluptas harum sint est nulla unde, dolore error similique voluptates. Aliquid voluptatem distinctio quibusdam odio, repellat vero corrupti illum culpa nostrum praesentium voluptatibus commodi? Atque, dignissimos ullam? Quam obcaecati aperiam corporis ipsum dicta deleniti repellendus."
           },
           {
             "description": "NS-100",
+            "category":"All Categories,Ice Cream Cup",
             "title": "Model No. :",
             "description2": "Paper Straw Machine",
             "title2": "Product Category :",
-            "src": "/assets/application/CraftsmanshipImg.png",
+            "src": "https://i.pinimg.com/564x/44/1e/0b/441e0b2db22ec277b652fd5a6c45cd25.jpg",
             "ctaText": "Download",
             "index": 2,
             "content": "2Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos porro quaerat alias magni consequatur aut consequuntur molestias, delectus hic modi distinctio. Vero reiciendis ut accusamus voluptas harum sint est nulla unde, dolore error similique voluptates. Aliquid voluptatem distinctio quibusdam odio, repellat vero corrupti illum culpa nostrum praesentium voluptatibus commodi? Atque, dignissimos ullam? Quam obcaecati aperiam corporis ipsum dicta deleniti repellendus."
           },
           {
             "description": "NS-400",
+            "category":"All Categories,Popcorn Tub",
             "title": "Model No. :",
             "description2": "Paper Bowl Machine",
             "title2": "Product Category :",
-            "src": "/assets/application/CraftsmanshipImg.png",
+            "src": "https://i.pinimg.com/564x/44/1e/0b/441e0b2db22ec277b652fd5a6c45cd25.jpg",
             "ctaText": "Download",
             "index": 3,
             "content": "NS-400 cont Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos porro quaerat alias magni consequatur aut consequuntur molestias, delectus hic modi distinctio. Vero reiciendis ut accusamus voluptas harum sint est nulla unde, dolore error similique voluptates. Aliquid voluptatem distinctio quibusdam odio, repellat vero corrupti illum culpa nostrum praesentium voluptatibus commodi? Atque, dignissimos ullam? Quam obcaecati aperiam corporis ipsum dicta deleniti repellendus."
           },
           {
             "description": "NS-300",
+            "category":"All Categories,Popcorn Tub",
             "title": "Model No. :",
             "description2": "Paper Plate Machine",
             "title2": "Product Category :",
-            "src": "/assets/application/CraftsmanshipImg.png",
+            "src": "https://i.pinimg.com/564x/44/1e/0b/441e0b2db22ec277b652fd5a6c45cd25.jpg",
             "ctaText": "Download",
             "index": 4,
             "content": "NS-300 cont Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos porro quaerat alias magni consequatur aut consequuntur molestias, delectus hic modi distinctio. Vero reiciendis ut accusamus voluptas harum sint est nulla unde, dolore error similique voluptates. Aliquid voluptatem distinctio quibusdam odio, repellat vero corrupti illum culpa nostrum praesentium voluptatibus commodi? Atque, dignissimos ullam? Quam obcaecati aperiam corporis ipsum dicta deleniti repellendus."
           },
           {
             "description": "NS-800",
+            "category":"All Categories,Salad Bowls",
+
             "title": "Model No. : ",
             "description2": "Paper Roll Machine",
             "title2": "Product Category :",
-            "src": "/assets/application/CraftsmanshipImg.png",
+            "src": "https://i.pinimg.com/564x/44/1e/0b/441e0b2db22ec277b652fd5a6c45cd25.jpg",
             "ctaText": "Download",
             "index": 5,
             "content": "NS-800 cont Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos porro quaerat alias magni consequatur aut consequuntur molestias, delectus hic modi distinctio. Vero reiciendis ut accusamus voluptas harum sint est nulla unde, dolore error similique voluptates. Aliquid voluptatem distinctio quibusdam odio, repellat vero corrupti illum culpa nostrum praesentium voluptatibus commodi? Atque, dignissimos ullam? Quam obcaecati aperiam corporis ipsum dicta deleniti repellendus."
@@ -105,12 +111,6 @@
           },
           {
             "title": "Sustainability"
-          },
-          {
-            "title": "Fries Bowls"
-          },
-          {
-            "title": "Paper Cup"
           }
         ]
       }

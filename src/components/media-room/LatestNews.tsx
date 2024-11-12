@@ -54,7 +54,7 @@ const Page3 = () => {
                   </svg>
                 </div>
                 <p className="border border-black rounded-md text-center w-max px-3">
-                  {LatestNews.filter}
+                  {LatestNews.mainTitle}
                 </p>
                 <h3 className="font-semibold text-lg">{LatestNews.title}</h3>
                 <p className="text-sm">{LatestNews.description}</p>

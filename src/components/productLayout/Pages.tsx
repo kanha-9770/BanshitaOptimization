@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Page1 from "@/components/productLayout/Header";
-// import Page2 from "@/components/productLayout/ProductsGrid";
+import Page2 from "@/components/productLayout/ProductsGrid";
 import { notFound, useParams } from "next/navigation";
 import {
   Header,
@@ -52,7 +52,7 @@ const Page = () => {
   return (
     <>
       <Page1 page1machine={page1machine} />
-      {/* <Page2 page2machine={page2machine} /> */}
+      <Page2 page2machine={page2machine} />
     </>
   );
 };

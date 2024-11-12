@@ -1,29 +1,24 @@
 "use client";
+
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { ProductCatalouge } from "@/components/Constants/product/product_data.json";
 import gsap from "gsap";
 import { Label } from "@radix-ui/react-label";
+import EnquiryCart from "../ui/EnquiryCart";
 
 const ProductPage2 = () => {
-  // State to manage the expanded item index
   const [expandedIndex, setExpandedIndex] = useState<number | null>(0);
-
   const carouselRef = useRef<HTMLDivElement | null>(null);
-
-  // Refs for animations
   const leftBorderRef = useRef<HTMLDivElement | null>(null);
   const bottomBorderRef = useRef<HTMLDivElement | null>(null);
   const circleRef = useRef<HTMLDivElement | null>(null);
   const itemsRef = useRef<Array<HTMLDivElement | null>>([]);
-  const [isChecked, setIsChecked] = useState<number | null>(null);
+  const [selectedItems, setSelectedItems] = useState<Set<string>>(new Set());
+  const [enquiryItems, setEnquiryItems] = useState<
+    Array<{ id: string; name: string; image: string }>
+  >([]);
 
-  const handleClick = (index: number) => {
-    // If the same checkbox is clicked again, uncheck it (set to null)
-    setIsChecked((prev) => (prev === index ? null : index));
-  };
-
-  // Toggle function to expand/collapse items
   const toggleExpansion = (index: number) => {
     setExpandedIndex(expandedIndex === index ? null : index);
   };
@@ -46,20 +41,59 @@ const ProductPage2 = () => {
     }
   };
 
+  const handleItemSelection = (
+    itemId: string,
+    itemName: string,
+    itemImage: string
+  ) => {
+    setSelectedItems((prevSelected) => {
+      const newSelected = new Set(prevSelected);
+      if (newSelected.has(itemId)) {
+        newSelected.delete(itemId);
+        setEnquiryItems((prevItems) =>
+          prevItems.filter((item) => item.id !== itemId)
+        );
+      } else {
+        newSelected.add(itemId);
+        setEnquiryItems((prevItems) => {
+          // Check if the item already exists in the cart
+          const itemExists = prevItems.some((item) => item.id === itemId);
+          if (!itemExists) {
+            return [
+              ...prevItems,
+              { id: itemId, name: itemName, image: itemImage },
+            ];
+          }
+          return prevItems;
+        });
+      }
+      return newSelected;
+    });
+  };
+
+  const removeEnquiryItem = (itemId: string) => {
+    setSelectedItems((prevSelected) => {
+      const newSelected = new Set(prevSelected);
+      newSelected.delete(itemId);
+      return newSelected;
+    });
+    setEnquiryItems((prevItems) =>
+      prevItems.filter((item) => item.id !== itemId)
+    );
+  };
+
   useEffect(() => {
     if (expandedIndex !== null) {
       const tl = gsap.timeline();
-      const mm = gsap.matchMedia(); // Create a GSAP matchMedia instance
-
+      const mm = gsap.matchMedia();
       mm.add("(min-width: 992px)", () => {
-        // For larger screens (e.g., tablets and desktops)
         tl.to(leftBorderRef.current, {
           height: "21rem",
           duration: 0.4,
           ease: "power2.out",
         })
           .to(bottomBorderRef.current, {
-            width: "5.5rem", // Larger width for bigger screens
+            width: "5.5rem",
             duration: 0.2,
             ease: "power2.out",
           })
@@ -81,9 +115,7 @@ const ProductPage2 = () => {
             "-=0.1"
           );
       });
-
       mm.add("(min-width: 768px) and (max-width: 991px)", () => {
-        // For mobile screens
         tl.to(leftBorderRef.current, {
           height: "6rem",
           duration: 0.4,
@@ -107,9 +139,7 @@ const ProductPage2 = () => {
             "-=0.1"
           );
       });
-
       mm.add("(max-width: 767px)", () => {
-        // For mobile screens
         tl.to(leftBorderRef.current, {
           height: "8rem",
           duration: 0.4,
@@ -133,10 +163,8 @@ const ProductPage2 = () => {
             "-=0.1"
           );
       });
-
-      // Clean up
       return () => {
-        mm.revert(); // Revert GSAP matchMedia animations when component unmounts
+        mm.revert();
       };
     }
   }, [expandedIndex]);
@@ -144,7 +172,6 @@ const ProductPage2 = () => {
   return (
     <>
       <div className="w-full bgLines font-poppins bg-grid-black/[0.2] lg:px-[2rem] px-[1rem] pt-[5rem] pb-[4rem] flex items-center justify-center relative font-regular">
-        {/* Radial gradient for the container to give a faded look */}
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center  bg-[#f2f2f2] [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
         <div className="bg-white w-full rounded-[0.5rem] lg:px-[2.2rem] px-[1rem] pb-[1.8rem] z-20">
           {ProductCatalouge.card.map((item, idx) => (
@@ -171,7 +198,6 @@ const ProductPage2 = () => {
                       : "group-hover:border-red-700 lg:ml-[1rem] ml-[0.5rem]"
                   }`}
                 ></div>
-
                 <h2
                   className={` ${
                     expandedIndex === idx
@@ -189,9 +215,9 @@ const ProductPage2 = () => {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="black"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     className="feather feather-chevron-up w-10 h-10 absolute right-0"
                   >
                     <polyline points="18 15 12 9 6 15"></polyline>
@@ -204,9 +230,9 @@ const ProductPage2 = () => {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="black"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     className="feather feather-chevron-down w-10 h-10 absolute right-0"
                   >
                     <polyline points="6 9 12 15 18 9"></polyline>
@@ -220,22 +246,18 @@ const ProductPage2 = () => {
                   }`}
                 ></div>
               </div>
-
               {expandedIndex === idx && (
                 <div className="w-full relative">
                   <div className="bg-gradient-to-r from-white via-[#dddddd] to-white h-[0.1rem] w-full absolute bottom-0"></div>
                   <div className="w-full lg:pl-[8rem] relative">
-                    {/* Left Border Animation */}
                     <div
                       ref={leftBorderRef}
                       className="border-l-2 border-solid border-red-700 h-[0rem] lg:-top-[4rem] -top-[2.2rem] left-[2.2rem] lg:left-[4.7rem]  absolute"
                     ></div>
-                    {/* Bottom Border Animation */}
                     <div
                       ref={bottomBorderRef}
                       className="border-b-2 border-solid border-red-700 w-0 absolute left-[4.7rem] top-[17rem] lg:block hidden"
                     ></div>
-                    {/* Circle Animation */}
                     <div
                       ref={circleRef}
                       className="border-2 border-solid border-red-700 lg:w-[1rem] lg:h-[1rem] w-[0.5rem] h-[0.5rem] lg:left-[9.5rem] left-[2rem]  lg:top-[16.6rem] md:top-[3.5rem] top-[5.5rem] absolute rounded-full bg-red-700 opacity-0 scale-0"
@@ -259,7 +281,6 @@ const ProductPage2 = () => {
                                   }}
                                   className="relative lg:mb-20 mb-16 lg:w-[18rem] w-[14rem] bg-gradient-to-b from-[#f5f5f5] to-[#f2f2f2] rounded-lg shadow-lg lg:hover:shadow-2xl transition-all duration-300 opacity-0 -translate-x-20"
                                 >
-                                  {/* Icons */}
                                   <div className="absolute top-4 right-2 flex space-x-2">
                                     <div className="w-6 h-6 p-[0.2rem] bg-white border-solid border-[0.1rem] border-[#f5f5f5] hover:border-red-700 rounded-full flex items-center justify-center relative group">
                                       <Image
@@ -290,9 +311,9 @@ const ProductPage2 = () => {
                                         viewBox="0 0 24 24"
                                         fill="none"
                                         stroke="black"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
+                                        strokeWidth="2"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
                                         className="feather feather-info w-4 h-4 hover:stroke-red-700"
                                       >
                                         <circle cx="12" cy="12" r="10"></circle>
@@ -318,7 +339,6 @@ const ProductPage2 = () => {
                                     </div>
                                   </div>
 
-                                  {/* Title */}
                                   <div className="pt-4 px-4">
                                     <h2 className="lg:text-[1rem] text-[0.9rem] font-semibold lg:w-[10rem] w-[7rem]">
                                       {containerItem.h1}
@@ -331,7 +351,6 @@ const ProductPage2 = () => {
                                     </p>
                                   </div>
 
-                                  {/* Image */}
                                   <div className="flex justify-center items-center">
                                     <div className="p-4 flex justify-center items-center">
                                       <Image
@@ -343,33 +362,33 @@ const ProductPage2 = () => {
                                     </div>
                                   </div>
 
-                                  {/* View Machine Button */}
                                   <div className="my-[0.5rem] flex lg:flex-rows flex-col items-center justify-center lg:h-[2.5rem]">
                                     <button className="lg:text-[0.9rem] text-[0.8rem] w-[65%] h-[2rem] border-[0.1rem] border-solid font-medium rounded-lg transition-colors duration-300 border-[#9c9c9c] hover:border-black hover:bg-black hover:text-white">
                                       {ProductCatalouge.viewMachine}
                                     </button>
                                   </div>
 
-                                  {/* Separator */}
                                   <div className="w-full h-px bg-[#9c9c9c]"></div>
 
-                                  {/* Checkbox */}
-                                  <div
-                                    className="py-2 flex items-center justify-center"
-                                    onClick={() => handleClick(containerIdx)}
-                                  >
+                                  <div className="py-2 flex items-center justify-center">
                                     <div className="flex items-center space-x-2">
                                       <input
                                         type="checkbox"
-                                        id={`addToEnquiry-${containerIdx}`}
+                                        id={`addToEnquiry-${idx}-${containerIdx}`}
                                         className="h-4 w-4 accent-red-700"
-                                        checked={isChecked === containerIdx}
+                                        checked={selectedItems.has(
+                                          `${idx}-${containerIdx}`
+                                        )}
                                         onChange={() =>
-                                          handleClick(containerIdx)
+                                          handleItemSelection(
+                                            `${idx}-${containerIdx}`,
+                                            containerItem.h1,
+                                            containerItem.img
+                                          )
                                         }
                                       />
                                       <Label
-                                        htmlFor={`addToEnquiry-${containerIdx}`}
+                                        htmlFor={`addToEnquiry-${idx}-${containerIdx}`}
                                         className="text-sm whitespace-nowrap"
                                       >
                                         {containerItem.inquiry}
@@ -381,7 +400,6 @@ const ProductPage2 = () => {
                             )}
                         </div>
                       </div>
-
                       <div className="flex -mt-16 mb-[1rem] justify-end lg:text-3xl text-2xl z-20 space-x-2">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -450,6 +468,7 @@ const ProductPage2 = () => {
           ))}
         </div>
       </div>
+      <EnquiryCart items={enquiryItems} onRemoveItem={removeEnquiryItem} />
     </>
   );
 };
